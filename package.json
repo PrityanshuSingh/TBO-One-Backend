@@ -1,0 +1,35 @@
+{
+  "name": "tbo_backend",
+  "version": "1.0.0",
+  "description": "This is the backend service for retrial of the serch queries.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prakash2003pramanick/TBO_Search_Retrival.git"
+  },
+  "keywords": [
+    "TBO",
+    "BACKEND",
+    "SEARCH",
+    "RETRIVAL"
+  ],
+  "author": "Veltrix_TBO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prakash2003pramanick/TBO_Search_Retrival/issues"
+  },
+  "homepage": "https://github.com/prakash2003pramanick/TBO_Search_Retrival#readme",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "base-64": "^1.0.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-async-handler": "^1.2.0",
+    "fuse.js": "^7.0.0",
+    "mongoose": "^8.9.5",
+    "node-cache": "^5.1.2"
+  }
+}
