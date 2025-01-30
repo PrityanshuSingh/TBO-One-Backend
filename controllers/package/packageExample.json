@@ -1,0 +1,523 @@
+{
+    "packageId": "PKG123456",
+    "packageName": "Luxury Paris Getaway",
+    "description": "A 5-day luxury trip to Paris including flights, hotel stay, and sightseeing tours.",
+    "duration": "5 Days / 4 Nights",
+    "price": {
+        "currency": "INR",
+        "basePrice": 2500,
+        "taxes": 200,
+        "discount": 150,
+        "totalPrice": 44764.94
+    },
+    "flights": [
+        [
+            {
+                "FirstNameFormat": null,
+                "IsBookableIfSeatNotAvailable": false,
+                "IsHoldAllowedWithSSR": false,
+                "LastNameFormat": null,
+                "ResultIndex": "OB6[TBO]e3Sq9hjP8YeMIxzpHUzbXbQ2RBZcv/Ze6Ygsm9BG22+5JpPhKq0ZIYB0LAHpfxvXuDJ/jtr0efJ8zKhqsrZsaVUVpA7wYZNruuQnUYCqDETKg6hh1yfiGGqr8/dzrJRsHVjTRuQ6cRl+BRfAW91oYZN33/Vcr3iarV26fsrUi8yYX+lcm/Pbw2OfSu/iP2DSm9q/Fh/PJxkKdROJbBoNyAHGJmyp7a0D18cyGeVdZlQvSOEDjpUX+de/6rfT6z7y4aNeX7c4SJVWq4RFyt53ak6mt4oKkxZORar6o1WulytusycTDa7tDagYkHS1Dxbom0YSf4W5q1xGn1HeEZTyYqkdE0L1D5eQ9vjIEYf+EZT9Erax9GIP9fzyZPZMYil8UZ73I7j73iWzai3aNZdvhFvS95KP86NzDzbbqb/uIbpnzoa+izdwrhBUG0rgO68/mplfmOGUh0ByGokCaQtsaGnGVAXYYFUmuX49qrTDIuiaRRz9ErqW4zE4ZDqPL361u08MZJsyg7vHNDevqQct/U0ngZaapTzUW/Rb0sUlzH1i7Pc2ElwPNol839rLPlmQXBofJQoZ+jcU6xUbuScDqGukbjgqCRNI5kh7Gm2kxTKOKijJY0fTqn4glzx6t+gOb+zL+jPz3eQbeCHLG1a/utAQznFOPUQH1gQH8xouWus=",
+                "Source": 3,
+                "IsLCC": true,
+                "IsRefundable": true,
+                "IsPanRequiredAtBook": false,
+                "IsPanRequiredAtTicket": false,
+                "IsPassportRequiredAtBook": false,
+                "IsPassportRequiredAtTicket": false,
+                "GSTAllowed": true,
+                "IsCouponAppilcable": true,
+                "IsGSTMandatory": false,
+                "AirlineRemark": "SpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet MainSpiceJet Main.",
+                "IsPassportFullDetailRequiredAtBook": false,
+                "ResultFareType": "RegularFare",
+                "Fare": {
+                    "Currency": "INR",
+                    "BaseFare": 8296,
+                    "Tax": 2616,
+                    "TaxBreakup": [
+                        {
+                            "key": "K3",
+                            "value": 0
+                        },
+                        {
+                            "key": "YQTax",
+                            "value": 0
+                        },
+                        {
+                            "key": "YR",
+                            "value": 130
+                        },
+                        {
+                            "key": "PSF",
+                            "value": 0
+                        },
+                        {
+                            "key": "UDF",
+                            "value": 0
+                        },
+                        {
+                            "key": "INTax",
+                            "value": 0
+                        },
+                        {
+                            "key": "TransactionFee",
+                            "value": 0
+                        },
+                        {
+                            "key": "OtherTaxes",
+                            "value": 2486
+                        }
+                    ],
+                    "YQTax": 0,
+                    "AdditionalTxnFeeOfrd": 0,
+                    "AdditionalTxnFeePub": 0,
+                    "PGCharge": 0,
+                    "OtherCharges": 3.54,
+                    "ChargeBU": [
+                        {
+                            "key": "TBOMARKUP",
+                            "value": 0
+                        },
+                        {
+                            "key": "GLOBALPROCUREMENTCHARGE",
+                            "value": 0
+                        },
+                        {
+                            "key": "CONVENIENCECHARGE",
+                            "value": 0
+                        },
+                        {
+                            "key": "OTHERCHARGE",
+                            "value": 3.54
+                        }
+                    ],
+                    "Discount": 0,
+                    "PublishedFare": 10915.54,
+                    "CommissionEarned": 0,
+                    "PLBEarned": 0,
+                    "IncentiveEarned": 0,
+                    "OfferedFare": 10915.54,
+                    "TdsOnCommission": 0,
+                    "TdsOnPLB": 0,
+                    "TdsOnIncentive": 0,
+                    "ServiceFee": 0,
+                    "TotalBaggageCharges": 0,
+                    "TotalMealCharges": 0,
+                    "TotalSeatCharges": 0,
+                    "TotalSpecialServiceCharges": 0
+                },
+                "FareBreakdown": [
+                    {
+                        "Currency": "INR",
+                        "PassengerType": 1,
+                        "PassengerCount": 1,
+                        "BaseFare": 2800,
+                        "Tax": 1308,
+                        "TaxBreakUp": [
+                            {
+                                "key": "YQTax",
+                                "value": 0
+                            },
+                            {
+                                "key": "YR",
+                                "value": 65
+                            },
+                            {
+                                "key": "OtherTaxes",
+                                "value": 1243
+                            }
+                        ],
+                        "YQTax": 0,
+                        "AdditionalTxnFeeOfrd": 0,
+                        "AdditionalTxnFeePub": 0,
+                        "PGCharge": 0,
+                        "SupplierReissueCharges": 0
+                    },
+                    {
+                        "Currency": "INR",
+                        "PassengerType": 2,
+                        "PassengerCount": 1,
+                        "BaseFare": 2800,
+                        "Tax": 1308,
+                        "TaxBreakUp": [
+                            {
+                                "key": "YQTax",
+                                "value": 0
+                            },
+                            {
+                                "key": "YR",
+                                "value": 65
+                            },
+                            {
+                                "key": "OtherTaxes",
+                                "value": 1243
+                            }
+                        ],
+                        "YQTax": 0,
+                        "AdditionalTxnFeeOfrd": 0,
+                        "AdditionalTxnFeePub": 0,
+                        "PGCharge": 0,
+                        "SupplierReissueCharges": 0
+                    },
+                    {
+                        "Currency": "INR",
+                        "PassengerType": 3,
+                        "PassengerCount": 1,
+                        "BaseFare": 2696,
+                        "Tax": 0,
+                        "TaxBreakUp": null,
+                        "YQTax": 0,
+                        "AdditionalTxnFeeOfrd": 0,
+                        "AdditionalTxnFeePub": 0,
+                        "PGCharge": 0,
+                        "SupplierReissueCharges": 0
+                    }
+                ],
+                "Segments": [
+                    [
+                        {
+                            "Baggage": "15 KG",
+                            "CabinBaggage": "7 KG",
+                            "CabinClass": 2,
+                            "SupplierFareClass": null,
+                            "TripIndicator": 1,
+                            "SegmentIndicator": 1,
+                            "Airline": {
+                                "AirlineCode": "SG",
+                                "AirlineName": "SpiceJet",
+                                "FlightNumber": "9049",
+                                "FareClass": "U",
+                                "OperatingCarrier": ""
+                            },
+                            "Origin": {
+                                "Airport": {
+                                    "AirportCode": "DEL",
+                                    "AirportName": "Indira Gandhi Airport",
+                                    "Terminal": "1D",
+                                    "CityCode": "DEL",
+                                    "CityName": "Delhi",
+                                    "CountryCode": "IN",
+                                    "CountryName": "India"
+                                },
+                                "DepTime": "2025-01-31T14:30:00"
+                            },
+                            "Destination": {
+                                "Airport": {
+                                    "AirportCode": "BOM",
+                                    "AirportName": "Chhatrapati Shivaji Maharaj International Airport",
+                                    "Terminal": "1",
+                                    "CityCode": "BOM",
+                                    "CityName": "Mumbai",
+                                    "CountryCode": "IN",
+                                    "CountryName": "India"
+                                },
+                                "ArrTime": "2025-01-31T16:00:00"
+                            },
+                            "Duration": 90,
+                            "GroundTime": 0,
+                            "Mile": 0,
+                            "StopOver": false,
+                            "FlightInfoIndex": "",
+                            "StopPoint": "",
+                            "StopPointArrivalTime": null,
+                            "StopPointDepartureTime": null,
+                            "Craft": "737",
+                            "Remark": null,
+                            "IsETicketEligible": true,
+                            "FlightStatus": "Confirmed",
+                            "Status": "",
+                            "FareClassification": {
+                                "Type": ""
+                            }
+                        }
+                    ]
+                ],
+                "LastTicketDate": null,
+                "TicketAdvisory": null,
+                "FareRules": [
+                    {
+                        "Origin": "DEL",
+                        "Destination": "BOM",
+                        "Airline": "SG",
+                        "FareBasisCode": "USAF",
+                        "FareRuleDetail": "",
+                        "FareRestriction": "",
+                        "FareFamilyCode": "",
+                        "FareRuleIndex": ""
+                    }
+                ],
+                "AirlineCode": "SG",
+                "MiniFareRules": [
+                    [
+                        {
+                            "JourneyPoints": "DEL-BOM",
+                            "Type": "Reissue",
+                            "From": "0",
+                            "To": "96",
+                            "Unit": "HOURS",
+                            "Details": "INR 2950"
+                        },
+                        {
+                            "JourneyPoints": "DEL-BOM",
+                            "Type": "Reissue",
+                            "From": "96",
+                            "To": "",
+                            "Unit": "HOURS",
+                            "Details": "INR 2250"
+                        },
+                        {
+                            "JourneyPoints": "DEL-BOM",
+                            "Type": "Cancellation",
+                            "From": "0",
+                            "To": "96",
+                            "Unit": "HOURS",
+                            "Details": "INR 3950"
+                        },
+                        {
+                            "JourneyPoints": "DEL-BOM",
+                            "Type": "Cancellation",
+                            "From": "96",
+                            "To": "",
+                            "Unit": "HOURS",
+                            "Details": "INR 2950"
+                        }
+                    ]
+                ],
+                "ValidatingAirline": "SG",
+                "FareClassification": {
+                    "Color": "lightBlue",
+                    "Type": "Publish"
+                }
+            }
+        ]
+    ],
+    "hotel": {
+        "name": "Ritz Paris",
+        "address": "15 Place Vendôme, 75001 Paris, France",
+        "checkInDate": "2025-06-10",
+        "checkOutDate": "2025-06-14",
+        "roomType": "Deluxe Suite",
+        "amenities": [
+            "WiFi",
+            "Breakfast",
+            "Spa",
+            "Swimming Pool"
+        ]
+    },
+    "sightseeing": [
+        {
+            "ResultIndex": 1,
+            "CityId": "111558",
+            "CityName": "Bhubhaneshwar",
+            "CountryCode": "IN",
+            "FromDate": "2025-02-02T00:00:00",
+            "ToDate": "2025-02-02T00:00:00",
+            "SightseeingName": "Attractions of Bhubhaneshwar",
+            "SightseeingCode": "E-E10-IN-BBATTRA",
+            "SightseeingTypes": [
+                "ACTIVITIES"
+            ],
+            "DurationDescription": [
+                {
+                    "TotalDuration": "1 DAYS",
+                    "Date": "2025-02-02T00:00:00"
+                }
+            ],
+            "Condition": "Printed Voucher. Print and bring the voucher to enjoy the activity. ",
+            "ImageList": [
+                "https://media.activitiesbank.com/29623/ENG/B/29623_3.jpg",
+                "https://media.activitiesbank.com/29623/ENG/B/29623_1.jpg",
+                "https://media.activitiesbank.com/29623/ENG/B/29623_2.jpg",
+                "https://media.activitiesbank.com/29623/ENG/B/29623_4.jpg"
+            ],
+            "Price": {
+                "CurrencyCode": "INR",
+                "BasePrice": 9231.65,
+                "Tax": 0,
+                "OtherCharges": 0,
+                "Discount": 0,
+                "PublishedPrice": 9231.65,
+                "PublishedPriceRoundedOff": 9231.65,
+                "OfferedPrice": 6923.74,
+                "OfferedPriceRoundedOff": 6923.74,
+                "AgentCommission": 2307.91,
+                "AgentMarkUp": 0,
+                "ServiceTax": 0,
+                "TDS": 923.16,
+                "TCS": 0,
+                "TotalGSTAmount": 0,
+                "GST": {
+                    "CGSTAmount": 0,
+                    "CGSTRate": 0,
+                    "CessAmount": 0,
+                    "CessRate": 0,
+                    "IGSTAmount": 0,
+                    "IGSTRate": 18,
+                    "SGSTAmount": 0,
+                    "SGSTRate": 0,
+                    "TaxableAmount": 0
+                }
+            },
+            "Source": 2,
+            "TourDescription": "Khandagiri and Udaygiri hills were carved and tunneled, to create this multi-storied ancient apartment residence for Jain monks. They were the work of the first known Orissan ruler, King Kharavela, and probably begun in the first century BC. Kharavela was a king of the Mahameghavahana dynasty, who is known for expansion of the Kalinga Empire and his installation of public improvements, such as canal systems. His queen was evidently quite a patron of the arts, and probably had much to do with the impressive sculptural decoration of the caves.<br />\n<br />\n<br />\n <br/><br/><strong>Inclusions: </strong>ADMISSIONSINCL,Tickets<br>TRANSPORTINCL,Transport<br>",
+            "IsPANMandatory": true
+        },
+        {
+            "ResultIndex": 4,
+            "CityId": "111558",
+            "CityName": "Bhubhaneshwar",
+            "CountryCode": "IN",
+            "FromDate": "2025-02-02T00:00:00",
+            "ToDate": "2025-02-02T00:00:00",
+            "SightseeingName": "Bhubhaneshwar Temple City Tour",
+            "SightseeingCode": "E-E10-IN-BBTEMPL",
+            "SightseeingTypes": [
+                "ACTIVITIES"
+            ],
+            "DurationDescription": [
+                {
+                    "TotalDuration": "1 DAYS",
+                    "Date": "2025-02-02T00:00:00"
+                }
+            ],
+            "Condition": "Printed Voucher. Print and bring the voucher to enjoy the activity. ",
+            "ImageList": [
+                "https://media.activitiesbank.com/29587/ENG/B/29587_2.jpg",
+                "https://media.activitiesbank.com/29587/ENG/B/29587_1.jpg",
+                "https://media.activitiesbank.com/29587/ENG/B/29587_3.jpg",
+                "https://media.activitiesbank.com/29587/ENG/B/29587_4.jpg"
+            ],
+            "Price": {
+                "CurrencyCode": "INR",
+                "BasePrice": 11469.63,
+                "Tax": 0,
+                "OtherCharges": 0,
+                "Discount": 0,
+                "PublishedPrice": 11469.63,
+                "PublishedPriceRoundedOff": 11469.63,
+                "OfferedPrice": 8602.22,
+                "OfferedPriceRoundedOff": 8602.22,
+                "AgentCommission": 2867.41,
+                "AgentMarkUp": 0,
+                "ServiceTax": 0,
+                "TDS": 1146.96,
+                "TCS": 0,
+                "TotalGSTAmount": 0,
+                "GST": {
+                    "CGSTAmount": 0,
+                    "CGSTRate": 0,
+                    "CessAmount": 0,
+                    "CessRate": 0,
+                    "IGSTAmount": 0,
+                    "IGSTRate": 18,
+                    "SGSTAmount": 0,
+                    "SGSTRate": 0,
+                    "TaxableAmount": 0
+                }
+            },
+            "Source": 2,
+            "TourDescription": "Start the tour with a visit to Lingraj Temple dedicated to Lord Shiva (Non Hindu are not allowed inside Temple) adorned with beautiful sculptures, which have been carved on the spire. Mukteshwar Temple, is one of the most prominent temples of Bhubaneswar and has been constructed in the style that is quite similar to the one used in the Kalinga School of Temple Architecture. Rajarani Temple is also among the renowned temples in Bhubaneswar made from the wonderful red and gold sandstone. Brahmeshwara Temple built around 11th century, is another Siva-linga temple famous for its intricately carved sculptures.<br />\n<br />\nThe temple has an 18m high tower. Parashurameswar Temple, built in 650 AD, is one of the oldest temples existing in Bhubaneshwar. A typical example of the Orissan style of temple architecture, the temple features pine spire curving up to a point over the sanctum and the pyramid-covered Jagamohana, where people sit and pray. Small but richly decorated shrine of Lord Shiva, the Parashurameswar Temple has sculptures of amorous couples, animals and floral designs. Siddheshwar Temple is a typical Orissan Temple with very graceful figure of the standing Lord Ganesh with seven mouldings.<br />\n<br />\n<br />\n<br />\n<br />\n<strong>Others:</strong> Please contact your provider to confirm your pickup time for sightseeing / excursion. Please present your voucher to the local guide at the beginning of the tour.<br/><br/><strong>Inclusions: </strong>ADMISSIONSINCL,Tickets<br>TRANSPORTINCL,Transport<br>",
+            "IsPANMandatory": true
+        },
+        {
+            "ResultIndex": 3,
+            "CityId": "111558",
+            "CityName": "Bhubhaneshwar",
+            "CountryCode": "IN",
+            "FromDate": "2025-02-02T00:00:00",
+            "ToDate": "2025-02-02T00:00:00",
+            "SightseeingName": "Excursion to Puri - Full-Day Tour",
+            "SightseeingCode": "E-E10-IN-BBPURI",
+            "SightseeingTypes": [
+                "ACTIVITIES"
+            ],
+            "DurationDescription": [
+                {
+                    "TotalDuration": "1 DAYS",
+                    "Date": "2025-02-02T00:00:00"
+                }
+            ],
+            "Condition": "Printed Voucher. Print and bring the voucher to enjoy the activity. ",
+            "ImageList": [
+                "https://media.activitiesbank.com/29624/ENG/B/29624_4.jpg",
+                "https://media.activitiesbank.com/29624/ENG/B/29624_1.jpg",
+                "https://media.activitiesbank.com/29624/ENG/B/29624_2.jpg",
+                "https://media.activitiesbank.com/29624/ENG/B/29624_3.jpg"
+            ],
+            "Price": {
+                "CurrencyCode": "INR",
+                "BasePrice": 13148.12,
+                "Tax": 0,
+                "OtherCharges": 0,
+                "Discount": 0,
+                "PublishedPrice": 13148.12,
+                "PublishedPriceRoundedOff": 13148.12,
+                "OfferedPrice": 9861.09,
+                "OfferedPriceRoundedOff": 9861.09,
+                "AgentCommission": 3287.03,
+                "AgentMarkUp": 0,
+                "ServiceTax": 0,
+                "TDS": 1314.81,
+                "TCS": 0,
+                "TotalGSTAmount": 0,
+                "GST": {
+                    "CGSTAmount": 0,
+                    "CGSTRate": 0,
+                    "CessAmount": 0,
+                    "CessRate": 0,
+                    "IGSTAmount": 0,
+                    "IGSTRate": 18,
+                    "SGSTAmount": 0,
+                    "SGSTRate": 0,
+                    "TaxableAmount": 0
+                }
+            },
+            "Source": 2,
+            "TourDescription": "Chilika Lake, the Asia’s the biggest inland salt-water lagoon, is separated from the waters of Bay of Bengal by a narrow neck of land. The Lake extends across the three districts of Puri, Ganjam and Khordha in Orissa. Golden sands, amazing sceneries of sunrise and sunset, soothing effect of sunbath and seclusion in tranquility, Puri Beach offers all these to her most privileged guests.<br />\n<br />\nA favorite tourist spot, Puri beach is very lengthy and quite wide. Shree Jagannath Puri temple, one of the most impressing monuments of the Indian State Orissa, was constructed by a famous king of Ganga Dynasty Ananta Varman Chodaganga Deva dating back to 12th century at the seashore Puri. This astounding Vaishnava temple enshrines Lord Jagannath, Devi Subhadra and Balabhadra. The main temple of Jagannath is an impressing and amazing structure constructed in Kalinga architecture, with a height of 65 meters placed on an elevated platform.<br />\n<br />\n<strong>Others:</strong> Non-Hindus are not allowed inside the Lord Jagannath Temple.<br/><br/><strong>Inclusions: </strong>ADMISSIONSINCL,Tickets<br>TRANSPORTINCL,Transport<br>",
+            "IsPANMandatory": true
+        }
+    ],
+    "transport": {
+        "airportTransfers": {
+            "pickup": {
+                "type": "Private Car",
+                "datetime": "2025-06-10T19:00:00Z",
+                "pickupLocation": "Charles de Gaulle Airport",
+                "dropoffLocation": "Ritz Paris"
+            },
+            "dropoff": {
+                "type": "Private Car",
+                "datetime": "2025-06-14T10:00:00Z",
+                "pickupLocation": "Ritz Paris",
+                "dropoffLocation": "Charles de Gaulle Airport"
+            }
+        }
+    },
+    "itinerary": [
+        {
+            "day": 1,
+            "date": "2025-06-10",
+            "activities": [
+                "Arrival in Paris",
+                "Check-in at Ritz Paris",
+                "Relax and explore nearby attractions"
+            ]
+        },
+        {
+            "day": 2,
+            "date": "2025-06-11",
+            "activities": [
+                "Breakfast at the hotel",
+                "Eiffel Tower Tour",
+                "Lunch at a local restaurant",
+                "Evening at leisure"
+            ]
+        }
+    ],
+    "additionalServices": {
+        "travelInsurance": true,
+        "visaAssistance": true,
+        "specialRequests": "Anniversary dinner reservation at Le Jules Verne"
+    }
+}
