@@ -1,6 +1,6 @@
 const axios = require('axios');
 const base64 = require('base-64');
-const Fuse = require('fuse.js'); // Import Fuse.js for fuzzy matching
+const Fuse = require('fuse.js');
 
 const findCityCode = async (cityName, CountryCode) => {
     const url = `${process.env.TBO_HOTEL_BASE_URL}/CityList`;

@@ -1,19 +1,26 @@
-const express = require('express');
 require('dotenv').config();
+const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const PORT = process.env.PORT || 3000;
 const findCityCode = require('./controllers/search/findCityCode')
+const mongoDB = require('./config/db')
+const { GoogleGenerativeAI } = require("@google/generative-ai");
 
-app.use(bodyParser.json())
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+
+app.use(express.json())
+
+
+mongoDB();
 
 
 
 
-app.use('/api',require('./routes'));
+app.use('/api', require('./routes'));
+const generateEmbedding = require('./utils/embedding/generateEmbedding')
 
-app.listen(async()=>{
-    const match = await findCityCode("dabad","IN")
-    console.log(`Server is listening on port ${PORT}`);
-    
-})
+app.listen(5000, '0.0.0.0', () => {
+    console.log('Server running on port 5000');
+});

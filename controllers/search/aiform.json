@@ -1,0 +1,28 @@
+{
+    "originCountry": "India",
+    "originCountryCode": "IN",
+    "originCity": "Allahabad",
+    "originCityObj": {
+        "cityName": "Allahabad",
+        "countryCode": "IN",
+        "countryName": "India",
+        "destinationId": 100307,
+        "stateProvince": "Uttar Pradesh",
+        "type": 14
+    },
+    "destinationCountry": "Austria",
+    "destinationCountryCode": "AT",
+    "destinationCity": "Vienna",
+    "destinationCityObj": {
+        "cityName": "Vienna",
+        "countryCode": "AT",
+        "countryName": "Austria",
+        "destinationId": 140888,
+        "stateProvince": "",
+        "type": 1
+    },
+    "fromDate": "2025-01-27",
+    "toDate": "2025-01-29",
+    "adultCount": "2",
+    "aiPrompt": "luxury"
+}
