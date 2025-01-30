@@ -11,7 +11,8 @@ const packageSchema = new mongoose.Schema(
     duration: { type: String, required: true },
     destination: { type: String, required: true },
     tagList: { type: [String], required: true },
-    tagsEmbedding: { type: [Number], required: true }
+    tagsEmbedding: { type: [Number], required: true },
+    type : { type: String , default : "global"}
   },
   {
     timestamps: true,
@@ -19,4 +20,4 @@ const packageSchema = new mongoose.Schema(
   }
 );
 
-module.exports = mongoose.model('Package', packageSchema); s
+module.exports = mongoose.model('Package', packageSchema);
