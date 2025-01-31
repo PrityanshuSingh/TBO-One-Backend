@@ -21,3 +21,5 @@ const embedHotelFeaturesAndDescription = async (hotelList, cityCode) => {
 }
 
 module.exports = embedHotelFeaturesAndDescription;
+
+

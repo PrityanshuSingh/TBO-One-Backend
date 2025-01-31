@@ -38,3 +38,5 @@ const vectorSearch = async (query, cityCode) => {
 }
 
 module.exports = vectorSearch;
+
+
