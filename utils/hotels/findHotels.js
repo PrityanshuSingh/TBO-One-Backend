@@ -1,4 +1,5 @@
 const generateEmbedding = require('../embedding/generateEmbedding');
+const hotel = require("../../models/Hotel")
 
 const vectorSearch = async (query, cityCode) => {
     const queryEmbedding = await generateEmbedding(query);
@@ -8,7 +9,7 @@ const vectorSearch = async (query, cityCode) => {
 
     const pipeline = [
         {
-            $match: { cityCode } // Filter by city code
+            $match: { cityCode } 
         },
         {
             $vectorSearch: {
@@ -28,7 +29,7 @@ const vectorSearch = async (query, cityCode) => {
     ];
 
     try {
-        const dbResult = await collection.aggregate(pipeline).toArray();
+        const dbResult = await hotels.aggregate(pipeline).toArray();
         return dbResult;
     } catch (error) {
         console.error("Error executing vector search:", error);

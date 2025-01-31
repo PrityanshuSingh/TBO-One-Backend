@@ -1,40 +1,23 @@
 const generateEmbedding = require('../embedding/generateEmbedding');
 const hotel = require("../../models/Hotel")
 
-const vectorSearch = async (query, cityCode) => {
-    const queryEmbedding = await generateEmbedding(query);
-    if (!queryEmbedding) {
-        return "invalid!!";
-    }
-
-    const pipeline = [
-        {
-            $match: { cityCode } 
-        },
-        {
-            $vectorSearch: {
-                index: "vector_try_1",
-                queryVector: queryEmbedding.embedding,
-                path: "feature_embedding",
-                numCandidates: 100,
-                limit: 4, // Limit to top 4 results
-                project: {
-                    _id: 0,
-                    text: 1,
-                    feature_embedding: 0,
-                    score: { $meta: "vectorSearchScore" }
-                }
-            }
-        }
-    ];
-
+const embedHotelFeaturesAndDescription = async (hotelList, cityCode) => {
     try {
-        const dbResult = await hotel.aggregate(pipeline).toArray();
-        return dbResult;
+        hotelList.forEach(Hotel => {
+            textContent = Hotel.Attractions + Hotel.HotelFacilities + Hotel.Description;
+            console.log("Description : ", Hotel.description);
+            console.log("Features : ", Hotel.features);
+            embededFeature = generateEmbedding(textContent);
+
+            const newHotel = new hotel({
+                cityCode : hotel.cityCode
+            });
+
+        });
     } catch (error) {
-        console.error("Error executing vector search:", error);
-        throw error;
+        console.log("Error embedding hotels", error);
+        throw error
     }
 }
 
-module.exports = vectorSearch;
+module.exports = embedHotelFeaturesAndDescription;

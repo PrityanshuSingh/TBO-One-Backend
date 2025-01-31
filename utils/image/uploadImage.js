@@ -1,7 +1,6 @@
 // uploadImage.js
 const cloudinary = require("../../config/cloudinary");
 const fs = require("fs");
-const { ApiError } = require("../error/ApiError");
 
 const uploadImage = async (
   filePath,
@@ -28,7 +27,7 @@ const uploadImage = async (
     fs.unlinkSync(filePath);
 
     console.error("Error while uploading image:", err);
-    throw new ApiError(500, "Error while uploading image", err);
+    throw err;
   }
 };
 

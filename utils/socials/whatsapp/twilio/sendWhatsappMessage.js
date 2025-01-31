@@ -8,28 +8,23 @@ const twilio = require('twilio');
 const client = twilio(id, token);
 
 const sendWhatsappMessage = async (to, body, mediaUrl) => {
-
-    if(!Array.isArray(mediaUrl)){
-        mediaUrl = [mediaUrl]
+    if (!Array.isArray(mediaUrl)) {
+        mediaUrl = [mediaUrl];
     }
 
-    // Sending messages to the client 
-    client.messages
-        .create({
-
-            // Message to be sent 
+    try {
+        const message = await client.messages.create({
             body,
-
-            // Senders Number (Twilio Sandbox No.) 
             from: 'whatsapp:+14155238886',
-
-            // Number receiving the message 
             to: `whatsapp:${to}`,
-
             mediaUrl
-        })
-        .then(message => console.log("Message sent successfully"))
-        .catch(error => console.log("error", error));
-}
+        });
 
+        console.log("Message sent successfully:", message);
+        return message.sid;
+    } catch (error) {
+        console.error("Error in Twilio API:", error);
+        throw new Error("Twilio API error: " + error.message); // Ensure error is properly thrown
+    }
+};
 module.exports = sendWhatsappMessage;
