@@ -3,16 +3,20 @@ const mongoose = require('mongoose');
 
 const packageSchema = new mongoose.Schema(
   {
-    name: { type: String, required: true },
-    description: { type: String, required: true },
-    details: { type: mongoose.Schema.Types.Mixed, required: true },
-    analytics: { type: mongoose.Schema.Types.Mixed, required: true },
-    price: { type: Number, required: true },
+    packageTitle: { type: String, required: true },
+    image: { type: String, required: true },
+    location: { type: String, required: true },
     duration: { type: String, required: true },
-    destination: { type: String, required: true },
-    tagList: { type: [String], required: true },
-    tagsEmbedding: { type: [Number], required: true },
-    type : { type: String , default : "global"}
+    shortDescription: { type: String },
+    detailedDescription: { type: String },
+    price: { type: mongoose.Schema.Types.Mixed, required: true },
+    details: { type: mongoose.Schema.Types.Mixed, required: true },
+    bestTimeToVisit: { type : String },
+    recommendation: { type: [String] },
+    notes: { type: String },
+    faqs: { type: [mongoose.Schema.Types.Mixed] },
+    tagsEmbedding: { type: [Number] },
+    type: { type: String, default: "global" }
   },
   {
     timestamps: true,
