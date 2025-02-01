@@ -7,9 +7,9 @@ const findCityCode = require('./controllers/search/findCityCode')
 const mongoDB = require('./config/db')
 const cors = require('cors');
 const { createAgent, getAgent } = require('./utils/agent/agent');
+const { createCustomer } = require('./utils/customer/Customer');
 
 app.use(express.json())
-
 
 mongoDB();
 app.use(cors({
@@ -27,4 +27,11 @@ app.use('/api', require('./routes'));
 
 app.listen(PORT, '0.0.0.0', async () => {
     console.log(`Server running on port ${PORT}`);
+    // await createCustomer({
+    //     "agentId":"679e03e65e267317b490eff6",
+    //     "name": "Prityanshu Singh",
+    //     "whatsApp": "+918279420073",
+    //     "email": "prityanshusingh2003@gmail.com"
+    // });
+    console.log("Added customer")
 });
