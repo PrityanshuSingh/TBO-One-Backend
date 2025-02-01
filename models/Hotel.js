@@ -2,8 +2,9 @@
 const mongoose = require('mongoose');
 
 const hotelSchema = new mongoose.Schema({
-  cityCode: { type: String, required: true },
-  hotelCode: { type: String, required: true, unique: true },
+  HotelRating: { type: String, required: true },
+  CityCode: { type: String },
+  HotelCode: { type: String, required: true, unique: true },
   feature_embedding: { type: String, required: true },
   createdAt: { type: Date, default: Date.now }
 });

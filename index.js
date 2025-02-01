@@ -3,7 +3,6 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const PORT = process.env.PORT || 3000;
-const findCityCode = require('./controllers/search/findCityCode')
 const mongoDB = require('./config/db')
 const cors = require('cors');
 const axios = require("axios");
@@ -18,7 +17,6 @@ app.use(cors({
     origin: "http://localhost:5173",
     methods: "GET, POST, PUT, DELETE, OPTIONS",
     allowedHeaders: "Content-Type, Authorization",
-    credentials: true
 }));
 
 
@@ -215,5 +213,5 @@ app.listen(PORT, '0.0.0.0', async () => {
     //     "whatsApp": "+918279420073",
     //     "email": "prityanshusingh2003@gmail.com"
     // });
-    console.log("Added customer")
+    // console.log("Added customer")
 });

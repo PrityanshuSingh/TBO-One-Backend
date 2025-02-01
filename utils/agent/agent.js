@@ -50,6 +50,8 @@ const getAgent = async (query) => {
             throw new Error('Agent not found');
         }
 
+        console.log("Agent id", agent._id)
+
         // Fetch the related customers, filtering out invalid references
         const customers = await Customer.find({
             agentId: agent._id
@@ -78,14 +80,13 @@ const getAgent = async (query) => {
         const cleanedGroups = removeId(groups);
         const cleanedCampaigns = removeId(campaigns);
 
-        // Attach the cleaned results to the agent object
-        agent.customers = cleanedCustomers;
-        agent.groups = cleanedGroups;
-        agent.campaigns = cleanedCampaigns;
-
-        // Remove _id from agent
         const { _id, ...agentWithoutId } = agent.toObject();
         agentWithoutId.id = _id.toString(); // Convert agent's _id to id
+
+        // Attach the cleaned results to the agent object
+        agentWithoutId.customers = cleanedCustomers;
+        agentWithoutId.groups = cleanedGroups;
+        agentWithoutId.campaigns = cleanedCampaigns;
 
         // Return the updated agent data with valid customers, groups, and campaigns
         return agentWithoutId;
