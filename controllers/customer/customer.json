@@ -1,0 +1,386 @@
+{
+    "id": "12345678",
+    "Profile": {
+        "role": "AGENT",
+        "firstName": "Rohit",
+        "lastName": "Sharma",
+        "email": "rohit.sharma@tbotravels.com",
+        "company": "TBO Travels",
+        "address": "Sector 45, Downtown City, Mumbai, Maharashtra, India",
+        "licenseNumber": "TBOTRAVEL7890",
+        "region": "APAC",
+        "contactNumber": "+91 (22) 9876-5432",
+        "website": "https://www.tbotravels.com",
+        "specialization": [
+            "Adventure Tours",
+            "Honeymoon Packages",
+            "Group Excursions",
+            "Luxury Cruises"
+        ],
+        "experienceYears": 12,
+        "socialMedia": {
+            "facebook": "https://www.facebook.com/rohit.sharma.tbotravels",
+            "instagram": "https://www.instagram.com/rohit_tbotravels",
+            "linkedin": "https://www.linkedin.com/in/rohit-sharma-tbotravels",
+            "twitter": "https://twitter.com/rohit_tbotravels"
+        },
+        "profileImage": "https://example.com/assets/images/rohit-sharma-profile.jpg",
+        "campaigns": [
+            {
+                "id": "1",
+                "name": "Goa Summer Bonanza",
+                "status": "Running",
+                "pkgId": "679d505d4a4362b7ba5a536d",
+                "grpId": [
+                    "102",
+                    "103"
+                ],
+                "contactId": [
+                    "5",
+                    "6"
+                ],
+                "interestContacts": [
+                    {
+                        "id": "5",
+                        "name": "Rajesh Kumar",
+                        "whatsApp": "9876543210",
+                        "status": "send",
+                        "prompts": "Hi I want to modify the packge according to my needs, can you look for more beaches and less crowded places?"
+                    },
+                    {
+                        "id": "6",
+                        "name": "Neha Gupta",
+                        "whatsApp": "1231231231",
+                        "status": "generate",
+                        "prompts": "Hi I want to modify the packge according to my needs, can you look for more beaches and less crowded places?"
+                    }
+                ]
+            },
+            {
+                "id": "2",
+                "name": "Manali Winter Wonderland",
+                "status": "Hold",
+                "pkgId": "679d505d4a4362b7ba5a536d",
+                "grpId": [
+                    "101"
+                ],
+                "contactId": [
+                    "7",
+                    "8"
+                ],
+                "interestContacts": [
+                    {
+                        "name": "Rohit Verma",
+                        "whatsApp": "91321321232",
+                        "status": "generate",
+                        "prompts": "Hi I want to add a camping experience in the package, can you add some adventure activities?"
+                    },
+                    {
+                        "name": "Kavita Rao",
+                        "whatsApp": "1231231231",
+                        "status": "generate",
+                        "prompts": "Hi I want to add a camping experience in the package, can you add some adventure activities?"
+                    }
+                ]
+            },
+            {
+                "id": "3",
+                "name": "Kerala Backwater Bliss",
+                "status": "Running",
+                "pkgId": "679d50afea439515e6504a9c",
+                "grpId": [
+                    "104",
+                    "105"
+                ],
+                "contactId": [
+                    "9",
+                    "10"
+                ],
+                "interestContacts": [
+                    {
+                        "id": "9",
+                        "name": "Suresh Iyer",
+                        "whatsApp": "9876543200",
+                        "status": "generate",
+                        "prompts": "Hi I want to add a houseboat stay in the package, can you add some adventure activities?"
+                    },
+                    {
+                        "id": "10",
+                        "name": "Anjali Desai",
+                        "whatsApp": "9123456700",
+                        "status": "send",
+                        "prompts": "Hi I want to add a houseboat stay in the package, can you add some adventure activities?"
+                    }
+                ]
+            },
+            {
+                "id": "4",
+                "name": "Rajasthan Royal Heritage",
+                "status": "Stopped",
+                "pkgId": "679d50afea439515e6504a9c",
+                "grpId": [
+                    "106"
+                ],
+                "contactId": [],
+                "interestContacts": []
+            },
+            {
+                "id": "5",
+                "name": "Luxury Cruises 2025",
+                "status": "Running",
+                "pkgId": "679d50dc03d7e82405f0c625",
+                "grpId": [
+                    "107",
+                    "108"
+                ],
+                "contactId": [],
+                "interestContacts": []
+            },
+            {
+                "id": "6",
+                "name": "Group Excursions Q1",
+                "status": "null",
+                "pkgId": "679d50afea439515e6504a9c",
+                "grpId": [
+                    "109",
+                    "110"
+                ],
+                "contactId": [
+                    "11",
+                    "12",
+                    "13",
+                    "14"
+                ],
+                "interestContacts": [
+                    {
+                        "id": "11",
+                        "name": "Deepak Joshi",
+                        "whatsApp": "9132132100",
+                        "status": "send",
+                        "prompts": "Hi I want to modify the packge according to my needs, can you look for more beaches and less crowded places?"
+                    },
+                    {
+                        "id": "12",
+                        "name": "Sunita Reddy",
+                        "whatsApp": "1231231200",
+                        "status": "sent",
+                        "prompts": "Hi I want to modify the packge according to my needs, can you look for more beaches and less crowded places?"
+                    },
+                    {
+                        "id": "13",
+                        "name": "Kiran Rao",
+                        "whatsApp": "9132132101",
+                        "status": "generate",
+                        "prompts": "Hi I want to modify the packge according to my needs, can you look for more beaches and less crowded places?"
+                    },
+                    {
+                        "id": "14",
+                        "name": "Meera Nair",
+                        "whatsApp": "1231231201",
+                        "status": "generate",
+                        "prompts": "Hi I want to modify the packge according to my needs, can you look for more beaches and less crowded places?"
+                    }
+                ]
+            }
+        ],
+        "saved": [
+            "679d505d4a4362b7ba5a536d",
+            "679d50dc03d7e82405f0c625"
+        ],
+        "customer": [
+            {
+                "id": "1",
+                "name": "Rajesh Kumar",
+                "whatsApp": "9876543210",
+                "email": "rajesh.kumar@example.com"
+            },
+            {
+                "id": "2",
+                "name": "Sonia Sharma",
+                "whatsApp": "9123456789",
+                "email": "sonia.sharma@example.com"
+            },
+            {
+                "id": "3",
+                "name": "Vikram Singh",
+                "whatsApp": "91321321232",
+                "email": "vikram.singh@example.com"
+            },
+            {
+                "id": "4",
+                "name": "Priya Mehta",
+                "whatsApp": "1231231231",
+                "email": "priya.mehta@example.com"
+            },
+            {
+                "id": "5",
+                "name": "Amit Patel",
+                "whatsApp": "91321321232",
+                "email": "amit.patel@example.com"
+            },
+            {
+                "id": "6",
+                "name": "Neha Gupta",
+                "whatsApp": "1231231231",
+                "email": "neha.gupta@example.com"
+            },
+            {
+                "id": "7",
+                "name": "Rohit Verma",
+                "whatsApp": "91321321232",
+                "email": "rohit.verma@example.com"
+            },
+            {
+                "id": "8",
+                "name": "Kavita Rao",
+                "whatsApp": "1231231231",
+                "email": "kavita.rao@example.com"
+            },
+            {
+                "id": "9",
+                "name": "Suresh Iyer",
+                "whatsApp": "9876543200",
+                "email": "suresh.iyer@example.com"
+            },
+            {
+                "id": "10",
+                "name": "Anjali Desai",
+                "whatsApp": "9123456700",
+                "email": "anjali.desai@example.com"
+            },
+            {
+                "id": "11",
+                "name": "Deepak Joshi",
+                "whatsApp": "9132132100",
+                "email": "deepak.joshi@example.com"
+            },
+            {
+                "id": "12",
+                "name": "Sunita Reddy",
+                "whatsApp": "1231231200",
+                "email": "sunita.reddy@example.com"
+            },
+            {
+                "id": "13",
+                "name": "Kiran Rao",
+                "whatsApp": "9132132101",
+                "email": "kiran.rao@example.com"
+            },
+            {
+                "id": "14",
+                "name": "Meera Nair",
+                "whatsApp": "1231231201",
+                "email": "meera.nair@example.com"
+            }
+        ],
+        "groups": [
+            {
+                "id": "100",
+                "name": "Loyalty Group",
+                "type": "whatsApp",
+                "contactId": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ]
+            },
+            {
+                "id": "101",
+                "name": "Manali Group",
+                "type": "whatsApp",
+                "contactId": [
+                    "1",
+                    "2"
+                ]
+            },
+            {
+                "id": "102",
+                "name": "Goa Group",
+                "type": "whatsApp",
+                "contactId": [
+                    "3",
+                    "4"
+                ]
+            },
+            {
+                "id": "103",
+                "name": "Kerala Group",
+                "type": "email",
+                "contactId": [
+                    "5",
+                    "6"
+                ]
+            },
+            {
+                "id": "104",
+                "name": "Luxury Cruises Group",
+                "type": "email",
+                "contactId": [
+                    "7",
+                    "8"
+                ]
+            },
+            {
+                "id": "105",
+                "name": "Adventure Enthusiasts",
+                "type": "whatsApp",
+                "contactId": [
+                    "9",
+                    "10"
+                ]
+            },
+            {
+                "id": "106",
+                "name": "Heritage Lovers",
+                "type": "email",
+                "contactId": [
+                    "11",
+                    "12",
+                    "13",
+                    "14"
+                ]
+            },
+            {
+                "id": "107",
+                "name": "Group Excursions",
+                "type": "whatsApp",
+                "contactId": [
+                    "1",
+                    "2",
+                    "5",
+                    "6"
+                ]
+            },
+            {
+                "id": "108",
+                "name": "Honeymoon Group",
+                "type": "email",
+                "contactId": [
+                    "3",
+                    "4",
+                    "7",
+                    "8"
+                ]
+            },
+            {
+                "id": "109",
+                "name": "Special Offers",
+                "type": "whatsApp",
+                "contactId": [
+                    "11",
+                    "12"
+                ]
+            },
+            {
+                "id": "110",
+                "name": "VIP Clients",
+                "type": "email",
+                "contactId": [
+                    "13",
+                    "14"
+                ]
+            }
+        ]
+    }
+}

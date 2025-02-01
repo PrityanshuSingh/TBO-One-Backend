@@ -2,13 +2,15 @@
 const mongoose = require('mongoose');
 
 const campaignSchema = new mongoose.Schema({
-  title: { type: String, required: true },
-  description: { type: String, required: true },
-  budget: { type: Number, required: true },
-  startDate: { type: Date, required: true },
-  endDate: { type: Date, required: true },
-  agent: { type: mongoose.Schema.Types.ObjectId, ref: 'Agent', required: true },
-  package: { type: mongoose.Schema.Types.ObjectId, ref: 'Package', required: true },
+  agentId: { type: mongoose.Schema.Types.ObjectId, ref: 'Agent', required: true },
+  name: { type: String, required: true },
+  status: { type: String, required: true },
+  pkgId: { type: mongoose.Schema.Types.ObjectId, ref: 'Package', required: true },
+  grpId: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Group' }],
+  contactId: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Contact' }],
+  startDate: { type: Date, required: true, default : Date.now()},
+  endDate: { type: Date },
+  interestContacts : { type: mongoose.Schema.Types.Mixed, ref: 'Contact' },
   createdAt: { type: Date, default: Date.now }
 });
 

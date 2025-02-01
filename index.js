@@ -5,7 +5,8 @@ const bodyParser = require('body-parser');
 const PORT = process.env.PORT || 3000;
 const findCityCode = require('./controllers/search/findCityCode')
 const mongoDB = require('./config/db')
-const cors = require('cors')
+const cors = require('cors');
+const { createAgent, getAgent } = require('./utils/agent/agent');
 
 app.use(express.json())
 
@@ -24,6 +25,6 @@ app.options("*", (req, res) => {
 });
 app.use('/api', require('./routes'));
 
-app.listen(5000, '0.0.0.0', async () => {
-    console.log('Server running on port 5000');
+app.listen(PORT, '0.0.0.0', async () => {
+    console.log(`Server running on port ${PORT}`);
 });
