@@ -84,7 +84,7 @@ const getAgent = async (query) => {
         agentWithoutId.id = _id.toString(); // Convert agent's _id to id
 
         // Attach the cleaned results to the agent object
-        agentWithoutId.customers = cleanedCustomers;
+        agentWithoutId.customer = cleanedCustomers;
         agentWithoutId.groups = cleanedGroups;
         agentWithoutId.campaigns = cleanedCampaigns;
 
