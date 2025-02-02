@@ -17,8 +17,6 @@ const getAllCountryCode = async () => {
             return new Error("No response found for the given CityCode");
         }
 
-        console.log("response", response.data)
-
         return response.data.CountryList;
 
     }
