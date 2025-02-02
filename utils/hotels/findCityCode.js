@@ -4,20 +4,18 @@ const Fuse = require('fuse.js');
 
 const findCityCode = async (cityName, CountryCode) => {
     const url = `${process.env.TBO_HOTEL_BASE_URL}/CityList`;
-    const username = 'hackathontest';
-    const password = 'Hac@98910186';
+    const username = process.env.TBO_HOTEL_USERNAME;
+    const password = process.env.TBO_HOTEL_PASSWORD;
+
     const basicAuth = base64.encode(`${username}:${password}`);
     const headers = {
         'Content-Type': 'application/json',
         Authorization: `Basic ${basicAuth}`,
     };
 
-    // Default to India if no CountryCode provided
-    if (!CountryCode) {
-        CountryCode = 'IN';
-    }
-
     const data = { CountryCode };
+
+    console.log("Data", data)
 
     try {
         // Fetch data from the API
@@ -26,6 +24,10 @@ const findCityCode = async (cityName, CountryCode) => {
         // Validate and extract CityList
         if (response.data && response.data.Status.Code === 200) {
             const cityList = response.data.CityList || [];
+
+            if(!cityName){
+                return cityList;
+            }
 
             // Perform fuzzy matching using Fuse.js
             const matches = matchCityName(cityList, cityName);
