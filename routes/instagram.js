@@ -27,18 +27,23 @@ router.get("/status", (req, res) => {
 */
 router.get("/connect", (req, res) => {
     console.log("Instagram Connect Request");
-    const { FB_router_ID, IG_REDIRECT_URI } = process.env;
+    const { FB_APP_ID, IG_REDIRECT_URI } = process.env;
 
     const scopes = [
         "public_profile",
         "email",
         "instagram_basic",
         "instagram_content_publish",
+        "read_insights",
+        "ads_management",
+        "ads_read",
+        "business_management",
+        "pages_read_engagement"
     ];
 
     const authUrl =
         `https://www.facebook.com/v22.0/dialog/oauth?` +
-        `client_id=${FB_router_ID}` +
+        `client_id=${FB_APP_ID}` +
         `&redirect_uri=${encodeURIComponent(IG_REDIRECT_URI)}` +
         `&scope=${scopes.join(",")}` +
         `&response_type=code`;
@@ -62,11 +67,11 @@ router.get("/callback", async (req, res) => {
             return res.status(400).send("No authorization code provided");
         }
 
-        const { FB_router_ID, FB_router_SECRET, IG_REDIRECT_URI } = process.env;
+        const { FB_APP_ID, FB_APP_SECRET, IG_REDIRECT_URI } = process.env;
         const tokenUrl = "https://graph.facebook.com/v22.0/oauth/access_token";
         const tokenParams = {
-            client_id: FB_router_ID,
-            client_secret: FB_router_SECRET,
+            client_id: FB_APP_ID,
+            client_secret: FB_APP_SECRET,
             redirect_uri: IG_REDIRECT_URI,
             code,
         };
@@ -80,8 +85,8 @@ router.get("/callback", async (req, res) => {
         const exchangeUrl = "https://graph.facebook.com/v22.0/oauth/access_token";
         const exchangeParams = {
             grant_type: "fb_exchange_token",
-            client_id: FB_router_ID,
-            client_secret: FB_router_SECRET,
+            client_id: FB_APP_ID,
+            client_secret: FB_APP_SECRET,
             fb_exchange_token: SHORT_LIVED_TOKEN,
         };
 
