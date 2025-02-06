@@ -16,11 +16,9 @@ async function generateWpDesc(req, res) {
     // } = req.body;
 
     const { packageId, email } = req.body;
-    console.log(req.body);
-    console.log(req.body["_id"]);
-    const package = await Package.findById(req.body["_id"]);
-    console.log(package);
-    const prompt = `Generate a captivating WhatsApp Description for the travel package "${package}". Strictly generate a caption with no explanation.`;
+    const package = await Package.findById(packageId);
+    console.log("package",package);
+    const prompt = `Craft a captivating and enticing WhatsApp description for the travel package titled '${package}'. The description should be highly engaging and written in vivid and not that long, dont add any options or heading, just keep it one caption and use imaginative language that inspires wanderlust and encourages users to click the provided link. Focus solely on the allure of the travel experience, using persuasive and descriptive adjectives to paint a picture of adventure and discovery, without including any numerical details since those are already present in the subheading of the message."`;
     const result = await model.generateContent(prompt);
     const caption = result.response.text();
     console.log("Generated Wp Description:", caption);
