@@ -15,8 +15,6 @@ const findCityCode = async (cityName, CountryCode) => {
 
     const data = { CountryCode };
 
-    console.log("Data", data)
-
     try {
         // Fetch data from the API
         const response = await axios.post(url, data, { headers });

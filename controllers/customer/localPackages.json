@@ -1,0 +1,4402 @@
+[
+  {
+    "_id": {
+      "$oid": "679d505d4a4362b7ba5a536d"
+    },
+    "packageTitle": "Rajasthan Royal Heritage Tour",
+    "image": "https://media.istockphoto.com/id/2150015755/photo/elephant-riders-in-amber-fort-famous-tourist-attraction-of-jaipur-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=2eIrJx_4ek-Rdd6VOkoCNwqpFqnSx8pl3e7f77My_ng=",
+    "location": "Rajasthan, India",
+    "duration": "12 Days/11 Nights",
+    "shortDescription": "Experience the grandeur of Rajasthan with visits to majestic forts, vibrant markets, and serene lakes.",
+    "detailedDescription": "Immerse yourself in the rich cultural tapestry of Rajasthan. This tour takes you through the royal palaces of Jaipur, the serene lakes of Udaipur, the historic forts of Jodhpur, and the vibrant bazaars of Jaipur. Enjoy traditional Rajasthani cuisine, cultural performances, and luxurious stays in heritage hotels.",
+    "price": {
+      "currency": "INR",
+      "basePrice": 35000,
+      "taxes": 5000,
+      "discount": 3000,
+      "totalPrice": 37000
+    },
+    "details": {
+      "flights": [
+        [
+          {
+            "FirstNameFormat": null,
+            "IsBookableIfSeatNotAvailable": false,
+            "IsHoldAllowedWithSSR": false,
+            "LastNameFormat": null,
+            "ResultIndex": "FLIGHT12345",
+            "Source": 3,
+            "IsLCC": true,
+            "IsRefundable": true,
+            "IsPanRequiredAtBook": false,
+            "IsPanRequiredAtTicket": false,
+            "IsPassportRequiredAtBook": false,
+            "IsPassportRequiredAtTicket": false,
+            "GSTAllowed": true,
+            "IsCouponAppilcable": true,
+            "IsGSTMandatory": false,
+            "AirlineRemark": "IndiGo operates multiple daily flights to Rajasthan destinations.",
+            "IsPassportFullDetailRequiredAtBook": false,
+            "ResultFareType": "RegularFare",
+            "Fare": {
+              "Currency": "INR",
+              "BaseFare": 8000,
+              "Tax": 2000,
+              "TaxBreakup": [
+                {
+                  "key": "GST",
+                  "value": 1800
+                },
+                {
+                  "key": "OtherTaxes",
+                  "value": 200
+                }
+              ],
+              "YQTax": 0,
+              "AdditionalTxnFeeOfrd": 0,
+              "AdditionalTxnFeePub": 0,
+              "PGCharge": 0,
+              "OtherCharges": 50,
+              "ChargeBU": [
+                {
+                  "key": "CONVENIENCECHARGE",
+                  "value": 50
+                }
+              ],
+              "Discount": 0,
+              "PublishedFare": 10050,
+              "CommissionEarned": 0,
+              "PLBEarned": 0,
+              "IncentiveEarned": 0,
+              "OfferedFare": 10050,
+              "TdsOnCommission": 0,
+              "TdsOnPLB": 0,
+              "TdsOnIncentive": 0,
+              "ServiceFee": 0,
+              "TotalBaggageCharges": 0,
+              "TotalMealCharges": 0,
+              "TotalSeatCharges": 0,
+              "TotalSpecialServiceCharges": 0
+            },
+            "FareBreakdown": [
+              {
+                "Currency": "INR",
+                "PassengerType": 1,
+                "PassengerCount": 1,
+                "BaseFare": 4000,
+                "Tax": 1000,
+                "TaxBreakUp": [
+                  {
+                    "key": "GST",
+                    "value": 900
+                  },
+                  {
+                    "key": "OtherTaxes",
+                    "value": 100
+                  }
+                ],
+                "YQTax": 0,
+                "AdditionalTxnFeeOfrd": 0,
+                "AdditionalTxnFeePub": 0,
+                "PGCharge": 0,
+                "SupplierReissueCharges": 0
+              },
+              {
+                "Currency": "INR",
+                "PassengerType": 2,
+                "PassengerCount": 1,
+                "BaseFare": 4000,
+                "Tax": 1000,
+                "TaxBreakUp": [
+                  {
+                    "key": "GST",
+                    "value": 900
+                  },
+                  {
+                    "key": "OtherTaxes",
+                    "value": 100
+                  }
+                ],
+                "YQTax": 0,
+                "AdditionalTxnFeeOfrd": 0,
+                "AdditionalTxnFeePub": 0,
+                "PGCharge": 0,
+                "SupplierReissueCharges": 0
+              }
+            ],
+            "Segments": [
+              [
+                {
+                  "Baggage": "15 KG",
+                  "CabinBaggage": "7 KG",
+                  "CabinClass": 2,
+                  "SupplierFareClass": null,
+                  "TripIndicator": 1,
+                  "SegmentIndicator": 1,
+                  "Airline": {
+                    "AirlineCode": "6E",
+                    "AirlineName": "IndiGo",
+                    "FlightNumber": "6E-123",
+                    "FareClass": "V",
+                    "OperatingCarrier": ""
+                  },
+                  "Origin": {
+                    "Airport": {
+                      "AirportCode": "DEL",
+                      "AirportName": "Indira Gandhi International Airport",
+                      "Terminal": "3",
+                      "CityCode": "DEL",
+                      "CityName": "Delhi",
+                      "CountryCode": "IN",
+                      "CountryName": "India"
+                    },
+                    "DepTime": "2025-07-01T08:00:00"
+                  },
+                  "Destination": {
+                    "Airport": {
+                      "AirportCode": "JAI",
+                      "AirportName": "Sanganer Airport",
+                      "Terminal": "1",
+                      "CityCode": "JAI",
+                      "CityName": "Jaipur",
+                      "CountryCode": "IN",
+                      "CountryName": "India"
+                    },
+                    "ArrTime": "2025-07-01T09:30:00"
+                  },
+                  "Duration": 90,
+                  "GroundTime": 0,
+                  "Mile": 0,
+                  "StopOver": false,
+                  "FlightInfoIndex": "",
+                  "StopPoint": "",
+                  "StopPointArrivalTime": null,
+                  "StopPointDepartureTime": null,
+                  "Craft": "737",
+                  "Remark": null,
+                  "IsETicketEligible": true,
+                  "FlightStatus": "Confirmed",
+                  "Status": "",
+                  "FareClassification": {
+                    "Type": ""
+                  }
+                }
+              ]
+            ],
+            "LastTicketDate": "2025-07-30",
+            "TicketAdvisory": null,
+            "FareRules": [
+              {
+                "Origin": "DEL",
+                "Destination": "JAI",
+                "Airline": "6E",
+                "FareBasisCode": "V",
+                "FareRuleDetail": "No changes allowed after booking.",
+                "FareRestriction": "Non-refundable.",
+                "FareFamilyCode": "Economy",
+                "FareRuleIndex": "FR12345"
+              }
+            ],
+            "AirlineCode": "6E",
+            "MiniFareRules": [
+              [
+                {
+                  "JourneyPoints": "DEL-JAI",
+                  "Type": "Reissue",
+                  "From": "24",
+                  "To": "72",
+                  "Unit": "HOURS",
+                  "Details": "INR 1500"
+                },
+                {
+                  "JourneyPoints": "DEL-JAI",
+                  "Type": "Reissue",
+                  "From": "72",
+                  "To": "",
+                  "Unit": "HOURS",
+                  "Details": "INR 2000"
+                },
+                {
+                  "JourneyPoints": "DEL-JAI",
+                  "Type": "Cancellation",
+                  "From": "24",
+                  "To": "72",
+                  "Unit": "HOURS",
+                  "Details": "INR 2500"
+                },
+                {
+                  "JourneyPoints": "DEL-JAI",
+                  "Type": "Cancellation",
+                  "From": "72",
+                  "To": "",
+                  "Unit": "HOURS",
+                  "Details": "INR 3500"
+                }
+              ]
+            ],
+            "ValidatingAirline": "6E",
+            "FareClassification": {
+              "Color": "lightGreen",
+              "Type": "Publish"
+            }
+          }
+        ]
+      ],
+      "hotel": {
+        "name": "Taj Rambagh Palace",
+        "address": "Rambagh, Jaipur, Rajasthan, India",
+        "checkInDate": "2025-07-01",
+        "checkOutDate": "2025-07-12",
+        "roomType": "Deluxe Suite",
+        "amenities": [
+          "WiFi",
+          "Breakfast",
+          "Spa",
+          "Swimming Pool",
+          "Free Parking"
+        ]
+      },
+      "sightseeing": [
+        {
+          "ResultIndex": 1,
+          "CityId": "110001",
+          "CityName": "Jaipur",
+          "CountryCode": "IN",
+          "FromDate": "2025-07-02T00:00:00",
+          "ToDate": "2025-07-02T00:00:00",
+          "SightseeingName": "Amber Fort and Elephant Ride",
+          "SightseeingCode": "RAJ-JAI-AMB",
+          "SightseeingTypes": [
+            "CULTURAL",
+            "ADVENTURE"
+          ],
+          "DurationDescription": [
+            {
+              "TotalDuration": "1 DAYS",
+              "Date": "2025-07-02T00:00:00"
+            }
+          ],
+          "Condition": "Includes entry tickets and guided tour. Elephant ride is optional.",
+          "ImageList": [
+            "https://media.istockphoto.com/id/1016237188/photo/indian-man-riding-on-elephant-near-amber-fort-jaipur-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=2gTfPOUYDtd8LXxwL67OzONSvC7d5jY2JcTcRig5GP0="
+          ],
+          "Price": {
+            "CurrencyCode": "INR",
+            "BasePrice": 2000,
+            "Tax": 180,
+            "OtherCharges": 0,
+            "Discount": 200,
+            "PublishedPrice": 1980,
+            "PublishedPriceRoundedOff": 2000,
+            "OfferedPrice": 1800,
+            "OfferedPriceRoundedOff": 1800,
+            "AgentCommission": 400,
+            "AgentMarkUp": 0,
+            "ServiceTax": 0,
+            "TDS": 200,
+            "TCS": 0,
+            "TotalGSTAmount": 0,
+            "GST": {
+              "CGSTAmount": 0,
+              "CGSTRate": 0,
+              "CessAmount": 0,
+              "CessRate": 0,
+              "IGSTAmount": 0,
+              "IGSTRate": 18,
+              "SGSTAmount": 0,
+              "SGSTRate": 0,
+              "TaxableAmount": 0
+            }
+          },
+          "Source": 2,
+          "TourDescription": "Explore the majestic Amber Fort, a UNESCO World Heritage Site, and enjoy a traditional elephant ride to the fort entrance. The fort showcases a blend of Hindu and Mughal architectural styles.",
+          "IsPANMandatory": false
+        },
+        {
+          "ResultIndex": 2,
+          "CityId": "110002",
+          "CityName": "Udaipur",
+          "CountryCode": "IN",
+          "FromDate": "2025-07-05T00:00:00",
+          "ToDate": "2025-07-05T00:00:00",
+          "SightseeingName": "Lake Pichola Boat Ride",
+          "SightseeingCode": "RAJ-UDL-PICT",
+          "SightseeingTypes": [
+            "SCENIC",
+            "RELAXATION"
+          ],
+          "DurationDescription": [
+            {
+              "TotalDuration": "1 DAYS",
+              "Date": "2025-07-05T00:00:00"
+            }
+          ],
+          "Condition": "Includes boat ride tickets and refreshments.",
+          "ImageList": [
+            "https://media.istockphoto.com/id/2170158745/photo/water-boats-many-at-lake-water-for-ferry-at-morning.webp?a=1&b=1&s=612x612&w=0&k=20&c=yPkSAJQY4C5P4qJM5oiJko6R2mDHe6ysAcqzyRQQssw="
+          ],
+          "Price": {
+            "CurrencyCode": "INR",
+            "BasePrice": 1500,
+            "Tax": 135,
+            "OtherCharges": 0,
+            "Discount": 150,
+            "PublishedPrice": 1635,
+            "PublishedPriceRoundedOff": 1600,
+            "OfferedPrice": 1350,
+            "OfferedPriceRoundedOff": 1350,
+            "AgentCommission": 270,
+            "AgentMarkUp": 0,
+            "ServiceTax": 0,
+            "TDS": 150,
+            "TCS": 0,
+            "TotalGSTAmount": 0,
+            "GST": {
+              "CGSTAmount": 0,
+              "CGSTRate": 0,
+              "CessAmount": 0,
+              "CessRate": 0,
+              "IGSTAmount": 0,
+              "IGSTRate": 18,
+              "SGSTAmount": 0,
+              "SGSTRate": 0,
+              "TaxableAmount": 0
+            }
+          },
+          "Source": 2,
+          "TourDescription": "Enjoy a serene boat ride on Lake Pichola, witnessing the stunning architecture of the City Palace and Jag Mandir Island Palace.",
+          "IsPANMandatory": false
+        }
+      ],
+      "transport": {
+        "airportTransfers": {
+          "pickup": {
+            "type": "Private Car",
+            "datetime": "2025-07-01T10:00:00Z",
+            "pickupLocation": "Jaipur International Airport",
+            "dropoffLocation": "Taj Rambagh Palace"
+          },
+          "dropoff": {
+            "type": "Private Car",
+            "datetime": "2025-07-12T12:00:00Z",
+            "pickupLocation": "Taj Rambagh Palace",
+            "dropoffLocation": "Jaipur International Airport"
+          }
+        }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "date": "2025-07-01",
+          "activities": [
+            "Arrival in Jaipur",
+            "Check-in at Taj Rambagh Palace",
+            "Welcome Dinner"
+          ]
+        },
+        {
+          "day": 2,
+          "date": "2025-07-02",
+          "activities": [
+            "Breakfast at the hotel",
+            "Amber Fort Tour",
+            "Lunch at a local restaurant",
+            "Evening Cultural Show"
+          ]
+        },
+        {
+          "day": 3,
+          "date": "2025-07-03",
+          "activities": [
+            "Breakfast at the hotel",
+            "Jaipur City Tour including Hawa Mahal and City Palace",
+            "Shopping at Johari Bazaar",
+            "Dinner at a rooftop restaurant"
+          ]
+        },
+        {
+          "day": 4,
+          "date": "2025-07-04",
+          "activities": [
+            "Breakfast at the hotel",
+            "Transfer to Udaipur by flight/train",
+            "Check-in at Lake Palace Hotel",
+            "Evening boat ride on Lake Pichola"
+          ]
+        },
+        {
+          "day": 5,
+          "date": "2025-07-05",
+          "activities": [
+            "Breakfast at the hotel",
+            "Lake Pichola Boat Ride",
+            "Visit to Monsoon Palace",
+            "Dinner at the hotel"
+          ]
+        },
+        {
+          "day": 6,
+          "date": "2025-07-06",
+          "activities": [
+            "Breakfast at the hotel",
+            "Transfer to Jodhpur by flight/train",
+            "Check-in at Umaid Bhawan Palace",
+            "Evening at leisure"
+          ]
+        },
+        {
+          "day": 7,
+          "date": "2025-07-07",
+          "activities": [
+            "Breakfast at the hotel",
+            "Mehrangarh Fort Tour",
+            "Visit to Jaswant Thada",
+            "Shopping at Sardar Market",
+            "Dinner at the hotel"
+          ]
+        },
+        {
+          "day": 8,
+          "date": "2025-07-08",
+          "activities": [
+            "Breakfast at the hotel",
+            "Day trip to Osian",
+            "Camel Safari",
+            "Return to Jodhpur"
+          ]
+        },
+        {
+          "day": 9,
+          "date": "2025-07-09",
+          "activities": [
+            "Breakfast at the hotel",
+            "Transfer back to Jaipur by flight/train",
+            "Check-in at Taj Rambagh Palace",
+            "Evening at leisure"
+          ]
+        },
+        {
+          "day": 10,
+          "date": "2025-07-10",
+          "activities": [
+            "Breakfast at the hotel",
+            "Day at leisure",
+            "Optional activities: Hot air balloon ride, spa treatments"
+          ]
+        },
+        {
+          "day": 11,
+          "date": "2025-07-11",
+          "activities": [
+            "Breakfast at the hotel",
+            "Visit to Nahargarh Fort",
+            "Farewell Dinner"
+          ]
+        },
+        {
+          "day": 12,
+          "date": "2025-07-12",
+          "activities": [
+            "Breakfast at the hotel",
+            "Check-out and transfer to Jaipur International Airport",
+            "Departure"
+          ]
+        }
+      ],
+      "additionalServices": {
+        "travelInsurance": true,
+        "visaAssistance": false,
+        "specialRequests": "Vegetarian meal preferences, Extra pillows upon request"
+      }
+    },
+    "bestTimeToVisit": "October to March",
+    "recommendationTags": [
+      "Trending",
+      "Cultural",
+      "Heritage",
+      "Royal",
+      "Adventure",
+      "Shopping",
+      "Scenic"
+    ],
+    "notes": "Peak season prices may vary. Advance booking is recommended for flights and hotels.",
+    "faqs": [
+      {
+        "question": "What is the best time to visit Rajasthan?",
+        "answer": "The best time to visit Rajasthan is from October to March when the weather is pleasant."
+      },
+      {
+        "question": "Are meals included in the package?",
+        "answer": "Yes, breakfast is included in the hotel stays. Additional meals are available at local restaurants."
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "679d50afea439515e6504a9c"
+    },
+    "packageTitle": "Kerala Backwater Bliss",
+    "image": "https://media.istockphoto.com/id/1225173869/photo/house-boat-anchored-in-lake-with-jungle-background-backwaters-kerala-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=uNC3UqE-bW-tB_hBIrned-tQWmrfPkbUQGPQ_-YqmYc=",
+    "location": "Kerala, India",
+    "duration": "8 Days/7 Nights",
+    "shortDescription": "Relax amidst the tranquil backwaters of Kerala, explore lush landscapes, and indulge in rejuvenating Ayurvedic treatments.",
+    "detailedDescription": "Discover the serene beauty of Kerala's backwaters with this meticulously crafted package. Cruise through the intricate network of canals, visit charming villages, experience traditional Kerala architecture, and enjoy the vibrant local culture. Complement your journey with authentic Kerala cuisine and rejuvenating Ayurvedic spa sessions.",
+    "price": {
+      "currency": "INR",
+      "basePrice": 28000,
+      "taxes": 4000,
+      "discount": 2500,
+      "totalPrice": 29500
+    },
+    "details": {
+      "flights": [
+        [
+          {
+            "FirstNameFormat": null,
+            "IsBookableIfSeatNotAvailable": false,
+            "IsHoldAllowedWithSSR": false,
+            "LastNameFormat": null,
+            "ResultIndex": "FLIGHT67890",
+            "Source": 3,
+            "IsLCC": false,
+            "IsRefundable": true,
+            "IsPanRequiredAtBook": false,
+            "IsPanRequiredAtTicket": false,
+            "IsPassportRequiredAtBook": false,
+            "IsPassportRequiredAtTicket": false,
+            "GSTAllowed": true,
+            "IsCouponAppilcable": true,
+            "IsGSTMandatory": false,
+            "AirlineRemark": "Air India operates daily flights to Kochi and Trivandrum.",
+            "IsPassportFullDetailRequiredAtBook": false,
+            "ResultFareType": "RegularFare",
+            "Fare": {
+              "Currency": "INR",
+              "BaseFare": 12000,
+              "Tax": 3000,
+              "TaxBreakup": [
+                {
+                  "key": "GST",
+                  "value": 2700
+                },
+                {
+                  "key": "OtherTaxes",
+                  "value": 300
+                }
+              ],
+              "YQTax": 0,
+              "AdditionalTxnFeeOfrd": 0,
+              "AdditionalTxnFeePub": 0,
+              "PGCharge": 0,
+              "OtherCharges": 100,
+              "ChargeBU": [
+                {
+                  "key": "CONVENIENCECHARGE",
+                  "value": 100
+                }
+              ],
+              "Discount": 0,
+              "PublishedFare": 15100,
+              "CommissionEarned": 0,
+              "PLBEarned": 0,
+              "IncentiveEarned": 0,
+              "OfferedFare": 15100,
+              "TdsOnCommission": 0,
+              "TdsOnPLB": 0,
+              "TdsOnIncentive": 0,
+              "ServiceFee": 0,
+              "TotalBaggageCharges": 0,
+              "TotalMealCharges": 0,
+              "TotalSeatCharges": 0,
+              "TotalSpecialServiceCharges": 0
+            },
+            "FareBreakdown": [
+              {
+                "Currency": "INR",
+                "PassengerType": 1,
+                "PassengerCount": 1,
+                "BaseFare": 6000,
+                "Tax": 1500,
+                "TaxBreakUp": [
+                  {
+                    "key": "GST",
+                    "value": 1350
+                  },
+                  {
+                    "key": "OtherTaxes",
+                    "value": 150
+                  }
+                ],
+                "YQTax": 0,
+                "AdditionalTxnFeeOfrd": 0,
+                "AdditionalTxnFeePub": 0,
+                "PGCharge": 0,
+                "SupplierReissueCharges": 0
+              },
+              {
+                "Currency": "INR",
+                "PassengerType": 2,
+                "PassengerCount": 1,
+                "BaseFare": 6000,
+                "Tax": 1500,
+                "TaxBreakUp": [
+                  {
+                    "key": "GST",
+                    "value": 1350
+                  },
+                  {
+                    "key": "OtherTaxes",
+                    "value": 150
+                  }
+                ],
+                "YQTax": 0,
+                "AdditionalTxnFeeOfrd": 0,
+                "AdditionalTxnFeePub": 0,
+                "PGCharge": 0,
+                "SupplierReissueCharges": 0
+              }
+            ],
+            "Segments": [
+              [
+                {
+                  "Baggage": "20 KG",
+                  "CabinBaggage": "7 KG",
+                  "CabinClass": 2,
+                  "SupplierFareClass": null,
+                  "TripIndicator": 1,
+                  "SegmentIndicator": 1,
+                  "Airline": {
+                    "AirlineCode": "AI",
+                    "AirlineName": "Air India",
+                    "FlightNumber": "AI-456",
+                    "FareClass": "S",
+                    "OperatingCarrier": ""
+                  },
+                  "Origin": {
+                    "Airport": {
+                      "AirportCode": "BOM",
+                      "AirportName": "Chhatrapati Shivaji Maharaj International Airport",
+                      "Terminal": "2",
+                      "CityCode": "BOM",
+                      "CityName": "Mumbai",
+                      "CountryCode": "IN",
+                      "CountryName": "India"
+                    },
+                    "DepTime": "2025-07-10T06:00:00"
+                  },
+                  "Destination": {
+                    "Airport": {
+                      "AirportCode": "COK",
+                      "AirportName": "Cochin International Airport",
+                      "Terminal": "1",
+                      "CityCode": "COK",
+                      "CityName": "Kochi",
+                      "CountryCode": "IN",
+                      "CountryName": "India"
+                    },
+                    "ArrTime": "2025-07-10T08:30:00"
+                  },
+                  "Duration": 150,
+                  "GroundTime": 0,
+                  "Mile": 0,
+                  "StopOver": false,
+                  "FlightInfoIndex": "",
+                  "StopPoint": "",
+                  "StopPointArrivalTime": null,
+                  "StopPointDepartureTime": null,
+                  "Craft": "A320",
+                  "Remark": null,
+                  "IsETicketEligible": true,
+                  "FlightStatus": "Confirmed",
+                  "Status": "",
+                  "FareClassification": {
+                    "Type": ""
+                  }
+                }
+              ]
+            ],
+            "LastTicketDate": "2025-07-25",
+            "TicketAdvisory": null,
+            "FareRules": [
+              {
+                "Origin": "BOM",
+                "Destination": "COK",
+                "Airline": "AI",
+                "FareBasisCode": "S",
+                "FareRuleDetail": "Changes allowed with a fee.",
+                "FareRestriction": "Refundable with cancellation charges.",
+                "FareFamilyCode": "Economy",
+                "FareRuleIndex": "FR67890"
+              }
+            ],
+            "AirlineCode": "AI",
+            "MiniFareRules": [
+              [
+                {
+                  "JourneyPoints": "BOM-COK",
+                  "Type": "Reissue",
+                  "From": "48",
+                  "To": "168",
+                  "Unit": "HOURS",
+                  "Details": "INR 2000"
+                },
+                {
+                  "JourneyPoints": "BOM-COK",
+                  "Type": "Reissue",
+                  "From": "168",
+                  "To": "",
+                  "Unit": "HOURS",
+                  "Details": "INR 3000"
+                },
+                {
+                  "JourneyPoints": "BOM-COK",
+                  "Type": "Cancellation",
+                  "From": "48",
+                  "To": "168",
+                  "Unit": "HOURS",
+                  "Details": "INR 3000"
+                },
+                {
+                  "JourneyPoints": "BOM-COK",
+                  "Type": "Cancellation",
+                  "From": "168",
+                  "To": "",
+                  "Unit": "HOURS",
+                  "Details": "INR 4000"
+                }
+              ]
+            ],
+            "ValidatingAirline": "AI",
+            "FareClassification": {
+              "Color": "lightYellow",
+              "Type": "Publish"
+            }
+          }
+        ]
+      ],
+      "hotel": {
+        "name": "Lake Palace Resort",
+        "address": "Backwaters, Alappuzha, Kerala, India",
+        "checkInDate": "2025-07-10",
+        "checkOutDate": "2025-07-18",
+        "roomType": "Houseboat Suite",
+        "amenities": [
+          "WiFi",
+          "Breakfast",
+          "Private Deck",
+          "Kitchenette",
+          "Sunset Viewing Area"
+        ]
+      },
+      "sightseeing": [
+        {
+          "ResultIndex": 1,
+          "CityId": "112233",
+          "CityName": "Alappuzha",
+          "CountryCode": "IN",
+          "FromDate": "2025-07-11T00:00:00",
+          "ToDate": "2025-07-11T00:00:00",
+          "SightseeingName": "Backwater Cruise",
+          "SightseeingCode": "KER-ALA-BCRU",
+          "SightseeingTypes": [
+            "RELAXATION",
+            "SCENIC"
+          ],
+          "DurationDescription": [
+            {
+              "TotalDuration": "1 DAYS",
+              "Date": "2025-07-11T00:00:00"
+            }
+          ],
+          "Condition": "Includes boat ride and local snacks.",
+          "ImageList": [
+            "https://media.istockphoto.com/id/1017900834/photo/houseboats-on-the-backwaters-of-kerala-in-alappuzha.webp?a=1&b=1&s=612x612&w=0&k=20&c=FtEqVRcyXYBO2bjqyLVYWSMfJLgfEnTEdqa5uNUEi8M="
+          ],
+          "Price": {
+            "CurrencyCode": "INR",
+            "BasePrice": 3000,
+            "Tax": 270,
+            "OtherCharges": 0,
+            "Discount": 300,
+            "PublishedPrice": 3270,
+            "PublishedPriceRoundedOff": 3000,
+            "OfferedPrice": 2700,
+            "OfferedPriceRoundedOff": 2700,
+            "AgentCommission": 540,
+            "AgentMarkUp": 0,
+            "ServiceTax": 0,
+            "TDS": 300,
+            "TCS": 0,
+            "TotalGSTAmount": 0,
+            "GST": {
+              "CGSTAmount": 0,
+              "CGSTRate": 0,
+              "CessAmount": 0,
+              "CessRate": 0,
+              "IGSTAmount": 0,
+              "IGSTRate": 18,
+              "SGSTAmount": 0,
+              "SGSTRate": 0,
+              "TaxableAmount": 0
+            }
+          },
+          "Source": 2,
+          "TourDescription": "Enjoy a peaceful cruise through Kerala's famous backwaters, witnessing the lush landscapes, traditional villages, and vibrant local life.",
+          "IsPANMandatory": false
+        },
+        {
+          "ResultIndex": 2,
+          "CityId": "112234",
+          "CityName": "Kumarakom",
+          "CountryCode": "IN",
+          "FromDate": "2025-07-13T00:00:00",
+          "ToDate": "2025-07-13T00:00:00",
+          "SightseeingName": "Bird Sanctuary Visit",
+          "SightseeingCode": "KER-KUM-BSAN",
+          "SightseeingTypes": [
+            "NATURE",
+            "WILDLIFE"
+          ],
+          "DurationDescription": [
+            {
+              "TotalDuration": "1 DAYS",
+              "Date": "2025-07-13T00:00:00"
+            }
+          ],
+          "Condition": "Guided tour included.",
+          "ImageList": [
+            "https://images.unsplash.com/photo-1480044965905-02098d419e96?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8QmlyZCUyMFNhbmN0dWFyeSUyMFZpc2l0fGVufDB8fDB8fHww"
+          ],
+          "Price": {
+            "CurrencyCode": "INR",
+            "BasePrice": 2500,
+            "Tax": 225,
+            "OtherCharges": 0,
+            "Discount": 250,
+            "PublishedPrice": 2475,
+            "PublishedPriceRoundedOff": 2500,
+            "OfferedPrice": 2250,
+            "OfferedPriceRoundedOff": 2250,
+            "AgentCommission": 450,
+            "AgentMarkUp": 0,
+            "ServiceTax": 0,
+            "TDS": 250,
+            "TCS": 0,
+            "TotalGSTAmount": 0,
+            "GST": {
+              "CGSTAmount": 0,
+              "CGSTRate": 0,
+              "CessAmount": 0,
+              "CessRate": 0,
+              "IGSTAmount": 0,
+              "IGSTRate": 18,
+              "SGSTAmount": 0,
+              "SGSTRate": 0,
+              "TaxableAmount": 0
+            }
+          },
+          "Source": 2,
+          "TourDescription": "Visit the Kumarakom Bird Sanctuary, home to a variety of migratory birds. Enjoy bird watching and the serene environment of the backwaters.",
+          "IsPANMandatory": false
+        }
+      ],
+      "transport": {
+        "airportTransfers": {
+          "pickup": {
+            "type": "Private Car",
+            "datetime": "2025-07-10T08:00:00Z",
+            "pickupLocation": "Chhatrapati Shivaji Maharaj International Airport",
+            "dropoffLocation": "Lake Palace Resort"
+          },
+          "dropoff": {
+            "type": "Private Car",
+            "datetime": "2025-07-18T10:00:00Z",
+            "pickupLocation": "Lake Palace Resort",
+            "dropoffLocation": "Chhatrapati Shivaji Maharaj International Airport"
+          }
+        }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "date": "2025-07-10",
+          "activities": [
+            "Arrival in Kochi",
+            "Transfer to Lake Palace Resort",
+            "Welcome Dinner on the Houseboat"
+          ]
+        },
+        {
+          "day": 2,
+          "date": "2025-07-11",
+          "activities": [
+            "Breakfast on the houseboat",
+            "Backwater Cruise",
+            "Lunch on the houseboat",
+            "Evening at leisure"
+          ]
+        },
+        {
+          "day": 3,
+          "date": "2025-07-12",
+          "activities": [
+            "Breakfast at the hotel",
+            "Transfer to Alappuzha",
+            "Check-in at the resort",
+            "Visit to Alappuzha Beach"
+          ]
+        },
+        {
+          "day": 4,
+          "date": "2025-07-13",
+          "activities": [
+            "Breakfast at the hotel",
+            "Bird Sanctuary Visit",
+            "Lunch at a local restaurant",
+            "Ayurvedic Spa Treatment"
+          ]
+        },
+        {
+          "day": 5,
+          "date": "2025-07-14",
+          "activities": [
+            "Breakfast at the hotel",
+            "Transfer to Kumarakom",
+            "Check-in at Kumarakom Lake Resort",
+            "Evening Boat Ride"
+          ]
+        },
+        {
+          "day": 6,
+          "date": "2025-07-15",
+          "activities": [
+            "Breakfast at the resort",
+            "Village Tour",
+            "Lunch at a local homestay",
+            "Evening Leisure"
+          ]
+        },
+        {
+          "day": 7,
+          "date": "2025-07-16",
+          "activities": [
+            "Breakfast at the resort",
+            "Back to Kochi",
+            "Shopping at Lulu Mall",
+            "Farewell Dinner"
+          ]
+        },
+        {
+          "day": 8,
+          "date": "2025-07-17",
+          "activities": [
+            "Breakfast at the hotel",
+            "Check-out and transfer to the airport",
+            "Departure"
+          ]
+        }
+      ],
+      "additionalServices": {
+        "travelInsurance": true,
+        "visaAssistance": false,
+        "specialRequests": "Extra towels, Dietary preferences for meals"
+      }
+    },
+    "bestTimeToVisit": "October to March",
+    "recommendationTags": [
+      "Trending",
+      "Loyality",
+      "Relaxation",
+      "Backwaters",
+      "Spa",
+      "Nature",
+      "Cultural",
+      "Scenic"
+    ],
+    "notes": "Book Ayurvedic treatments in advance. Ensure houseboat dates are confirmed.",
+    "faqs": [
+      {
+        "question": "What should I pack for the Kerala Backwater Bliss package?",
+        "answer": "Lightweight clothing, comfortable shoes, sunscreen, hat, and a camera are recommended."
+      },
+      {
+        "question": "Are meals included in the package?",
+        "answer": "Yes, breakfast is included at all hotels and meals on the houseboat are provided."
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "679d50dc03d7e82405f0c625"
+    },
+    "packageTitle": "Goa Beach and Adventure Getaway",
+    "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8R29hJTJDJTIwSW5kaWF8ZW58MHx8MHx8fDA%3D",
+    "location": "Goa, India",
+    "duration": "7 Days/6 Nights",
+    "shortDescription": "Enjoy the sun, sand, and sea in Goa with a mix of beach relaxation and thrilling adventure activities.",
+    "detailedDescription": "Discover the vibrant life of Goa with its pristine beaches, lively nightlife, and a plethora of adventure activities. This package offers a balanced mix of relaxation on golden sands, water sports like parasailing and jet-skiing, exploration of historic forts, and vibrant markets. Stay in luxury beachfront resorts and savor delicious Goan cuisine.",
+    "price": {
+      "currency": "INR",
+      "basePrice": 22000,
+      "taxes": 3000,
+      "discount": 2000,
+      "totalPrice": 23000
+    },
+    "details": {
+      "flights": [
+        [
+          {
+            "FirstNameFormat": null,
+            "IsBookableIfSeatNotAvailable": false,
+            "IsHoldAllowedWithSSR": false,
+            "LastNameFormat": null,
+            "ResultIndex": "FLIGHT54321",
+            "Source": 3,
+            "IsLCC": true,
+            "IsRefundable": true,
+            "IsPanRequiredAtBook": false,
+            "IsPanRequiredAtTicket": false,
+            "IsPassportRequiredAtBook": false,
+            "IsPassportRequiredAtTicket": false,
+            "GSTAllowed": true,
+            "IsCouponAppilcable": true,
+            "IsGSTMandatory": false,
+            "AirlineRemark": "SpiceJet offers daily flights to Goa from major cities.",
+            "IsPassportFullDetailRequiredAtBook": false,
+            "ResultFareType": "RegularFare",
+            "Fare": {
+              "Currency": "INR",
+              "BaseFare": 7000,
+              "Tax": 1500,
+              "TaxBreakup": [
+                {
+                  "key": "GST",
+                  "value": 1350
+                },
+                {
+                  "key": "OtherTaxes",
+                  "value": 150
+                }
+              ],
+              "YQTax": 0,
+              "AdditionalTxnFeeOfrd": 0,
+              "AdditionalTxnFeePub": 0,
+              "PGCharge": 0,
+              "OtherCharges": 80,
+              "ChargeBU": [
+                {
+                  "key": "CONVENIENCECHARGE",
+                  "value": 80
+                }
+              ],
+              "Discount": 0,
+              "PublishedFare": 8580,
+              "CommissionEarned": 0,
+              "PLBEarned": 0,
+              "IncentiveEarned": 0,
+              "OfferedFare": 8580,
+              "TdsOnCommission": 0,
+              "TdsOnPLB": 0,
+              "TdsOnIncentive": 0,
+              "ServiceFee": 0,
+              "TotalBaggageCharges": 0,
+              "TotalMealCharges": 0,
+              "TotalSeatCharges": 0,
+              "TotalSpecialServiceCharges": 0
+            },
+            "FareBreakdown": [
+              {
+                "Currency": "INR",
+                "PassengerType": 1,
+                "PassengerCount": 1,
+                "BaseFare": 3500,
+                "Tax": 750,
+                "TaxBreakUp": [
+                  {
+                    "key": "GST",
+                    "value": 675
+                  },
+                  {
+                    "key": "OtherTaxes",
+                    "value": 75
+                  }
+                ],
+                "YQTax": 0,
+                "AdditionalTxnFeeOfrd": 0,
+                "AdditionalTxnFeePub": 0,
+                "PGCharge": 0,
+                "SupplierReissueCharges": 0
+              },
+              {
+                "Currency": "INR",
+                "PassengerType": 2,
+                "PassengerCount": 1,
+                "BaseFare": 3500,
+                "Tax": 750,
+                "TaxBreakUp": [
+                  {
+                    "key": "GST",
+                    "value": 675
+                  },
+                  {
+                    "key": "OtherTaxes",
+                    "value": 75
+                  }
+                ],
+                "YQTax": 0,
+                "AdditionalTxnFeeOfrd": 0,
+                "AdditionalTxnFeePub": 0,
+                "PGCharge": 0,
+                "SupplierReissueCharges": 0
+              }
+            ],
+            "Segments": [
+              [
+                {
+                  "Baggage": "15 KG",
+                  "CabinBaggage": "7 KG",
+                  "CabinClass": 2,
+                  "SupplierFareClass": null,
+                  "TripIndicator": 1,
+                  "SegmentIndicator": 1,
+                  "Airline": {
+                    "AirlineCode": "SG",
+                    "AirlineName": "SpiceJet",
+                    "FlightNumber": "SG-789",
+                    "FareClass": "G",
+                    "OperatingCarrier": ""
+                  },
+                  "Origin": {
+                    "Airport": {
+                      "AirportCode": "BOM",
+                      "AirportName": "Chhatrapati Shivaji Maharaj International Airport",
+                      "Terminal": "1",
+                      "CityCode": "BOM",
+                      "CityName": "Mumbai",
+                      "CountryCode": "IN",
+                      "CountryName": "India"
+                    },
+                    "DepTime": "2025-08-01T09:00:00"
+                  },
+                  "Destination": {
+                    "Airport": {
+                      "AirportCode": "GOI",
+                      "AirportName": "Dabolim Airport",
+                      "Terminal": "1",
+                      "CityCode": "GOI",
+                      "CityName": "Goa",
+                      "CountryCode": "IN",
+                      "CountryName": "India"
+                    },
+                    "ArrTime": "2025-08-01T10:30:00"
+                  },
+                  "Duration": 90,
+                  "GroundTime": 0,
+                  "Mile": 0,
+                  "StopOver": false,
+                  "FlightInfoIndex": "",
+                  "StopPoint": "",
+                  "StopPointArrivalTime": null,
+                  "StopPointDepartureTime": null,
+                  "Craft": "A320",
+                  "Remark": null,
+                  "IsETicketEligible": true,
+                  "FlightStatus": "Confirmed",
+                  "Status": "",
+                  "FareClassification": {
+                    "Type": ""
+                  }
+                }
+              ]
+            ],
+            "LastTicketDate": "2025-08-15",
+            "TicketAdvisory": null,
+            "FareRules": [
+              {
+                "Origin": "BOM",
+                "Destination": "GOI",
+                "Airline": "SG",
+                "FareBasisCode": "G",
+                "FareRuleDetail": "Changes allowed with a fee.",
+                "FareRestriction": "Refundable with cancellation charges.",
+                "FareFamilyCode": "Economy",
+                "FareRuleIndex": "FR54321"
+              }
+            ],
+            "AirlineCode": "SG",
+            "MiniFareRules": [
+              [
+                {
+                  "JourneyPoints": "BOM-GOI",
+                  "Type": "Reissue",
+                  "From": "24",
+                  "To": "72",
+                  "Unit": "HOURS",
+                  "Details": "INR 1800"
+                },
+                {
+                  "JourneyPoints": "BOM-GOI",
+                  "Type": "Reissue",
+                  "From": "72",
+                  "To": "",
+                  "Unit": "HOURS",
+                  "Details": "INR 2500"
+                },
+                {
+                  "JourneyPoints": "BOM-GOI",
+                  "Type": "Cancellation",
+                  "From": "24",
+                  "To": "72",
+                  "Unit": "HOURS",
+                  "Details": "INR 3000"
+                },
+                {
+                  "JourneyPoints": "BOM-GOI",
+                  "Type": "Cancellation",
+                  "From": "72",
+                  "To": "",
+                  "Unit": "HOURS",
+                  "Details": "INR 4000"
+                }
+              ]
+            ],
+            "ValidatingAirline": "SG",
+            "FareClassification": {
+              "Color": "lightBlue",
+              "Type": "Publish"
+            }
+          }
+        ]
+      ],
+      "hotel": {
+        "name": "The Leela Goa",
+        "address": "Mobor Beach, Goa, India",
+        "checkInDate": "2025-08-01",
+        "checkOutDate": "2025-08-07",
+        "roomType": "Beachfront Suite",
+        "amenities": [
+          "WiFi",
+          "Breakfast",
+          "Swimming Pool",
+          "Spa",
+          "Beach Access",
+          "Fitness Center"
+        ]
+      },
+      "sightseeing": [
+        {
+          "ResultIndex": 1,
+          "CityId": "445566",
+          "CityName": "Goa",
+          "CountryCode": "IN",
+          "FromDate": "2025-08-02T00:00:00",
+          "ToDate": "2025-08-02T00:00:00",
+          "SightseeingName": "Basilica of Bom Jesus",
+          "SightseeingCode": "GOA-GOI-BOB",
+          "SightseeingTypes": [
+            "HISTORIC",
+            "CULTURAL"
+          ],
+          "DurationDescription": [
+            {
+              "TotalDuration": "1 DAYS",
+              "Date": "2025-08-02T00:00:00"
+            }
+          ],
+          "Condition": "Guided tour included.",
+          "ImageList": [
+            "https://images.unsplash.com/photo-1706940119676-957a79a61248?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8QmFzaWxpY2ElMjBvZiUyMEJvbSUyMEplc3VzfGVufDB8fDB8fHww"
+          ],
+          "Price": {
+            "CurrencyCode": "INR",
+            "BasePrice": 1000,
+            "Tax": 90,
+            "OtherCharges": 0,
+            "Discount": 100,
+            "PublishedPrice": 1090,
+            "PublishedPriceRoundedOff": 1000,
+            "OfferedPrice": 900,
+            "OfferedPriceRoundedOff": 900,
+            "AgentCommission": 180,
+            "AgentMarkUp": 0,
+            "ServiceTax": 0,
+            "TDS": 100,
+            "TCS": 0,
+            "TotalGSTAmount": 0,
+            "GST": {
+              "CGSTAmount": 0,
+              "CGSTRate": 0,
+              "CessAmount": 0,
+              "CessRate": 0,
+              "IGSTAmount": 0,
+              "IGSTRate": 18,
+              "SGSTAmount": 0,
+              "SGSTRate": 0,
+              "TaxableAmount": 0
+            }
+          },
+          "Source": 2,
+          "TourDescription": "Visit the UNESCO World Heritage Site, Basilica of Bom Jesus, which houses the mortal remains of St. Francis Xavier.",
+          "IsPANMandatory": false
+        },
+        {
+          "ResultIndex": 2,
+          "CityId": "445567",
+          "CityName": "Goa",
+          "CountryCode": "IN",
+          "FromDate": "2025-08-04T00:00:00",
+          "ToDate": "2025-08-04T00:00:00",
+          "SightseeingName": "Water Sports at Calangute Beach",
+          "SightseeingCode": "GOA-GOI-WSW",
+          "SightseeingTypes": [
+            "ADVENTURE",
+            "WATER SPORTS"
+          ],
+          "DurationDescription": [
+            {
+              "TotalDuration": "1 DAYS",
+              "Date": "2025-08-04T00:00:00"
+            }
+          ],
+          "Condition": "Includes equipment and safety briefing.",
+          "ImageList": [
+            "https://www.istockphoto.com/photo/vagator-beach-in-goa-india-gm1254346716-366598037?utm_campaign=srp_photos_top&utm_content=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2FWater-Sports-at-Calangute-Beach&utm_medium=affiliate&utm_source=unsplash&utm_term=Water+Sports+at+Calangute+Beach%3A%3A%3A"
+          ],
+          "Price": {
+            "CurrencyCode": "INR",
+            "BasePrice": 2000,
+            "Tax": 180,
+            "OtherCharges": 0,
+            "Discount": 200,
+            "PublishedPrice": 2180,
+            "PublishedPriceRoundedOff": 2000,
+            "OfferedPrice": 1800,
+            "OfferedPriceRoundedOff": 1800,
+            "AgentCommission": 360,
+            "AgentMarkUp": 0,
+            "ServiceTax": 0,
+            "TDS": 200,
+            "TCS": 0,
+            "TotalGSTAmount": 0,
+            "GST": {
+              "CGSTAmount": 0,
+              "CGSTRate": 0,
+              "CessAmount": 0,
+              "CessRate": 0,
+              "IGSTAmount": 0,
+              "IGSTRate": 18,
+              "SGSTAmount": 0,
+              "SGSTRate": 0,
+              "TaxableAmount": 0
+            }
+          },
+          "Source": 2,
+          "TourDescription": "Engage in thrilling water sports like parasailing, jet-skiing, and banana boat rides at Calangute Beach.",
+          "IsPANMandatory": false
+        }
+      ],
+      "transport": {
+        "airportTransfers": {
+          "pickup": {
+            "type": "Private Car",
+            "datetime": "2025-08-01T11:00:00Z",
+            "pickupLocation": "Chhatrapati Shivaji Maharaj International Airport",
+            "dropoffLocation": "The Leela Goa"
+          },
+          "dropoff": {
+            "type": "Private Car",
+            "datetime": "2025-08-07T14:00:00Z",
+            "pickupLocation": "The Leela Goa",
+            "dropoffLocation": "Chhatrapati Shivaji Maharaj International Airport"
+          }
+        }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "date": "2025-08-01",
+          "activities": [
+            "Arrival in Goa",
+            "Transfer to The Leela Goa",
+            "Welcome Dinner by the Beach"
+          ]
+        },
+        {
+          "day": 2,
+          "date": "2025-08-02",
+          "activities": [
+            "Breakfast at the hotel",
+            "Basilica of Bom Jesus Tour",
+            "Lunch at a local restaurant",
+            "Evening Beach Walk"
+          ]
+        },
+        {
+          "day": 3,
+          "date": "2025-08-03",
+          "activities": [
+            "Breakfast at the hotel",
+            "Old Goa Heritage Tour",
+            "Lunch at a traditional Goan restaurant",
+            "Evening at leisure"
+          ]
+        },
+        {
+          "day": 4,
+          "date": "2025-08-04",
+          "activities": [
+            "Breakfast at the hotel",
+            "Water Sports at Calangute Beach",
+            "Lunch at a beachside shack",
+            "Sunset Cruise"
+          ]
+        },
+        {
+          "day": 5,
+          "date": "2025-08-05",
+          "activities": [
+            "Breakfast at the hotel",
+            "Day trip to Anjuna and Vagator Beaches",
+            "Lunch at a seaside restaurant",
+            "Evening Shopping at Anjuna Flea Market"
+          ]
+        },
+        {
+          "day": 6,
+          "date": "2025-08-06",
+          "activities": [
+            "Breakfast at the hotel",
+            "Explore Dudhsagar Waterfalls",
+            "Lunch at a local eatery",
+            "Evening Leisure at the Resort"
+          ]
+        },
+        {
+          "day": 7,
+          "date": "2025-08-07",
+          "activities": [
+            "Breakfast at the hotel",
+            "Check-out and transfer to the airport",
+            "Departure"
+          ]
+        }
+      ],
+      "additionalServices": {
+        "travelInsurance": true,
+        "visaAssistance": false,
+        "specialRequests": "Room with sea view, Early check-in upon request"
+      }
+    },
+    "bestTimeToVisit": "November to February",
+    "recommendationTags": [
+      "Beach",
+      "Adventure",
+      "Loyality",
+      "Nightlife",
+      "Water Sports",
+      "Cultural",
+      "Relaxation"
+    ],
+    "notes": "Ensure to carry sun protection. Water sports activities are subject to weather conditions.",
+    "faqs": [
+      {
+        "question": "Are water sports included in the package?",
+        "answer": "Yes, water sports at Calangute Beach are included. Additional charges may apply for certain activities."
+      },
+      {
+        "question": "Is airport pickup provided?",
+        "answer": "Yes, private car transfers are included for airport pickups and drop-offs."
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "893d505d4a4362b7ba5a538f"
+    },
+    "packageTitle": "Goa Sun & Sand Extravaganza",
+    "image": "https://media.istockphoto.com/id/1145709125/photo/beautiful-sunset-by-the-arabian-sea-in-the-north-goa.webp?a=1&b=1&s=612x612&w=0&k=20&c=FBmGYTtJNc1p0S5jKGeUOx5oIzj4PUBPu40C_2qeOjo=",
+    "location": "Goa, India",
+    "duration": "7 Days/6 Nights",
+    "shortDescription": "Enjoy the ultimate beach vacation in Goa with vibrant nightlife, water sports, and luxurious resorts.",
+    "detailedDescription": "Experience the best of Goa with this all-inclusive package featuring pristine beaches, exciting water sports, heritage tours of Old Goa, and vibrant nightlife. Stay at a luxurious beachfront resort and savor delectable Goan cuisine while exploring the scenic beauty and rich history of this coastal paradise.",
+    "price": {
+      "currency": "INR",
+      "basePrice": 22000,
+      "taxes": 2500,
+      "discount": 1500,
+      "totalPrice": 23000
+    },
+    "details": {
+      "flights": [
+        [
+          {
+            "FirstNameFormat": null,
+            "IsBookableIfSeatNotAvailable": false,
+            "IsHoldAllowedWithSSR": false,
+            "LastNameFormat": null,
+            "ResultIndex": "FLIGHT78901",
+            "Source": 3,
+            "IsLCC": true,
+            "IsRefundable": true,
+            "IsPanRequiredAtBook": false,
+            "IsPanRequiredAtTicket": false,
+            "IsPassportRequiredAtBook": false,
+            "IsPassportRequiredAtTicket": false,
+            "GSTAllowed": true,
+            "IsCouponAppilcable": true,
+            "IsGSTMandatory": false,
+            "AirlineRemark": "GoAir offers multiple daily flights to Goa.",
+            "IsPassportFullDetailRequiredAtBook": false,
+            "ResultFareType": "RegularFare",
+            "Fare": {
+              "Currency": "INR",
+              "BaseFare": 5000,
+              "Tax": 800,
+              "TaxBreakup": [
+                {
+                  "key": "GST",
+                  "value": 720
+                },
+                {
+                  "key": "OtherTaxes",
+                  "value": 80
+                }
+              ],
+              "YQTax": 0,
+              "AdditionalTxnFeeOfrd": 0,
+              "AdditionalTxnFeePub": 0,
+              "PGCharge": 0,
+              "OtherCharges": 40,
+              "ChargeBU": [
+                {
+                  "key": "CONVENIENCECHARGE",
+                  "value": 40
+                }
+              ],
+              "Discount": 0,
+              "PublishedFare": 5840,
+              "CommissionEarned": 0,
+              "PLBEarned": 0,
+              "IncentiveEarned": 0,
+              "OfferedFare": 5840,
+              "TdsOnCommission": 0,
+              "TdsOnPLB": 0,
+              "TdsOnIncentive": 0,
+              "ServiceFee": 0,
+              "TotalBaggageCharges": 0,
+              "TotalMealCharges": 0,
+              "TotalSeatCharges": 0,
+              "TotalSpecialServiceCharges": 0
+            },
+            "FareBreakdown": [
+              {
+                "Currency": "INR",
+                "PassengerType": 1,
+                "PassengerCount": 1,
+                "BaseFare": 2500,
+                "Tax": 400,
+                "TaxBreakUp": [
+                  {
+                    "key": "GST",
+                    "value": 360
+                  },
+                  {
+                    "key": "OtherTaxes",
+                    "value": 40
+                  }
+                ],
+                "YQTax": 0,
+                "AdditionalTxnFeeOfrd": 0,
+                "AdditionalTxnFeePub": 0,
+                "PGCharge": 0,
+                "SupplierReissueCharges": 0
+              },
+              {
+                "Currency": "INR",
+                "PassengerType": 2,
+                "PassengerCount": 1,
+                "BaseFare": 2500,
+                "Tax": 400,
+                "TaxBreakUp": [
+                  {
+                    "key": "GST",
+                    "value": 360
+                  },
+                  {
+                    "key": "OtherTaxes",
+                    "value": 40
+                  }
+                ],
+                "YQTax": 0,
+                "AdditionalTxnFeeOfrd": 0,
+                "AdditionalTxnFeePub": 0,
+                "PGCharge": 0,
+                "SupplierReissueCharges": 0
+              }
+            ],
+            "Segments": [
+              [
+                {
+                  "Baggage": "15 KG",
+                  "CabinBaggage": "7 KG",
+                  "CabinClass": 2,
+                  "SupplierFareClass": null,
+                  "TripIndicator": 1,
+                  "SegmentIndicator": 1,
+                  "Airline": {
+                    "AirlineCode": "G8",
+                    "AirlineName": "GoAir",
+                    "FlightNumber": "G8-789",
+                    "FareClass": "Y",
+                    "OperatingCarrier": ""
+                  },
+                  "Origin": {
+                    "Airport": {
+                      "AirportCode": "BOM",
+                      "AirportName": "Chhatrapati Shivaji Maharaj International Airport",
+                      "Terminal": "2",
+                      "CityCode": "BOM",
+                      "CityName": "Mumbai",
+                      "CountryCode": "IN",
+                      "CountryName": "India"
+                    },
+                    "DepTime": "2025-09-05T06:00:00"
+                  },
+                  "Destination": {
+                    "Airport": {
+                      "AirportCode": "GOI",
+                      "AirportName": "Goa International Airport",
+                      "Terminal": "1",
+                      "CityCode": "GOI",
+                      "CityName": "Goa",
+                      "CountryCode": "IN",
+                      "CountryName": "India"
+                    },
+                    "ArrTime": "2025-09-05T07:30:00"
+                  },
+                  "Duration": 90,
+                  "GroundTime": 0,
+                  "Mile": 0,
+                  "StopOver": false,
+                  "FlightInfoIndex": "",
+                  "StopPoint": "",
+                  "StopPointArrivalTime": null,
+                  "StopPointDepartureTime": null,
+                  "Craft": "Airbus A320",
+                  "Remark": null,
+                  "IsETicketEligible": true,
+                  "FlightStatus": "Confirmed",
+                  "Status": "",
+                  "FareClassification": {
+                    "Type": ""
+                  }
+                }
+              ]
+            ],
+            "LastTicketDate": "2025-09-20",
+            "TicketAdvisory": null,
+            "FareRules": [
+              {
+                "Origin": "BOM",
+                "Destination": "GOI",
+                "Airline": "G8",
+                "FareBasisCode": "Y",
+                "FareRuleDetail": "No changes allowed after booking.",
+                "FareRestriction": "Non-refundable.",
+                "FareFamilyCode": "Economy",
+                "FareRuleIndex": "FR78901"
+              }
+            ],
+            "AirlineCode": "G8",
+            "MiniFareRules": [
+              [
+                {
+                  "JourneyPoints": "BOM-GOI",
+                  "Type": "Reissue",
+                  "From": "24",
+                  "To": "72",
+                  "Unit": "HOURS",
+                  "Details": "INR 1000"
+                },
+                {
+                  "JourneyPoints": "BOM-GOI",
+                  "Type": "Reissue",
+                  "From": "72",
+                  "To": "",
+                  "Unit": "HOURS",
+                  "Details": "INR 1500"
+                },
+                {
+                  "JourneyPoints": "BOM-GOI",
+                  "Type": "Cancellation",
+                  "From": "24",
+                  "To": "72",
+                  "Unit": "HOURS",
+                  "Details": "INR 1200"
+                },
+                {
+                  "JourneyPoints": "BOM-GOI",
+                  "Type": "Cancellation",
+                  "From": "72",
+                  "To": "",
+                  "Unit": "HOURS",
+                  "Details": "INR 2000"
+                }
+              ]
+            ],
+            "ValidatingAirline": "G8",
+            "FareClassification": {
+              "Color": "lightGreen",
+              "Type": "Publish"
+            }
+          }
+        ]
+      ],
+      "hotel": {
+        "name": "Taj Exotica Goa",
+        "address": "Benaulim, Goa, India",
+        "checkInDate": "2025-09-05",
+        "checkOutDate": "2025-09-12",
+        "roomType": "Beachfront Suite",
+        "amenities": [
+          "WiFi",
+          "Breakfast",
+          "Pool",
+          "Spa",
+          "Sea View"
+        ]
+      },
+      "sightseeing": [
+        {
+          "ResultIndex": 1,
+          "CityId": "310001",
+          "CityName": "Goa",
+          "CountryCode": "IN",
+          "FromDate": "2025-09-06T00:00:00",
+          "ToDate": "2025-09-06T00:00:00",
+          "SightseeingName": "Beach Party & Water Sports",
+          "SightseeingCode": "GOA-BTW-001",
+          "SightseeingTypes": [
+            "BEACH",
+            "ADVENTURE"
+          ],
+          "DurationDescription": [
+            {
+              "TotalDuration": "1 DAYS",
+              "Date": "2025-09-06T00:00:00"
+            }
+          ],
+          "Condition": "Includes water sports and beach party access.",
+          "ImageList": [
+            "https://plus.unsplash.com/premium_photo-1664302565146-89f10e851e54?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8QmVhY2glMjBQYXJ0eSUyMCUyNiUyMFdhdGVyJTIwU3BvcnRzfGVufDB8fDB8fHww"
+          ],
+          "Price": {
+            "CurrencyCode": "INR",
+            "BasePrice": 1200,
+            "Tax": 100,
+            "OtherCharges": 0,
+            "Discount": 100,
+            "PublishedPrice": 1200,
+            "PublishedPriceRoundedOff": 1200,
+            "OfferedPrice": 1100,
+            "OfferedPriceRoundedOff": 1100,
+            "AgentCommission": 200,
+            "AgentMarkUp": 0,
+            "ServiceTax": 0,
+            "TDS": 100,
+            "TCS": 0,
+            "TotalGSTAmount": 0,
+            "GST": {
+              "CGSTAmount": 0,
+              "CGSTRate": 0,
+              "CessAmount": 0,
+              "CessRate": 0,
+              "IGSTAmount": 0,
+              "IGSTRate": 18,
+              "SGSTAmount": 0,
+              "SGSTRate": 0,
+              "TaxableAmount": 0
+            }
+          },
+          "Source": 2,
+          "TourDescription": "Enjoy an exciting day of water sports and beach festivities at Goa's most popular beach.",
+          "IsPANMandatory": false
+        },
+        {
+          "ResultIndex": 2,
+          "CityId": "310002",
+          "CityName": "Panaji",
+          "CountryCode": "IN",
+          "FromDate": "2025-09-08T00:00:00",
+          "ToDate": "2025-09-08T00:00:00",
+          "SightseeingName": "Old Goa Heritage Tour",
+          "SightseeingCode": "GOA-OGH-002",
+          "SightseeingTypes": [
+            "CULTURAL",
+            "HISTORICAL"
+          ],
+          "DurationDescription": [
+            {
+              "TotalDuration": "1 DAYS",
+              "Date": "2025-09-08T00:00:00"
+            }
+          ],
+          "Condition": "Guided tour of historic churches and temples in Old Goa.",
+          "ImageList": [
+            "https://plus.unsplash.com/premium_photo-1691960159629-2148e8088aea?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8T2xkJTIwR29hJTIwSGVyaXRhZ2UlMjBUb3VyfGVufDB8fDB8fHww"
+          ],
+          "Price": {
+            "CurrencyCode": "INR",
+            "BasePrice": 1000,
+            "Tax": 80,
+            "OtherCharges": 0,
+            "Discount": 80,
+            "PublishedPrice": 1000,
+            "PublishedPriceRoundedOff": 1000,
+            "OfferedPrice": 920,
+            "OfferedPriceRoundedOff": 920,
+            "AgentCommission": 180,
+            "AgentMarkUp": 0,
+            "ServiceTax": 0,
+            "TDS": 80,
+            "TCS": 0,
+            "TotalGSTAmount": 0,
+            "GST": {
+              "CGSTAmount": 0,
+              "CGSTRate": 0,
+              "CessAmount": 0,
+              "CessRate": 0,
+              "IGSTAmount": 0,
+              "IGSTRate": 18,
+              "SGSTAmount": 0,
+              "SGSTRate": 0,
+              "TaxableAmount": 0
+            }
+          },
+          "Source": 2,
+          "TourDescription": "Explore the rich history of Old Goa with a guided tour of its magnificent churches and temples.",
+          "IsPANMandatory": false
+        }
+      ],
+      "transport": {
+        "airportTransfers": {
+          "pickup": {
+            "type": "Private Car",
+            "datetime": "2025-09-05T08:00:00Z",
+            "pickupLocation": "Goa International Airport",
+            "dropoffLocation": "Taj Exotica Goa"
+          },
+          "dropoff": {
+            "type": "Private Car",
+            "datetime": "2025-09-12T10:00:00Z",
+            "pickupLocation": "Taj Exotica Goa",
+            "dropoffLocation": "Goa International Airport"
+          }
+        }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "date": "2025-09-05",
+          "activities": [
+            "Arrival in Goa",
+            "Transfer to Taj Exotica Goa",
+            "Check-in and leisure at the beach"
+          ]
+        },
+        {
+          "day": 2,
+          "date": "2025-09-06",
+          "activities": [
+            "Breakfast at the hotel",
+            "Water sports and beach party",
+            "Evening at leisure"
+          ]
+        },
+        {
+          "day": 3,
+          "date": "2025-09-07",
+          "activities": [
+            "Breakfast at the hotel",
+            "Guided tour of Old Goa",
+            "Lunch at a local restaurant",
+            "Free time in the evening"
+          ]
+        },
+        {
+          "day": 4,
+          "date": "2025-09-08",
+          "activities": [
+            "Breakfast at the hotel",
+            "Old Goa Heritage Tour",
+            "Explore local markets"
+          ]
+        },
+        {
+          "day": 5,
+          "date": "2025-09-09",
+          "activities": [
+            "Breakfast at the hotel",
+            "Day at leisure on the beach",
+            "Optional water sports activities"
+          ]
+        },
+        {
+          "day": 6,
+          "date": "2025-09-10",
+          "activities": [
+            "Breakfast at the hotel",
+            "Shopping and local sightseeing",
+            "Farewell dinner"
+          ]
+        },
+        {
+          "day": 7,
+          "date": "2025-09-11",
+          "activities": [
+            "Breakfast at the hotel",
+            "Check-out and transfer to airport",
+            "Departure"
+          ]
+        }
+      ],
+      "additionalServices": {
+        "travelInsurance": true,
+        "visaAssistance": false,
+        "specialRequests": "Special dietary meals, extra beach towels"
+      }
+    },
+    "bestTimeToVisit": "November to February",
+    "recommendationTags": [
+      "Trending",
+      "Loyalty",
+      "Beach",
+      "Adventure",
+      "Sun & Sand"
+    ],
+    "notes": "Peak season rates apply. Book early to secure your preferred dates.",
+    "faqs": [
+      {
+        "question": "Are water sports included in the package?",
+        "answer": "Yes, water sports and beach party access are included."
+      },
+      {
+        "question": "Is airport transfer provided?",
+        "answer": "Yes, private car transfers are provided to and from the airport."
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "901d505d4a4362b7ba5a5391"
+    },
+    "packageTitle": "Himalayan Adventure Trek",
+    "image": "https://media.istockphoto.com/id/870456590/photo/mountain-biker-in-himalayas-mountains.webp?a=1&b=1&s=612x612&w=0&k=20&c=70KUBZPCcZ8B3xveQWd7TqV5C-T2mF5SWj-n7POBass=",
+    "location": "Uttarakhand, India",
+    "duration": "10 Days/9 Nights",
+    "shortDescription": "Embark on a thrilling trek through the majestic Himalayas with breathtaking views and adventurous activities.",
+    "detailedDescription": "Experience the raw beauty of the Himalayas with our exclusive trekking package. Journey through rugged mountain trails, enjoy scenic vistas, and engage in adventure sports like river rafting and camping. Accommodations in comfortable mountain lodges and guided treks ensure a safe and memorable adventure.",
+    "price": {
+      "currency": "INR",
+      "basePrice": 30000,
+      "taxes": 4000,
+      "discount": 2500,
+      "totalPrice": 31500
+    },
+    "details": {
+      "flights": [
+        [
+          {
+            "FirstNameFormat": null,
+            "IsBookableIfSeatNotAvailable": false,
+            "IsHoldAllowedWithSSR": false,
+            "LastNameFormat": null,
+            "ResultIndex": "FLIGHT34567",
+            "Source": 3,
+            "IsLCC": false,
+            "IsRefundable": true,
+            "IsPanRequiredAtBook": false,
+            "IsPanRequiredAtTicket": false,
+            "IsPassportRequiredAtBook": false,
+            "IsPassportRequiredAtTicket": false,
+            "GSTAllowed": true,
+            "IsCouponAppilcable": true,
+            "IsGSTMandatory": false,
+            "AirlineRemark": "Air India operates regular flights to Dehradun.",
+            "IsPassportFullDetailRequiredAtBook": false,
+            "ResultFareType": "RegularFare",
+            "Fare": {
+              "Currency": "INR",
+              "BaseFare": 6000,
+              "Tax": 1200,
+              "TaxBreakup": [
+                {
+                  "key": "GST",
+                  "value": 1080
+                },
+                {
+                  "key": "OtherTaxes",
+                  "value": 120
+                }
+              ],
+              "YQTax": 0,
+              "AdditionalTxnFeeOfrd": 0,
+              "AdditionalTxnFeePub": 0,
+              "PGCharge": 0,
+              "OtherCharges": 60,
+              "ChargeBU": [
+                {
+                  "key": "CONVENIENCECHARGE",
+                  "value": 60
+                }
+              ],
+              "Discount": 0,
+              "PublishedFare": 7260,
+              "CommissionEarned": 0,
+              "PLBEarned": 0,
+              "IncentiveEarned": 0,
+              "OfferedFare": 7260,
+              "TdsOnCommission": 0,
+              "TdsOnPLB": 0,
+              "TdsOnIncentive": 0,
+              "ServiceFee": 0,
+              "TotalBaggageCharges": 0,
+              "TotalMealCharges": 0,
+              "TotalSeatCharges": 0,
+              "TotalSpecialServiceCharges": 0
+            },
+            "FareBreakdown": [
+              {
+                "Currency": "INR",
+                "PassengerType": 1,
+                "PassengerCount": 1,
+                "BaseFare": 3000,
+                "Tax": 600,
+                "TaxBreakUp": [
+                  {
+                    "key": "GST",
+                    "value": 540
+                  },
+                  {
+                    "key": "OtherTaxes",
+                    "value": 60
+                  }
+                ],
+                "YQTax": 0,
+                "AdditionalTxnFeeOfrd": 0,
+                "AdditionalTxnFeePub": 0,
+                "PGCharge": 0,
+                "SupplierReissueCharges": 0
+              },
+              {
+                "Currency": "INR",
+                "PassengerType": 2,
+                "PassengerCount": 1,
+                "BaseFare": 3000,
+                "Tax": 600,
+                "TaxBreakUp": [
+                  {
+                    "key": "GST",
+                    "value": 540
+                  },
+                  {
+                    "key": "OtherTaxes",
+                    "value": 60
+                  }
+                ],
+                "YQTax": 0,
+                "AdditionalTxnFeeOfrd": 0,
+                "AdditionalTxnFeePub": 0,
+                "PGCharge": 0,
+                "SupplierReissueCharges": 0
+              }
+            ],
+            "Segments": [
+              [
+                {
+                  "Baggage": "20 KG",
+                  "CabinBaggage": "7 KG",
+                  "CabinClass": 2,
+                  "SupplierFareClass": null,
+                  "TripIndicator": 1,
+                  "SegmentIndicator": 1,
+                  "Airline": {
+                    "AirlineCode": "AI",
+                    "AirlineName": "Air India",
+                    "FlightNumber": "AI-345",
+                    "FareClass": "M",
+                    "OperatingCarrier": ""
+                  },
+                  "Origin": {
+                    "Airport": {
+                      "AirportCode": "DEL",
+                      "AirportName": "Indira Gandhi International Airport",
+                      "Terminal": "3",
+                      "CityCode": "DEL",
+                      "CityName": "Delhi",
+                      "CountryCode": "IN",
+                      "CountryName": "India"
+                    },
+                    "DepTime": "2025-10-10T07:30:00"
+                  },
+                  "Destination": {
+                    "Airport": {
+                      "AirportCode": "DED",
+                      "AirportName": "Jolly Grant Airport",
+                      "Terminal": "1",
+                      "CityCode": "DED",
+                      "CityName": "Dehradun",
+                      "CountryCode": "IN",
+                      "CountryName": "India"
+                    },
+                    "ArrTime": "2025-10-10T09:00:00"
+                  },
+                  "Duration": 90,
+                  "GroundTime": 0,
+                  "Mile": 0,
+                  "StopOver": false,
+                  "FlightInfoIndex": "",
+                  "StopPoint": "",
+                  "StopPointArrivalTime": null,
+                  "StopPointDepartureTime": null,
+                  "Craft": "Boeing 737",
+                  "Remark": null,
+                  "IsETicketEligible": true,
+                  "FlightStatus": "Confirmed",
+                  "Status": "",
+                  "FareClassification": {
+                    "Type": ""
+                  }
+                }
+              ]
+            ],
+            "LastTicketDate": "2025-10-25",
+            "TicketAdvisory": null,
+            "FareRules": [
+              {
+                "Origin": "DEL",
+                "Destination": "DED",
+                "Airline": "AI",
+                "FareBasisCode": "M",
+                "FareRuleDetail": "No changes allowed after booking.",
+                "FareRestriction": "Non-refundable.",
+                "FareFamilyCode": "Economy",
+                "FareRuleIndex": "FR34567"
+              }
+            ],
+            "AirlineCode": "AI",
+            "MiniFareRules": [
+              [
+                {
+                  "JourneyPoints": "DEL-DED",
+                  "Type": "Reissue",
+                  "From": "24",
+                  "To": "72",
+                  "Unit": "HOURS",
+                  "Details": "INR 1500"
+                },
+                {
+                  "JourneyPoints": "DEL-DED",
+                  "Type": "Reissue",
+                  "From": "72",
+                  "To": "",
+                  "Unit": "HOURS",
+                  "Details": "INR 2000"
+                },
+                {
+                  "JourneyPoints": "DEL-DED",
+                  "Type": "Cancellation",
+                  "From": "24",
+                  "To": "72",
+                  "Unit": "HOURS",
+                  "Details": "INR 1800"
+                },
+                {
+                  "JourneyPoints": "DEL-DED",
+                  "Type": "Cancellation",
+                  "From": "72",
+                  "To": "",
+                  "Unit": "HOURS",
+                  "Details": "INR 2500"
+                }
+              ]
+            ],
+            "ValidatingAirline": "AI",
+            "FareClassification": {
+              "Color": "lightGreen",
+              "Type": "Publish"
+            }
+          }
+        ]
+      ],
+      "hotel": {
+        "name": "Himalayan Retreat Resort",
+        "address": "Mussoorie, Uttarakhand, India",
+        "checkInDate": "2025-10-10",
+        "checkOutDate": "2025-10-20",
+        "roomType": "Deluxe Room",
+        "amenities": [
+          "WiFi",
+          "Breakfast",
+          "Mountain View",
+          "Spa"
+        ]
+      },
+      "sightseeing": [
+        {
+          "ResultIndex": 1,
+          "CityId": "410001",
+          "CityName": "Mussoorie",
+          "CountryCode": "IN",
+          "FromDate": "2025-10-11T00:00:00",
+          "ToDate": "2025-10-11T00:00:00",
+          "SightseeingName": "Himalayan Trek Experience",
+          "SightseeingCode": "HIM-HTE-001",
+          "SightseeingTypes": [
+            "ADVENTURE",
+            "NATURE"
+          ],
+          "DurationDescription": [
+            {
+              "TotalDuration": "1 DAYS",
+              "Date": "2025-10-11T00:00:00"
+            }
+          ],
+          "Condition": "Guided trek through scenic Himalayan trails.",
+          "ImageList": [
+            "https://images.unsplash.com/photo-1545652985-5edd365b12eb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8SGltYWxheWFuJTIwVHJlayUyMEV4cGVyaWVuY2UlMjBtYXNvb3JpZXxlbnwwfHwwfHx8MA%3D%3D"
+          ],
+          "Price": {
+            "CurrencyCode": "INR",
+            "BasePrice": 2000,
+            "Tax": 180,
+            "OtherCharges": 0,
+            "Discount": 150,
+            "PublishedPrice": 2030,
+            "PublishedPriceRoundedOff": 2030,
+            "OfferedPrice": 1850,
+            "OfferedPriceRoundedOff": 1850,
+            "AgentCommission": 300,
+            "AgentMarkUp": 0,
+            "ServiceTax": 0,
+            "TDS": 150,
+            "TCS": 0,
+            "TotalGSTAmount": 0,
+            "GST": {
+              "CGSTAmount": 0,
+              "CGSTRate": 0,
+              "CessAmount": 0,
+              "CessRate": 0,
+              "IGSTAmount": 0,
+              "IGSTRate": 18,
+              "SGSTAmount": 0,
+              "SGSTRate": 0,
+              "TaxableAmount": 0
+            }
+          },
+          "Source": 2,
+          "TourDescription": "Experience a breathtaking trek in the Himalayan foothills with experienced guides.",
+          "IsPANMandatory": false
+        },
+        {
+          "ResultIndex": 2,
+          "CityId": "410002",
+          "CityName": "Rishikesh",
+          "CountryCode": "IN",
+          "FromDate": "2025-10-14T00:00:00",
+          "ToDate": "2025-10-14T00:00:00",
+          "SightseeingName": "River Rafting in Rishikesh",
+          "SightseeingCode": "HIM-RRI-002",
+          "SightseeingTypes": [
+            "ADVENTURE",
+            "WATER SPORTS"
+          ],
+          "DurationDescription": [
+            {
+              "TotalDuration": "1 DAYS",
+              "Date": "2025-10-14T00:00:00"
+            }
+          ],
+          "Condition": "Includes rafting equipment and safety gear.",
+          "ImageList": [
+            "https://media.istockphoto.com/id/1302237529/photo/stunning-view-of-the-ganga-river-embankment-with-the-lakshman-jhula-bridge-and-tera-manzil.webp?a=1&b=1&s=612x612&w=0&k=20&c=TxU9BNI14-2WN8qpbC3c853-dhRe3KSutl0GjeXiPMM="
+          ],
+          "Price": {
+            "CurrencyCode": "INR",
+            "BasePrice": 1800,
+            "Tax": 162,
+            "OtherCharges": 0,
+            "Discount": 150,
+            "PublishedPrice": 1812,
+            "PublishedPriceRoundedOff": 1812,
+            "OfferedPrice": 1650,
+            "OfferedPriceRoundedOff": 1650,
+            "AgentCommission": 270,
+            "AgentMarkUp": 0,
+            "ServiceTax": 0,
+            "TDS": 150,
+            "TCS": 0,
+            "TotalGSTAmount": 0,
+            "GST": {
+              "CGSTAmount": 0,
+              "CGSTRate": 0,
+              "CessAmount": 0,
+              "CessRate": 0,
+              "IGSTAmount": 0,
+              "IGSTRate": 18,
+              "SGSTAmount": 0,
+              "SGSTRate": 0,
+              "TaxableAmount": 0
+            }
+          },
+          "Source": 2,
+          "TourDescription": "Enjoy an exhilarating river rafting experience in the Ganges at Rishikesh.",
+          "IsPANMandatory": false
+        }
+      ],
+      "transport": {
+        "airportTransfers": {
+          "pickup": {
+            "type": "Private Car",
+            "datetime": "2025-10-10T10:00:00Z",
+            "pickupLocation": "Jolly Grant Airport",
+            "dropoffLocation": "Himalayan Retreat Resort"
+          },
+          "dropoff": {
+            "type": "Private Car",
+            "datetime": "2025-10-20T12:00:00Z",
+            "pickupLocation": "Himalayan Retreat Resort",
+            "dropoffLocation": "Jolly Grant Airport"
+          }
+        }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "date": "2025-10-10",
+          "activities": [
+            "Arrival in Dehradun",
+            "Transfer to Mussoorie",
+            "Check-in at Himalayan Retreat Resort"
+          ]
+        },
+        {
+          "day": 2,
+          "date": "2025-10-11",
+          "activities": [
+            "Breakfast at the resort",
+            "Orientation and local sightseeing in Mussoorie",
+            "Preparation for trek"
+          ]
+        },
+        {
+          "day": 3,
+          "date": "2025-10-12",
+          "activities": [
+            "Breakfast at the resort",
+            "Start of Himalayan trek - Day 1",
+            "Camping under the stars"
+          ]
+        },
+        {
+          "day": 4,
+          "date": "2025-10-13",
+          "activities": [
+            "Breakfast at the camp",
+            "Himalayan trek - Day 2",
+            "Return to lodge in the evening"
+          ]
+        },
+        {
+          "day": 5,
+          "date": "2025-10-14",
+          "activities": [
+            "Breakfast at the lodge",
+            "River rafting in Rishikesh",
+            "Return to resort"
+          ]
+        },
+        {
+          "day": 6,
+          "date": "2025-10-15",
+          "activities": [
+            "Breakfast at the resort",
+            "Free day for leisure and local exploration"
+          ]
+        },
+        {
+          "day": 7,
+          "date": "2025-10-16",
+          "activities": [
+            "Breakfast at the resort",
+            "Guided trek and camping in the nearby hills"
+          ]
+        },
+        {
+          "day": 8,
+          "date": "2025-10-17",
+          "activities": [
+            "Breakfast at the camp",
+            "Return trek and local sightseeing"
+          ]
+        },
+        {
+          "day": 9,
+          "date": "2025-10-18",
+          "activities": [
+            "Breakfast at the lodge",
+            "Optional adventure sports or relaxation"
+          ]
+        },
+        {
+          "day": 10,
+          "date": "2025-10-19",
+          "activities": [
+            "Breakfast at the resort",
+            "Check-out and transfer to Dehradun",
+            "Departure"
+          ]
+        }
+      ],
+      "additionalServices": {
+        "travelInsurance": true,
+        "visaAssistance": false,
+        "specialRequests": "Equipment for trekking provided, vegetarian meal options available."
+      }
+    },
+    "bestTimeToVisit": "March to May or September to November",
+    "recommendationTags": [
+      "Adventure",
+      "Loyalty",
+      "Mountain",
+      "Trekking",
+      "Nature"
+    ],
+    "notes": "Ensure a moderate level of fitness. Advance booking recommended due to limited trekking permits.",
+    "faqs": [
+      {
+        "question": "What level of fitness is required for this trek?",
+        "answer": "A moderate level of fitness is recommended for this trek."
+      },
+      {
+        "question": "Are trekking equipment and guides provided?",
+        "answer": "Yes, all necessary equipment and experienced guides are provided as part of the package."
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "812d505d4a4362b7ba5a53a2"
+    },
+    "packageTitle": "Varanasi Spiritual Sojourn",
+    "image": "https://media.istockphoto.com/id/516984446/photo/varanasi-burning-grounds-at-night.webp?a=1&b=1&s=612x612&w=0&k=20&c=j4qpc4gkij7zVVuniYZiUu08pmCL3kfyWVtpHElNnqg=",
+    "location": "Varanasi, India",
+    "duration": "7 Days/6 Nights",
+    "shortDescription": "Embark on a soul-stirring journey through the ancient spiritual heart of India along the banks of the Ganges.",
+    "detailedDescription": "Immerse yourself in the mystique of Varanasi, one of the oldest living cities in the world. This package offers a guided exploration of the sacred ghats, mesmerizing Ganga Aarti ceremonies, historic temples, and the serene ambiance of Sarnath. Enjoy traditional Banarasi cuisine and spiritual insights from local gurus.",
+    "price": {
+      "currency": "INR",
+      "basePrice": 18000,
+      "taxes": 2200,
+      "discount": 1200,
+      "totalPrice": 19000
+    },
+    "details": {
+      "flights": [
+        [
+          {
+            "FirstNameFormat": null,
+            "IsBookableIfSeatNotAvailable": false,
+            "IsHoldAllowedWithSSR": false,
+            "LastNameFormat": null,
+            "ResultIndex": "FLIGHT56789",
+            "Source": 3,
+            "IsLCC": true,
+            "IsRefundable": true,
+            "IsPanRequiredAtBook": false,
+            "IsPanRequiredAtTicket": false,
+            "IsPassportRequiredAtBook": false,
+            "IsPassportRequiredAtTicket": false,
+            "GSTAllowed": true,
+            "IsCouponAppilcable": true,
+            "IsGSTMandatory": false,
+            "AirlineRemark": "Vistara offers quality service to Varanasi.",
+            "IsPassportFullDetailRequiredAtBook": false,
+            "ResultFareType": "RegularFare",
+            "Fare": {
+              "Currency": "INR",
+              "BaseFare": 4500,
+              "Tax": 900,
+              "TaxBreakup": [
+                {
+                  "key": "GST",
+                  "value": 810
+                },
+                {
+                  "key": "OtherTaxes",
+                  "value": 90
+                }
+              ],
+              "YQTax": 0,
+              "AdditionalTxnFeeOfrd": 0,
+              "AdditionalTxnFeePub": 0,
+              "PGCharge": 0,
+              "OtherCharges": 30,
+              "ChargeBU": [
+                {
+                  "key": "CONVENIENCECHARGE",
+                  "value": 30
+                }
+              ],
+              "Discount": 0,
+              "PublishedFare": 5430,
+              "CommissionEarned": 0,
+              "PLBEarned": 0,
+              "IncentiveEarned": 0,
+              "OfferedFare": 5430,
+              "TdsOnCommission": 0,
+              "TdsOnPLB": 0,
+              "TdsOnIncentive": 0,
+              "ServiceFee": 0,
+              "TotalBaggageCharges": 0,
+              "TotalMealCharges": 0,
+              "TotalSeatCharges": 0,
+              "TotalSpecialServiceCharges": 0
+            },
+            "FareBreakdown": [
+              {
+                "Currency": "INR",
+                "PassengerType": 1,
+                "PassengerCount": 1,
+                "BaseFare": 2250,
+                "Tax": 450,
+                "TaxBreakUp": [
+                  {
+                    "key": "GST",
+                    "value": 405
+                  },
+                  {
+                    "key": "OtherTaxes",
+                    "value": 45
+                  }
+                ],
+                "YQTax": 0,
+                "AdditionalTxnFeeOfrd": 0,
+                "AdditionalTxnFeePub": 0,
+                "PGCharge": 0,
+                "SupplierReissueCharges": 0
+              },
+              {
+                "Currency": "INR",
+                "PassengerType": 2,
+                "PassengerCount": 1,
+                "BaseFare": 2250,
+                "Tax": 450,
+                "TaxBreakUp": [
+                  {
+                    "key": "GST",
+                    "value": 405
+                  },
+                  {
+                    "key": "OtherTaxes",
+                    "value": 45
+                  }
+                ],
+                "YQTax": 0,
+                "AdditionalTxnFeeOfrd": 0,
+                "AdditionalTxnFeePub": 0,
+                "PGCharge": 0,
+                "SupplierReissueCharges": 0
+              }
+            ],
+            "Segments": [
+              [
+                {
+                  "Baggage": "15 KG",
+                  "CabinBaggage": "7 KG",
+                  "CabinClass": 2,
+                  "SupplierFareClass": null,
+                  "TripIndicator": 1,
+                  "SegmentIndicator": 1,
+                  "Airline": {
+                    "AirlineCode": "VS",
+                    "AirlineName": "Vistara",
+                    "FlightNumber": "VS-567",
+                    "FareClass": "Y",
+                    "OperatingCarrier": ""
+                  },
+                  "Origin": {
+                    "Airport": {
+                      "AirportCode": "DEL",
+                      "AirportName": "Indira Gandhi International Airport",
+                      "Terminal": "3",
+                      "CityCode": "DEL",
+                      "CityName": "Delhi",
+                      "CountryCode": "IN",
+                      "CountryName": "India"
+                    },
+                    "DepTime": "2025-11-10T08:00:00"
+                  },
+                  "Destination": {
+                    "Airport": {
+                      "AirportCode": "VNS",
+                      "AirportName": "Lal Bahadur Shastri Airport",
+                      "Terminal": "1",
+                      "CityCode": "VNS",
+                      "CityName": "Varanasi",
+                      "CountryCode": "IN",
+                      "CountryName": "India"
+                    },
+                    "ArrTime": "2025-11-10T10:00:00"
+                  },
+                  "Duration": 120,
+                  "GroundTime": 0,
+                  "Mile": 0,
+                  "StopOver": false,
+                  "FlightInfoIndex": "",
+                  "StopPoint": "",
+                  "StopPointArrivalTime": null,
+                  "StopPointDepartureTime": null,
+                  "Craft": "Airbus A320",
+                  "Remark": null,
+                  "IsETicketEligible": true,
+                  "FlightStatus": "Confirmed",
+                  "Status": "",
+                  "FareClassification": {
+                    "Type": ""
+                  }
+                }
+              ]
+            ],
+            "LastTicketDate": "2025-11-25",
+            "TicketAdvisory": null,
+            "FareRules": [
+              {
+                "Origin": "DEL",
+                "Destination": "VNS",
+                "Airline": "VS",
+                "FareBasisCode": "Y",
+                "FareRuleDetail": "No changes allowed after booking.",
+                "FareRestriction": "Non-refundable.",
+                "FareFamilyCode": "Economy",
+                "FareRuleIndex": "FR56789"
+              }
+            ],
+            "AirlineCode": "VS",
+            "MiniFareRules": [
+              [
+                {
+                  "JourneyPoints": "DEL-VNS",
+                  "Type": "Reissue",
+                  "From": "24",
+                  "To": "72",
+                  "Unit": "HOURS",
+                  "Details": "INR 1100"
+                },
+                {
+                  "JourneyPoints": "DEL-VNS",
+                  "Type": "Reissue",
+                  "From": "72",
+                  "To": "",
+                  "Unit": "HOURS",
+                  "Details": "INR 1600"
+                },
+                {
+                  "JourneyPoints": "DEL-VNS",
+                  "Type": "Cancellation",
+                  "From": "24",
+                  "To": "72",
+                  "Unit": "HOURS",
+                  "Details": "INR 1300"
+                },
+                {
+                  "JourneyPoints": "DEL-VNS",
+                  "Type": "Cancellation",
+                  "From": "72",
+                  "To": "",
+                  "Unit": "HOURS",
+                  "Details": "INR 2100"
+                }
+              ]
+            ],
+            "ValidatingAirline": "VS",
+            "FareClassification": {
+              "Color": "lightGreen",
+              "Type": "Publish"
+            }
+          }
+        ]
+      ],
+      "hotel": {
+        "name": "BrijRang Varanasi",
+        "address": "Varanasi, Uttar Pradesh, India",
+        "checkInDate": "2025-11-10",
+        "checkOutDate": "2025-11-16",
+        "roomType": "Heritage Suite",
+        "amenities": [
+          "WiFi",
+          "Breakfast",
+          "Cultural Ambiance",
+          "Rooftop View"
+        ]
+      },
+      "sightseeing": [
+        {
+          "ResultIndex": 1,
+          "CityId": "510001",
+          "CityName": "Varanasi",
+          "CountryCode": "IN",
+          "FromDate": "2025-11-11T00:00:00",
+          "ToDate": "2025-11-11T00:00:00",
+          "SightseeingName": "Ganga Aarti at Dashashwamedh Ghat",
+          "SightseeingCode": "VAR-GAG-001",
+          "SightseeingTypes": [
+            "SPIRITUAL",
+            "CULTURAL"
+          ],
+          "DurationDescription": [
+            {
+              "TotalDuration": "1 DAYS",
+              "Date": "2025-11-11T00:00:00"
+            }
+          ],
+          "Condition": "Experience the mesmerizing Ganga Aarti at the iconic Dashashwamedh Ghat.",
+          "ImageList": [
+            "https://media.istockphoto.com/id/2150016461/photo/heavy-silver-lamp-used-in-ganga-aarti-on-banks-of-holy-river-ganges-in-one-of-the-oldest.webp?a=1&b=1&s=612x612&w=0&k=20&c=btTTU4xbwIl4xexN-N_QpvAyNtUXmpru_0umF3KjQzA="
+          ],
+          "Price": {
+            "CurrencyCode": "INR",
+            "BasePrice": 800,
+            "Tax": 72,
+            "OtherCharges": 0,
+            "Discount": 50,
+            "PublishedPrice": 822,
+            "PublishedPriceRoundedOff": 822,
+            "OfferedPrice": 770,
+            "OfferedPriceRoundedOff": 770,
+            "AgentCommission": 150,
+            "AgentMarkUp": 0,
+            "ServiceTax": 0,
+            "TDS": 50,
+            "TCS": 0,
+            "TotalGSTAmount": 0,
+            "GST": {
+              "CGSTAmount": 0,
+              "CGSTRate": 0,
+              "CessAmount": 0,
+              "CessRate": 0,
+              "IGSTAmount": 0,
+              "IGSTRate": 18,
+              "SGSTAmount": 0,
+              "SGSTRate": 0,
+              "TaxableAmount": 0
+            }
+          },
+          "Source": 2,
+          "TourDescription": "Witness the sacred Ganga Aarti at Dashashwamedh Ghat, a spiritual highlight of Varanasi.",
+          "IsPANMandatory": false
+        },
+        {
+          "ResultIndex": 2,
+          "CityId": "510002",
+          "CityName": "Sarnath",
+          "CountryCode": "IN",
+          "FromDate": "2025-11-13T00:00:00",
+          "ToDate": "2025-11-13T00:00:00",
+          "SightseeingName": "Sarnath Historical Tour",
+          "SightseeingCode": "VAR-SAR-002",
+          "SightseeingTypes": [
+            "CULTURAL",
+            "HISTORICAL"
+          ],
+          "DurationDescription": [
+            {
+              "TotalDuration": "1 DAYS",
+              "Date": "2025-11-13T00:00:00"
+            }
+          ],
+          "Condition": "Guided tour of Sarnath, where Lord Buddha delivered his first sermon.",
+          "ImageList": [
+            "https://media.istockphoto.com/id/2150016311/photo/colorful-wat-thai-temple-with-clear-blue-sky-background-in-sarnath-uttar-pradesh-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=lgcPYqlKz3z0yYeX8wXxxgyl4c93KXVTKQzgbiuWwCc="
+          ],
+          "Price": {
+            "CurrencyCode": "INR",
+            "BasePrice": 1000,
+            "Tax": 90,
+            "OtherCharges": 0,
+            "Discount": 80,
+            "PublishedPrice": 1010,
+            "PublishedPriceRoundedOff": 1010,
+            "OfferedPrice": 930,
+            "OfferedPriceRoundedOff": 930,
+            "AgentCommission": 170,
+            "AgentMarkUp": 0,
+            "ServiceTax": 0,
+            "TDS": 80,
+            "TCS": 0,
+            "TotalGSTAmount": 0,
+            "GST": {
+              "CGSTAmount": 0,
+              "CGSTRate": 0,
+              "CessAmount": 0,
+              "CessRate": 0,
+              "IGSTAmount": 0,
+              "IGSTRate": 18,
+              "SGSTAmount": 0,
+              "SGSTRate": 0,
+              "TaxableAmount": 0
+            }
+          },
+          "Source": 2,
+          "TourDescription": "Explore the rich history of Sarnath with a guided tour of its ancient stupas and ruins.",
+          "IsPANMandatory": false
+        }
+      ],
+      "transport": {
+        "airportTransfers": {
+          "pickup": {
+            "type": "Private Car",
+            "datetime": "2025-11-10T11:00:00Z",
+            "pickupLocation": "Lal Bahadur Shastri Airport",
+            "dropoffLocation": "BrijRang Varanasi"
+          },
+          "dropoff": {
+            "type": "Private Car",
+            "datetime": "2025-11-16T09:00:00Z",
+            "pickupLocation": "BrijRang Varanasi",
+            "dropoffLocation": "Lal Bahadur Shastri Airport"
+          }
+        }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "date": "2025-11-10",
+          "activities": [
+            "Arrival in Varanasi",
+            "Transfer to BrijRang Varanasi",
+            "Check-in and evening Aarti view"
+          ]
+        },
+        {
+          "day": 2,
+          "date": "2025-11-11",
+          "activities": [
+            "Morning boat ride on the Ganges",
+            "Visit local markets and temples",
+            "Evening Ganga Aarti at Dashashwamedh Ghat"
+          ]
+        },
+        {
+          "day": 3,
+          "date": "2025-11-12",
+          "activities": [
+            "Guided tour of ancient ghats and temples",
+            "Lunch featuring Banarasi cuisine",
+            "Evening at leisure"
+          ]
+        },
+        {
+          "day": 4,
+          "date": "2025-11-13",
+          "activities": [
+            "Visit Sarnath and historical sites",
+            "Guided tour and cultural exploration",
+            "Return to hotel in the evening"
+          ]
+        },
+        {
+          "day": 5,
+          "date": "2025-11-14",
+          "activities": [
+            "Free day for personal exploration and shopping",
+            "Optional spiritual sessions"
+          ]
+        },
+        {
+          "day": 6,
+          "date": "2025-11-15",
+          "activities": [
+            "Cultural tour of local heritage sites",
+            "Evening traditional music and dance performance"
+          ]
+        },
+        {
+          "day": 7,
+          "date": "2025-11-16",
+          "activities": [
+            "Breakfast at the hotel",
+            "Check-out and transfer to airport",
+            "Departure"
+          ]
+        }
+      ],
+      "additionalServices": {
+        "travelInsurance": true,
+        "visaAssistance": false,
+        "specialRequests": "Request for early check-in and late check-out if available."
+      }
+    },
+    "bestTimeToVisit": "October to March",
+    "recommendationTags": [
+      "Spiritual",
+      "Cultural",
+      "Heritage",
+      "Loyalty"
+    ],
+    "notes": "Experience the mystical vibe of Varanasi. Ensure to book your boat ride in advance.",
+    "faqs": [
+      {
+        "question": "What spiritual activities are included in the package?",
+        "answer": "The package includes Ganga Aarti, a boat ride on the Ganges, and guided tours of temples and historical sites."
+      },
+      {
+        "question": "Are meals included in the package?",
+        "answer": "Breakfast is included in the hotel stay, and additional meals can be arranged at local restaurants."
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "923d505d4a4362b7ba5a53b3"
+    },
+    "packageTitle": "Andaman Island Paradise",
+    "image": "https://media.istockphoto.com/id/1302072956/photo/the-view-of-the-beach-in-havelock-island-andaman-and-nicobar-islands.webp?a=1&b=1&s=612x612&w=0&k=20&c=m3nee06EyzAF-dodwgM-adMMUQF88lod4y_Xp7KhqN8=",
+    "location": "Andaman and Nicobar Islands, India",
+    "duration": "8 Days/7 Nights",
+    "shortDescription": "Explore pristine beaches, vibrant coral reefs, and lush tropical forests in the Andaman Islands.",
+    "detailedDescription": "Dive into the serene beauty of the Andaman Islands with our comprehensive package offering island hopping, snorkeling, scuba diving, and visits to historic sites. Enjoy luxurious beachfront accommodations, local seafood delicacies, and guided tours to discover the marine biodiversity and colonial heritage of this tropical paradise.",
+    "price": {
+      "currency": "INR",
+      "basePrice": 28000,
+      "taxes": 3500,
+      "discount": 2000,
+      "totalPrice": 29500
+    },
+    "details": {
+      "flights": [
+        [
+          {
+            "FirstNameFormat": null,
+            "IsBookableIfSeatNotAvailable": false,
+            "IsHoldAllowedWithSSR": false,
+            "LastNameFormat": null,
+            "ResultIndex": "FLIGHT11223",
+            "Source": 3,
+            "IsLCC": true,
+            "IsRefundable": true,
+            "IsPanRequiredAtBook": false,
+            "IsPanRequiredAtTicket": false,
+            "IsPassportRequiredAtBook": false,
+            "IsPassportRequiredAtTicket": false,
+            "GSTAllowed": true,
+            "IsCouponAppilcable": true,
+            "IsGSTMandatory": false,
+            "AirlineRemark": "IndiGo operates daily flights to Port Blair.",
+            "IsPassportFullDetailRequiredAtBook": false,
+            "ResultFareType": "RegularFare",
+            "Fare": {
+              "Currency": "INR",
+              "BaseFare": 7000,
+              "Tax": 1500,
+              "TaxBreakup": [
+                {
+                  "key": "GST",
+                  "value": 1350
+                },
+                {
+                  "key": "OtherTaxes",
+                  "value": 150
+                }
+              ],
+              "YQTax": 0,
+              "AdditionalTxnFeeOfrd": 0,
+              "AdditionalTxnFeePub": 0,
+              "PGCharge": 0,
+              "OtherCharges": 50,
+              "ChargeBU": [
+                {
+                  "key": "CONVENIENCECHARGE",
+                  "value": 50
+                }
+              ],
+              "Discount": 0,
+              "PublishedFare": 8550,
+              "CommissionEarned": 0,
+              "PLBEarned": 0,
+              "IncentiveEarned": 0,
+              "OfferedFare": 8550,
+              "TdsOnCommission": 0,
+              "TdsOnPLB": 0,
+              "TdsOnIncentive": 0,
+              "ServiceFee": 0,
+              "TotalBaggageCharges": 0,
+              "TotalMealCharges": 0,
+              "TotalSeatCharges": 0,
+              "TotalSpecialServiceCharges": 0
+            },
+            "FareBreakdown": [
+              {
+                "Currency": "INR",
+                "PassengerType": 1,
+                "PassengerCount": 1,
+                "BaseFare": 3500,
+                "Tax": 750,
+                "TaxBreakUp": [
+                  {
+                    "key": "GST",
+                    "value": 675
+                  },
+                  {
+                    "key": "OtherTaxes",
+                    "value": 75
+                  }
+                ],
+                "YQTax": 0,
+                "AdditionalTxnFeeOfrd": 0,
+                "AdditionalTxnFeePub": 0,
+                "PGCharge": 0,
+                "SupplierReissueCharges": 0
+              },
+              {
+                "Currency": "INR",
+                "PassengerType": 2,
+                "PassengerCount": 1,
+                "BaseFare": 3500,
+                "Tax": 750,
+                "TaxBreakUp": [
+                  {
+                    "key": "GST",
+                    "value": 675
+                  },
+                  {
+                    "key": "OtherTaxes",
+                    "value": 75
+                  }
+                ],
+                "YQTax": 0,
+                "AdditionalTxnFeeOfrd": 0,
+                "AdditionalTxnFeePub": 0,
+                "PGCharge": 0,
+                "SupplierReissueCharges": 0
+              }
+            ],
+            "Segments": [
+              [
+                {
+                  "Baggage": "15 KG",
+                  "CabinBaggage": "7 KG",
+                  "CabinClass": 2,
+                  "SupplierFareClass": null,
+                  "TripIndicator": 1,
+                  "SegmentIndicator": 1,
+                  "Airline": {
+                    "AirlineCode": "6E",
+                    "AirlineName": "IndiGo",
+                    "FlightNumber": "6E-1123",
+                    "FareClass": "Y",
+                    "OperatingCarrier": ""
+                  },
+                  "Origin": {
+                    "Airport": {
+                      "AirportCode": "MAA",
+                      "AirportName": "Chennai International Airport",
+                      "Terminal": "1",
+                      "CityCode": "MAA",
+                      "CityName": "Chennai",
+                      "CountryCode": "IN",
+                      "CountryName": "India"
+                    },
+                    "DepTime": "2025-12-05T06:00:00"
+                  },
+                  "Destination": {
+                    "Airport": {
+                      "AirportCode": "IXZ",
+                      "AirportName": "Veer Savarkar International Airport",
+                      "Terminal": "2",
+                      "CityCode": "IXZ",
+                      "CityName": "Port Blair",
+                      "CountryCode": "IN",
+                      "CountryName": "India"
+                    },
+                    "ArrTime": "2025-12-05T09:00:00"
+                  },
+                  "Duration": 180,
+                  "GroundTime": 0,
+                  "Mile": 0,
+                  "StopOver": false,
+                  "FlightInfoIndex": "",
+                  "StopPoint": "",
+                  "StopPointArrivalTime": null,
+                  "StopPointDepartureTime": null,
+                  "Craft": "Airbus A320",
+                  "Remark": null,
+                  "IsETicketEligible": true,
+                  "FlightStatus": "Confirmed",
+                  "Status": "",
+                  "FareClassification": {
+                    "Type": ""
+                  }
+                }
+              ]
+            ],
+            "LastTicketDate": "2025-12-20",
+            "TicketAdvisory": null,
+            "FareRules": [
+              {
+                "Origin": "MAA",
+                "Destination": "IXZ",
+                "Airline": "6E",
+                "FareBasisCode": "Y",
+                "FareRuleDetail": "No changes allowed after booking.",
+                "FareRestriction": "Non-refundable.",
+                "FareFamilyCode": "Economy",
+                "FareRuleIndex": "FR11223"
+              }
+            ],
+            "AirlineCode": "6E",
+            "MiniFareRules": [
+              [
+                {
+                  "JourneyPoints": "MAA-IXZ",
+                  "Type": "Reissue",
+                  "From": "24",
+                  "To": "72",
+                  "Unit": "HOURS",
+                  "Details": "INR 1200"
+                },
+                {
+                  "JourneyPoints": "MAA-IXZ",
+                  "Type": "Reissue",
+                  "From": "72",
+                  "To": "",
+                  "Unit": "HOURS",
+                  "Details": "INR 1700"
+                },
+                {
+                  "JourneyPoints": "MAA-IXZ",
+                  "Type": "Cancellation",
+                  "From": "24",
+                  "To": "72",
+                  "Unit": "HOURS",
+                  "Details": "INR 1400"
+                },
+                {
+                  "JourneyPoints": "MAA-IXZ",
+                  "Type": "Cancellation",
+                  "From": "72",
+                  "To": "",
+                  "Unit": "HOURS",
+                  "Details": "INR 2200"
+                }
+              ]
+            ],
+            "ValidatingAirline": "6E",
+            "FareClassification": {
+              "Color": "lightGreen",
+              "Type": "Publish"
+            }
+          }
+        ]
+      ],
+      "hotel": {
+        "name": "SeaView Resort, Port Blair",
+        "address": "Port Blair, Andaman and Nicobar Islands, India",
+        "checkInDate": "2025-12-05",
+        "checkOutDate": "2025-12-12",
+        "roomType": "Deluxe Beachfront Room",
+        "amenities": [
+          "WiFi",
+          "Breakfast",
+          "Sea View",
+          "Pool",
+          "Spa"
+        ]
+      },
+      "sightseeing": [
+        {
+          "ResultIndex": 1,
+          "CityId": "620001",
+          "CityName": "Port Blair",
+          "CountryCode": "IN",
+          "FromDate": "2025-12-06T00:00:00",
+          "ToDate": "2025-12-06T00:00:00",
+          "SightseeingName": "Cellular Jail Light & Sound Show",
+          "SightseeingCode": "AND-CJL-001",
+          "SightseeingTypes": [
+            "Historical",
+            "Cultural"
+          ],
+          "DurationDescription": [
+            {
+              "TotalDuration": "1 DAYS",
+              "Date": "2025-12-06T00:00:00"
+            }
+          ],
+          "Condition": "Guided tour of the Cellular Jail followed by an evening Light & Sound show.",
+          "ImageList": [
+            "https://media.istockphoto.com/id/968845788/photo/aberdeen-jetty-port-blair-andaman-island.webp?a=1&b=1&s=612x612&w=0&k=20&c=NCq1AUXfGC5fFmIA2tG_Y_nsIP2arn6z4kwpbLOURUM="
+          ],
+          "Price": {
+            "CurrencyCode": "INR",
+            "BasePrice": 1000,
+            "Tax": 90,
+            "OtherCharges": 0,
+            "Discount": 50,
+            "PublishedPrice": 1040,
+            "PublishedPriceRoundedOff": 1040,
+            "OfferedPrice": 950,
+            "OfferedPriceRoundedOff": 950,
+            "AgentCommission": 150,
+            "AgentMarkUp": 0,
+            "ServiceTax": 0,
+            "TDS": 50,
+            "TCS": 0,
+            "TotalGSTAmount": 0,
+            "GST": {
+              "CGSTAmount": 0,
+              "CGSTRate": 0,
+              "CessAmount": 0,
+              "CessRate": 0,
+              "IGSTAmount": 0,
+              "IGSTRate": 18,
+              "SGSTAmount": 0,
+              "SGSTRate": 0,
+              "TaxableAmount": 0
+            }
+          },
+          "Source": 2,
+          "TourDescription": "Witness the historic legacy of the Cellular Jail with an immersive light and sound experience.",
+          "IsPANMandatory": false
+        },
+        {
+          "ResultIndex": 2,
+          "CityId": "620002",
+          "CityName": "Havelock Island",
+          "CountryCode": "IN",
+          "FromDate": "2025-12-08T00:00:00",
+          "ToDate": "2025-12-08T00:00:00",
+          "SightseeingName": "Scuba Diving at Havelock Island",
+          "SightseeingCode": "AND-HAV-SCD",
+          "SightseeingTypes": [
+            "Adventure",
+            "Beach"
+          ],
+          "DurationDescription": [
+            {
+              "TotalDuration": "1 DAYS",
+              "Date": "2025-12-08T00:00:00"
+            }
+          ],
+          "Condition": "Dive into the crystal-clear waters of Havelock Island and witness stunning marine life and coral reefs.",
+          "ImageList": [
+            "https://plus.unsplash.com/premium_photo-1661851197851-a79c667276a3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8U2N1YmElMjBEaXZpbmclMjBhdCUyMEhhdmVsb2NrJTIwSXNsYW5kfGVufDB8fDB8fHww"
+          ],
+          "Price": {
+            "CurrencyCode": "INR",
+            "BasePrice": 1500,
+            "Tax": 135,
+            "OtherCharges": 0,
+            "Discount": 100,
+            "PublishedPrice": 1535,
+            "PublishedPriceRoundedOff": 1535,
+            "OfferedPrice": 1535,
+            "OfferedPriceRoundedOff": 1535,
+            "AgentCommission": 200,
+            "AgentMarkUp": 0,
+            "ServiceTax": 0,
+            "TDS": 100,
+            "TCS": 0,
+            "TotalGSTAmount": 0,
+            "GST": {
+              "CGSTAmount": 0,
+              "CGSTRate": 0,
+              "CessAmount": 0,
+              "CessRate": 0,
+              "IGSTAmount": 0,
+              "IGSTRate": 18,
+              "SGSTAmount": 0,
+              "SGSTRate": 0,
+              "TaxableAmount": 0
+            }
+          },
+          "Source": 2,
+          "TourDescription": "Experience an exhilarating scuba diving session amidst vibrant coral reefs.",
+          "IsPANMandatory": false
+        }
+      ],
+      "transport": {
+        "airportTransfers": {
+          "pickup": {
+            "type": "Private Car",
+            "datetime": "2025-12-05T10:00:00Z",
+            "pickupLocation": "Veer Savarkar International Airport",
+            "dropoffLocation": "SeaView Resort, Port Blair"
+          },
+          "dropoff": {
+            "type": "Private Car",
+            "datetime": "2025-12-12T12:00:00Z",
+            "pickupLocation": "SeaView Resort, Port Blair",
+            "dropoffLocation": "Veer Savarkar International Airport"
+          }
+        }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "date": "2025-12-05",
+          "activities": [
+            "Arrival in Port Blair",
+            "Transfer to SeaView Resort",
+            "Welcome dinner and leisure time"
+          ]
+        },
+        {
+          "day": 2,
+          "date": "2025-12-06",
+          "activities": [
+            "Breakfast at the resort",
+            "Visit Cellular Jail and attend the Light & Sound Show",
+            "Evening at leisure"
+          ]
+        },
+        {
+          "day": 3,
+          "date": "2025-12-07",
+          "activities": [
+            "Breakfast at the resort",
+            "Island hopping tour including Ross Island and North Bay",
+            "Lunch on board and return in the evening"
+          ]
+        },
+        {
+          "day": 4,
+          "date": "2025-12-08",
+          "activities": [
+            "Breakfast at the resort",
+            "Scuba diving session at Havelock Island",
+            "Relax on the beach in the afternoon"
+          ]
+        },
+        {
+          "day": 5,
+          "date": "2025-12-09",
+          "activities": [
+            "Breakfast at the resort",
+            "Leisure day for water sports and local exploration",
+            "Optional snorkeling or sea walking"
+          ]
+        },
+        {
+          "day": 6,
+          "date": "2025-12-10",
+          "activities": [
+            "Breakfast at the resort",
+            "Visit to local markets and cultural sites",
+            "Evening bonfire on the beach"
+          ]
+        },
+        {
+          "day": 7,
+          "date": "2025-12-11",
+          "activities": [
+            "Breakfast at the resort",
+            "Free day for relaxation and optional excursions",
+            "Farewell dinner under the stars"
+          ]
+        },
+        {
+          "day": 8,
+          "date": "2025-12-12",
+          "activities": [
+            "Breakfast at the resort",
+            "Check-out and transfer to airport",
+            "Departure"
+          ]
+        }
+      ],
+      "additionalServices": {
+        "travelInsurance": true,
+        "visaAssistance": false,
+        "specialRequests": "Snorkeling gear provided on request"
+      }
+    },
+    "bestTimeToVisit": "November to April",
+    "recommendationTags": [
+      "Trending",
+      "Beach",
+      "Adventure",
+      "Island"
+    ],
+    "notes": "Book well in advance to secure slots for water activities.",
+    "faqs": [
+      {
+        "question": "Is scuba diving suitable for beginners?",
+        "answer": "Yes, our scuba diving sessions are conducted with professional instructors and are suitable for beginners."
+      },
+      {
+        "question": "Are meals included in the package?",
+        "answer": "Breakfast is included at the resort; other meals can be enjoyed at local restaurants or arranged on request."
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "934d505d4a4362b7ba5a53c4"
+    },
+    "packageTitle": "Madhya Pradesh Wildlife & Heritage Safari",
+    "image": "https://media.istockphoto.com/id/1472982571/photo/bengal-tiger-in-bandhavgarh-national-park-in-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=NG___wdcvoUu_aMb82RMNRnV7598cEv1XyIH2y0LGO4=",
+    "location": "Madhya Pradesh, India",
+    "duration": "9 Days/8 Nights",
+    "shortDescription": "Experience the thrill of wildlife safaris and the rich cultural heritage of Madhya Pradesh.",
+    "detailedDescription": "Discover the wild side of India with our Madhya Pradesh Safari package. Journey through dense forests and national parks, encounter majestic wildlife in their natural habitat, and explore ancient forts and temples that echo the region's glorious past. This package includes guided jungle safaris, cultural tours, and comfortable heritage accommodations.",
+    "price": {
+      "currency": "INR",
+      "basePrice": 32000,
+      "taxes": 4000,
+      "discount": 2500,
+      "totalPrice": 33500
+    },
+    "details": {
+      "flights": [
+        [
+          {
+            "FirstNameFormat": null,
+            "IsBookableIfSeatNotAvailable": false,
+            "IsHoldAllowedWithSSR": false,
+            "LastNameFormat": null,
+            "ResultIndex": "FLIGHT67890",
+            "Source": 3,
+            "IsLCC": false,
+            "IsRefundable": true,
+            "IsPanRequiredAtBook": false,
+            "IsPanRequiredAtTicket": false,
+            "IsPassportRequiredAtBook": false,
+            "IsPassportRequiredAtTicket": false,
+            "GSTAllowed": true,
+            "IsCouponAppilcable": true,
+            "IsGSTMandatory": false,
+            "AirlineRemark": "Air India offers comfortable flights from Mumbai to Jabalpur.",
+            "IsPassportFullDetailRequiredAtBook": false,
+            "ResultFareType": "RegularFare",
+            "Fare": {
+              "Currency": "INR",
+              "BaseFare": 6000,
+              "Tax": 1200,
+              "TaxBreakup": [
+                {
+                  "key": "GST",
+                  "value": 1080
+                },
+                {
+                  "key": "OtherTaxes",
+                  "value": 120
+                }
+              ],
+              "YQTax": 0,
+              "AdditionalTxnFeeOfrd": 0,
+              "AdditionalTxnFeePub": 0,
+              "PGCharge": 0,
+              "OtherCharges": 60,
+              "ChargeBU": [
+                {
+                  "key": "CONVENIENCECHARGE",
+                  "value": 60
+                }
+              ],
+              "Discount": 0,
+              "PublishedFare": 7260,
+              "CommissionEarned": 0,
+              "PLBEarned": 0,
+              "IncentiveEarned": 0,
+              "OfferedFare": 7260,
+              "TdsOnCommission": 0,
+              "TdsOnPLB": 0,
+              "TdsOnIncentive": 0,
+              "ServiceFee": 0,
+              "TotalBaggageCharges": 0,
+              "TotalMealCharges": 0,
+              "TotalSeatCharges": 0,
+              "TotalSpecialServiceCharges": 0
+            },
+            "FareBreakdown": [
+              {
+                "Currency": "INR",
+                "PassengerType": 1,
+                "PassengerCount": 1,
+                "BaseFare": 3000,
+                "Tax": 600,
+                "TaxBreakUp": [
+                  {
+                    "key": "GST",
+                    "value": 540
+                  },
+                  {
+                    "key": "OtherTaxes",
+                    "value": 60
+                  }
+                ],
+                "YQTax": 0,
+                "AdditionalTxnFeeOfrd": 0,
+                "AdditionalTxnFeePub": 0,
+                "PGCharge": 0,
+                "SupplierReissueCharges": 0
+              },
+              {
+                "Currency": "INR",
+                "PassengerType": 2,
+                "PassengerCount": 1,
+                "BaseFare": 3000,
+                "Tax": 600,
+                "TaxBreakUp": [
+                  {
+                    "key": "GST",
+                    "value": 540
+                  },
+                  {
+                    "key": "OtherTaxes",
+                    "value": 60
+                  }
+                ],
+                "YQTax": 0,
+                "AdditionalTxnFeeOfrd": 0,
+                "AdditionalTxnFeePub": 0,
+                "PGCharge": 0,
+                "SupplierReissueCharges": 0
+              }
+            ],
+            "Segments": [
+              [
+                {
+                  "Baggage": "20 KG",
+                  "CabinBaggage": "7 KG",
+                  "CabinClass": 2,
+                  "SupplierFareClass": null,
+                  "TripIndicator": 1,
+                  "SegmentIndicator": 1,
+                  "Airline": {
+                    "AirlineCode": "AI",
+                    "AirlineName": "Air India",
+                    "FlightNumber": "AI-678",
+                    "FareClass": "M",
+                    "OperatingCarrier": ""
+                  },
+                  "Origin": {
+                    "Airport": {
+                      "AirportCode": "BOM",
+                      "AirportName": "Chhatrapati Shivaji Maharaj International Airport",
+                      "Terminal": "2",
+                      "CityCode": "BOM",
+                      "CityName": "Mumbai",
+                      "CountryCode": "IN",
+                      "CountryName": "India"
+                    },
+                    "DepTime": "2025-10-01T07:00:00"
+                  },
+                  "Destination": {
+                    "Airport": {
+                      "AirportCode": "JLR",
+                      "AirportName": "Jabalpur Airport",
+                      "Terminal": "1",
+                      "CityCode": "JLR",
+                      "CityName": "Jabalpur",
+                      "CountryCode": "IN",
+                      "CountryName": "India"
+                    },
+                    "ArrTime": "2025-10-01T08:30:00"
+                  },
+                  "Duration": 90,
+                  "GroundTime": 0,
+                  "Mile": 0,
+                  "StopOver": false,
+                  "FlightInfoIndex": "",
+                  "StopPoint": "",
+                  "StopPointArrivalTime": null,
+                  "StopPointDepartureTime": null,
+                  "Craft": "Boeing 737",
+                  "Remark": null,
+                  "IsETicketEligible": true,
+                  "FlightStatus": "Confirmed",
+                  "Status": "",
+                  "FareClassification": {
+                    "Type": ""
+                  }
+                }
+              ]
+            ],
+            "LastTicketDate": "2025-10-25",
+            "TicketAdvisory": null,
+            "FareRules": [
+              {
+                "Origin": "BOM",
+                "Destination": "JLR",
+                "Airline": "AI",
+                "FareBasisCode": "M",
+                "FareRuleDetail": "No changes allowed after booking.",
+                "FareRestriction": "Non-refundable.",
+                "FareFamilyCode": "Economy",
+                "FareRuleIndex": "FR67890"
+              }
+            ],
+            "AirlineCode": "AI",
+            "MiniFareRules": [
+              [
+                {
+                  "JourneyPoints": "BOM-JLR",
+                  "Type": "Reissue",
+                  "From": "24",
+                  "To": "72",
+                  "Unit": "HOURS",
+                  "Details": "INR 1500"
+                },
+                {
+                  "JourneyPoints": "BOM-JLR",
+                  "Type": "Reissue",
+                  "From": "72",
+                  "To": "",
+                  "Unit": "HOURS",
+                  "Details": "INR 2000"
+                },
+                {
+                  "JourneyPoints": "BOM-JLR",
+                  "Type": "Cancellation",
+                  "From": "24",
+                  "To": "72",
+                  "Unit": "HOURS",
+                  "Details": "INR 1800"
+                },
+                {
+                  "JourneyPoints": "BOM-JLR",
+                  "Type": "Cancellation",
+                  "From": "72",
+                  "To": "",
+                  "Unit": "HOURS",
+                  "Details": "INR 2500"
+                }
+              ]
+            ],
+            "ValidatingAirline": "AI",
+            "FareClassification": {
+              "Color": "lightGreen",
+              "Type": "Publish"
+            }
+          }
+        ]
+      ],
+      "hotel": {
+        "name": "Heritage Haveli, Jabalpur",
+        "address": "Jabalpur, Madhya Pradesh, India",
+        "checkInDate": "2025-10-01",
+        "checkOutDate": "2025-10-09",
+        "roomType": "Heritage Suite",
+        "amenities": [
+          "WiFi",
+          "Breakfast",
+          "Cultural Ambiance",
+          "Heritage Decor"
+        ]
+      },
+      "sightseeing": [
+        {
+          "ResultIndex": 1,
+          "CityId": "730001",
+          "CityName": "Kanha",
+          "CountryCode": "IN",
+          "FromDate": "2025-10-03T00:00:00",
+          "ToDate": "2025-10-03T00:00:00",
+          "SightseeingName": "Kanha National Park Safari",
+          "SightseeingCode": "MP-KNP-001",
+          "SightseeingTypes": [
+            "Wildlife",
+            "Adventure"
+          ],
+          "DurationDescription": [
+            {
+              "TotalDuration": "1 DAYS",
+              "Date": "2025-10-03T00:00:00"
+            }
+          ],
+          "Condition": "Guided jeep safari through Kanha National Park to spot tigers and other wildlife.",
+          "ImageList": [
+            "https://media.istockphoto.com/id/1329865207/photo/a-royal-bengal-tiger-walking-towards-a-safari-jeep.webp?a=1&b=1&s=612x612&w=0&k=20&c=ClyxCU56dFmTeAOWqK8UfFMON37xIXY5AZbwE7NR_l8="
+          ],
+          "Price": {
+            "CurrencyCode": "INR",
+            "BasePrice": 1500,
+            "Tax": 135,
+            "OtherCharges": 0,
+            "Discount": 100,
+            "PublishedPrice": 1535,
+            "PublishedPriceRoundedOff": 1535,
+            "OfferedPrice": 1535,
+            "OfferedPriceRoundedOff": 1535,
+            "AgentCommission": 200,
+            "AgentMarkUp": 0,
+            "ServiceTax": 0,
+            "TDS": 100,
+            "TCS": 0,
+            "TotalGSTAmount": 0,
+            "GST": {
+              "CGSTAmount": 0,
+              "CGSTRate": 0,
+              "CessAmount": 0,
+              "CessRate": 0,
+              "IGSTAmount": 0,
+              "IGSTRate": 18,
+              "SGSTAmount": 0,
+              "SGSTRate": 0,
+              "TaxableAmount": 0
+            }
+          },
+          "Source": 2,
+          "TourDescription": "Experience a thrilling jungle safari in one of India's premier tiger reserves.",
+          "IsPANMandatory": false
+        },
+        {
+          "ResultIndex": 2,
+          "CityId": "730002",
+          "CityName": "Orchha",
+          "CountryCode": "IN",
+          "FromDate": "2025-10-05T00:00:00",
+          "ToDate": "2025-10-05T00:00:00",
+          "SightseeingName": "Ancient Fort & Temple Tour",
+          "SightseeingCode": "MP-AFT-002",
+          "SightseeingTypes": [
+            "Cultural",
+            "Historical"
+          ],
+          "DurationDescription": [
+            {
+              "TotalDuration": "1 DAYS",
+              "Date": "2025-10-05T00:00:00"
+            }
+          ],
+          "Condition": "Explore ancient forts and temples that narrate the rich history of the region.",
+          "ImageList": [
+            "https://media.istockphoto.com/id/1779897953/photo/sigiriya-aka-the-lion-rock-in-sri-lanka.webp?a=1&b=1&s=612x612&w=0&k=20&c=L2SaJlv64zaDPFmSYrYy0uSiObXEPn6s2_lJsPh6PCQ="
+          ],
+          "Price": {
+            "CurrencyCode": "INR",
+            "BasePrice": 1200,
+            "Tax": 108,
+            "OtherCharges": 0,
+            "Discount": 80,
+            "PublishedPrice": 1228,
+            "PublishedPriceRoundedOff": 1228,
+            "OfferedPrice": 1228,
+            "OfferedPriceRoundedOff": 1228,
+            "AgentCommission": 160,
+            "AgentMarkUp": 0,
+            "ServiceTax": 0,
+            "TDS": 80,
+            "TCS": 0,
+            "TotalGSTAmount": 0,
+            "GST": {
+              "CGSTAmount": 0,
+              "CGSTRate": 0,
+              "CessAmount": 0,
+              "CessRate": 0,
+              "IGSTAmount": 0,
+              "IGSTRate": 18,
+              "SGSTAmount": 0,
+              "SGSTRate": 0,
+              "TaxableAmount": 0
+            }
+          },
+          "Source": 2,
+          "TourDescription": "Delve into the historical marvels of Orchha with a guided tour of its forts and temples.",
+          "IsPANMandatory": false
+        }
+      ],
+      "transport": {
+        "airportTransfers": {
+          "pickup": {
+            "type": "Private Car",
+            "datetime": "2025-10-01T09:00:00Z",
+            "pickupLocation": "Jabalpur Airport",
+            "dropoffLocation": "Heritage Haveli, Jabalpur"
+          },
+          "dropoff": {
+            "type": "Private Car",
+            "datetime": "2025-10-09T10:00:00Z",
+            "pickupLocation": "Heritage Haveli, Jabalpur",
+            "dropoffLocation": "Jabalpur Airport"
+          }
+        }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "date": "2025-10-01",
+          "activities": [
+            "Arrival in Jabalpur",
+            "Transfer to Heritage Haveli",
+            "Welcome dinner and local orientation"
+          ]
+        },
+        {
+          "day": 2,
+          "date": "2025-10-02",
+          "activities": [
+            "Breakfast at the hotel",
+            "City tour of Jabalpur including historical sites",
+            "Evening free for leisure"
+          ]
+        },
+        {
+          "day": 3,
+          "date": "2025-10-03",
+          "activities": [
+            "Early breakfast at the hotel",
+            "Jeep safari at Kanha National Park",
+            "Lunch in the park and return by evening"
+          ]
+        },
+        {
+          "day": 4,
+          "date": "2025-10-04",
+          "activities": [
+            "Breakfast at the hotel",
+            "Free day for optional wildlife or nature walks",
+            "Local market exploration in the evening"
+          ]
+        },
+        {
+          "day": 5,
+          "date": "2025-10-05",
+          "activities": [
+            "Breakfast at the hotel",
+            "Guided tour of ancient forts and temples in Orchha",
+            "Lunch and cultural show in the evening"
+          ]
+        },
+        {
+          "day": 6,
+          "date": "2025-10-06",
+          "activities": [
+            "Breakfast at the hotel",
+            "Visit to local tribal villages and heritage centers",
+            "Evening at leisure"
+          ]
+        },
+        {
+          "day": 7,
+          "date": "2025-10-07",
+          "activities": [
+            "Breakfast at the hotel",
+            "Additional wildlife safari or cultural activity (optional)",
+            "Dinner at a traditional restaurant"
+          ]
+        },
+        {
+          "day": 8,
+          "date": "2025-10-08",
+          "activities": [
+            "Breakfast at the hotel",
+            "Relaxation day and final local sightseeing",
+            "Farewell dinner"
+          ]
+        },
+        {
+          "day": 9,
+          "date": "2025-10-09",
+          "activities": [
+            "Breakfast at the hotel",
+            "Check-out and transfer to airport",
+            "Departure"
+          ]
+        }
+      ],
+      "additionalServices": {
+        "travelInsurance": true,
+        "visaAssistance": false,
+        "specialRequests": "Vegetarian meal options available, guided wildlife safaris included."
+      }
+    },
+    "bestTimeToVisit": "October to March",
+    "recommendationTags": [
+      "Trending",
+      "Wildlife",
+      "Heritage",
+      "Adventure",
+      "Cultural"
+    ],
+    "notes": "Best experienced during the cooler months when wildlife is more active.",
+    "faqs": [
+      {
+        "question": "What wildlife can I expect to see during the safari?",
+        "answer": "You may spot tigers, leopards, deer, and a variety of bird species during the jungle safaris."
+      },
+      {
+        "question": "Is a jungle safari safe for families?",
+        "answer": "Yes, the safaris are conducted by experienced guides with proper safety measures in place."
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "945d505d4a4362b7ba5a53d5"
+    },
+    "packageTitle": "Kutch Rann Utsav Extravaganza",
+    "image": "https://media.istockphoto.com/id/1398807464/photo/volcanic-landscape-in-iceland.webp?a=1&b=1&s=612x612&w=0&k=20&c=bwkTeq6OCBK4ecAf5OEjUD7saY8l0v0V-rnPP-abIvg=",
+    "location": "Kutch, Gujarat, India",
+    "duration": "6 Days/5 Nights",
+    "shortDescription": "Experience the vibrant culture, art, and mesmerizing salt desert of the Rann of Kutch during the Rann Utsav.",
+    "detailedDescription": "Join us for a cultural celebration at the Rann Utsav in Kutch, Gujarat. This package offers a unique blend of traditional music, dance, handicrafts, and a surreal stay amid the vast white salt desert. Enjoy camel rides, local cuisine, and immersive cultural performances that bring the spirit of Kutch to life.",
+    "price": {
+      "currency": "INR",
+      "basePrice": 20000,
+      "taxes": 3000,
+      "discount": 1500,
+      "totalPrice": 21500
+    },
+    "details": {
+      "flights": [
+        [
+          {
+            "FirstNameFormat": null,
+            "IsBookableIfSeatNotAvailable": false,
+            "IsHoldAllowedWithSSR": false,
+            "LastNameFormat": null,
+            "ResultIndex": "FLIGHT33445",
+            "Source": 3,
+            "IsLCC": true,
+            "IsRefundable": true,
+            "IsPanRequiredAtBook": false,
+            "IsPanRequiredAtTicket": false,
+            "IsPassportRequiredAtBook": false,
+            "IsPassportRequiredAtTicket": false,
+            "GSTAllowed": true,
+            "IsCouponAppilcable": true,
+            "IsGSTMandatory": false,
+            "AirlineRemark": "Air India Express operates frequent flights to Bhuj.",
+            "IsPassportFullDetailRequiredAtBook": false,
+            "ResultFareType": "RegularFare",
+            "Fare": {
+              "Currency": "INR",
+              "BaseFare": 5000,
+              "Tax": 1000,
+              "TaxBreakup": [
+                {
+                  "key": "GST",
+                  "value": 900
+                },
+                {
+                  "key": "OtherTaxes",
+                  "value": 100
+                }
+              ],
+              "YQTax": 0,
+              "AdditionalTxnFeeOfrd": 0,
+              "AdditionalTxnFeePub": 0,
+              "PGCharge": 0,
+              "OtherCharges": 40,
+              "ChargeBU": [
+                {
+                  "key": "CONVENIENCECHARGE",
+                  "value": 40
+                }
+              ],
+              "Discount": 0,
+              "PublishedFare": 6040,
+              "CommissionEarned": 0,
+              "PLBEarned": 0,
+              "IncentiveEarned": 0,
+              "OfferedFare": 6040,
+              "TdsOnCommission": 0,
+              "TdsOnPLB": 0,
+              "TdsOnIncentive": 0,
+              "ServiceFee": 0,
+              "TotalBaggageCharges": 0,
+              "TotalMealCharges": 0,
+              "TotalSeatCharges": 0,
+              "TotalSpecialServiceCharges": 0
+            },
+            "FareBreakdown": [
+              {
+                "Currency": "INR",
+                "PassengerType": 1,
+                "PassengerCount": 1,
+                "BaseFare": 2500,
+                "Tax": 500,
+                "TaxBreakUp": [
+                  {
+                    "key": "GST",
+                    "value": 450
+                  },
+                  {
+                    "key": "OtherTaxes",
+                    "value": 50
+                  }
+                ],
+                "YQTax": 0,
+                "AdditionalTxnFeeOfrd": 0,
+                "AdditionalTxnFeePub": 0,
+                "PGCharge": 0,
+                "SupplierReissueCharges": 0
+              },
+              {
+                "Currency": "INR",
+                "PassengerType": 2,
+                "PassengerCount": 1,
+                "BaseFare": 2500,
+                "Tax": 500,
+                "TaxBreakUp": [
+                  {
+                    "key": "GST",
+                    "value": 450
+                  },
+                  {
+                    "key": "OtherTaxes",
+                    "value": 50
+                  }
+                ],
+                "YQTax": 0,
+                "AdditionalTxnFeeOfrd": 0,
+                "AdditionalTxnFeePub": 0,
+                "PGCharge": 0,
+                "SupplierReissueCharges": 0
+              }
+            ],
+            "Segments": [
+              [
+                {
+                  "Baggage": "15 KG",
+                  "CabinBaggage": "7 KG",
+                  "CabinClass": 2,
+                  "SupplierFareClass": null,
+                  "TripIndicator": 1,
+                  "SegmentIndicator": 1,
+                  "Airline": {
+                    "AirlineCode": "IX",
+                    "AirlineName": "Air India Express",
+                    "FlightNumber": "IX-334",
+                    "FareClass": "Y",
+                    "OperatingCarrier": ""
+                  },
+                  "Origin": {
+                    "Airport": {
+                      "AirportCode": "AMD",
+                      "AirportName": "Sardar Vallabhbhai Patel International Airport",
+                      "Terminal": "1",
+                      "CityCode": "AMD",
+                      "CityName": "Ahmedabad",
+                      "CountryCode": "IN",
+                      "CountryName": "India"
+                    },
+                    "DepTime": "2025-11-15T06:30:00"
+                  },
+                  "Destination": {
+                    "Airport": {
+                      "AirportCode": "BHJ",
+                      "AirportName": "Bhuj Airport",
+                      "Terminal": "1",
+                      "CityCode": "BHJ",
+                      "CityName": "Bhuj",
+                      "CountryCode": "IN",
+                      "CountryName": "India"
+                    },
+                    "ArrTime": "2025-11-15T07:30:00"
+                  },
+                  "Duration": 60,
+                  "GroundTime": 0,
+                  "Mile": 0,
+                  "StopOver": false,
+                  "FlightInfoIndex": "",
+                  "StopPoint": "",
+                  "StopPointArrivalTime": null,
+                  "StopPointDepartureTime": null,
+                  "Craft": "Airbus A320",
+                  "Remark": null,
+                  "IsETicketEligible": true,
+                  "FlightStatus": "Confirmed",
+                  "Status": "",
+                  "FareClassification": {
+                    "Type": ""
+                  }
+                }
+              ]
+            ],
+            "LastTicketDate": "2025-11-30",
+            "TicketAdvisory": null,
+            "FareRules": [
+              {
+                "Origin": "AMD",
+                "Destination": "BHJ",
+                "Airline": "IX",
+                "FareBasisCode": "Y",
+                "FareRuleDetail": "No changes allowed after booking.",
+                "FareRestriction": "Non-refundable.",
+                "FareFamilyCode": "Economy",
+                "FareRuleIndex": "FR33445"
+              }
+            ],
+            "AirlineCode": "IX",
+            "MiniFareRules": [
+              [
+                {
+                  "JourneyPoints": "AMD-BHJ",
+                  "Type": "Reissue",
+                  "From": "24",
+                  "To": "72",
+                  "Unit": "HOURS",
+                  "Details": "INR 1100"
+                },
+                {
+                  "JourneyPoints": "AMD-BHJ",
+                  "Type": "Reissue",
+                  "From": "72",
+                  "To": "",
+                  "Unit": "HOURS",
+                  "Details": "INR 1600"
+                },
+                {
+                  "JourneyPoints": "AMD-BHJ",
+                  "Type": "Cancellation",
+                  "From": "24",
+                  "To": "72",
+                  "Unit": "HOURS",
+                  "Details": "INR 1300"
+                },
+                {
+                  "JourneyPoints": "AMD-BHJ",
+                  "Type": "Cancellation",
+                  "From": "72",
+                  "To": "",
+                  "Unit": "HOURS",
+                  "Details": "INR 2100"
+                }
+              ]
+            ],
+            "ValidatingAirline": "IX",
+            "FareClassification": {
+              "Color": "lightGreen",
+              "Type": "Publish"
+            }
+          }
+        ]
+      ],
+      "hotel": {
+        "name": "White Desert Resort",
+        "address": "Kutch, Gujarat, India",
+        "checkInDate": "2025-11-15",
+        "checkOutDate": "2025-11-20",
+        "roomType": "Luxury Tent Suite",
+        "amenities": [
+          "WiFi",
+          "Breakfast",
+          "Desert View",
+          "Bonfire"
+        ]
+      },
+      "sightseeing": [
+        {
+          "ResultIndex": 1,
+          "CityId": "810001",
+          "CityName": "Kutch",
+          "CountryCode": "IN",
+          "FromDate": "2025-11-16T00:00:00",
+          "ToDate": "2025-11-16T00:00:00",
+          "SightseeingName": "Camel Safari & Desert Exploration",
+          "SightseeingCode": "GJ-KUT-CS",
+          "SightseeingTypes": [
+            "Adventure",
+            "Cultural"
+          ],
+          "DurationDescription": [
+            {
+              "TotalDuration": "1 DAYS",
+              "Date": "2025-11-16T00:00:00"
+            }
+          ],
+          "Condition": "Enjoy an exhilarating camel safari across the white salt desert with local guides.",
+          "ImageList": [
+            "https://media.istockphoto.com/id/2161510590/photo/woman-on-camel-in-the-desert-at-sunset-near-4x4-suv.webp?a=1&b=1&s=612x612&w=0&k=20&c=8ykfm9VaQz-THkGvgVX0m3AatlvikOt4_D7Dzzy0P_M="
+          ],
+          "Price": {
+            "CurrencyCode": "INR",
+            "BasePrice": 1300,
+            "Tax": 117,
+            "OtherCharges": 0,
+            "Discount": 100,
+            "PublishedPrice": 1317,
+            "PublishedPriceRoundedOff": 1317,
+            "OfferedPrice": 1317,
+            "OfferedPriceRoundedOff": 1317,
+            "AgentCommission": 180,
+            "AgentMarkUp": 0,
+            "ServiceTax": 0,
+            "TDS": 100,
+            "TCS": 0,
+            "TotalGSTAmount": 0,
+            "GST": {
+              "CGSTAmount": 0,
+              "CGSTRate": 0,
+              "CessAmount": 0,
+              "CessRate": 0,
+              "IGSTAmount": 0,
+              "IGSTRate": 18,
+              "SGSTAmount": 0,
+              "SGSTRate": 0,
+              "TaxableAmount": 0
+            }
+          },
+          "Source": 2,
+          "TourDescription": "Traverse the mystical salt desert on camelback and experience the unique landscape of Kutch.",
+          "IsPANMandatory": false
+        },
+        {
+          "ResultIndex": 2,
+          "CityId": "810002",
+          "CityName": "Kutch",
+          "CountryCode": "IN",
+          "FromDate": "2025-11-18T00:00:00",
+          "ToDate": "2025-11-18T00:00:00",
+          "SightseeingName": "Rann Utsav Cultural Evening",
+          "SightseeingCode": "GJ-KUT-RUE",
+          "SightseeingTypes": [
+            "Cultural",
+            "Festive"
+          ],
+          "DurationDescription": [
+            {
+              "TotalDuration": "1 DAYS",
+              "Date": "2025-11-18T00:00:00"
+            }
+          ],
+          "Condition": "Experience the magic of the Rann Utsav with traditional dance, music, and local art.",
+          "ImageList": [
+            "https://media.istockphoto.com/id/1128240818/photo/camel-ride.webp?a=1&b=1&s=612x612&w=0&k=20&c=VSzHxZfX67wuD5Xb3nd8i1Ty83k7WW6nTuZ7WYkRJCM="
+          ],
+          "Price": {
+            "CurrencyCode": "INR",
+            "BasePrice": 1400,
+            "Tax": 126,
+            "OtherCharges": 0,
+            "Discount": 100,
+            "PublishedPrice": 1426,
+            "PublishedPriceRoundedOff": 1426,
+            "OfferedPrice": 1426,
+            "OfferedPriceRoundedOff": 1426,
+            "AgentCommission": 190,
+            "AgentMarkUp": 0,
+            "ServiceTax": 0,
+            "TDS": 100,
+            "TCS": 0,
+            "TotalGSTAmount": 0,
+            "GST": {
+              "CGSTAmount": 0,
+              "CGSTRate": 0,
+              "CessAmount": 0,
+              "CessRate": 0,
+              "IGSTAmount": 0,
+              "IGSTRate": 18,
+              "SGSTAmount": 0,
+              "SGSTRate": 0,
+              "TaxableAmount": 0
+            }
+          },
+          "Source": 2,
+          "TourDescription": "Immerse yourself in the festive spirit of Rann Utsav with vibrant cultural performances and local handicrafts.",
+          "IsPANMandatory": false
+        }
+      ],
+      "transport": {
+        "airportTransfers": {
+          "pickup": {
+            "type": "Private Car",
+            "datetime": "2025-11-15T08:00:00Z",
+            "pickupLocation": "Bhuj Airport",
+            "dropoffLocation": "White Desert Resort"
+          },
+          "dropoff": {
+            "type": "Private Car",
+            "datetime": "2025-11-20T10:00:00Z",
+            "pickupLocation": "White Desert Resort",
+            "dropoffLocation": "Bhuj Airport"
+          }
+        }
+      },
+      "itinerary": [
+        {
+          "day": 1,
+          "date": "2025-11-15",
+          "activities": [
+            "Arrival in Bhuj",
+            "Transfer to White Desert Resort",
+            "Welcome dinner and desert sunset"
+          ]
+        },
+        {
+          "day": 2,
+          "date": "2025-11-16",
+          "activities": [
+            "Breakfast at the resort",
+            "Camel safari and desert exploration",
+            "Picnic lunch in the desert",
+            "Return to resort in the evening"
+          ]
+        },
+        {
+          "day": 3,
+          "date": "2025-11-17",
+          "activities": [
+            "Breakfast at the resort",
+            "Leisure day with optional local market visit",
+            "Evening bonfire and folk music"
+          ]
+        },
+        {
+          "day": 4,
+          "date": "2025-11-18",
+          "activities": [
+            "Breakfast at the resort",
+            "Attend Rann Utsav cultural evening",
+            "Enjoy traditional dance and music performances"
+          ]
+        },
+        {
+          "day": 5,
+          "date": "2025-11-19",
+          "activities": [
+            "Breakfast at the resort",
+            "Full day at Rann Utsav festivities with local crafts and cuisine",
+            "Sunset at the salt desert"
+          ]
+        },
+        {
+          "day": 6,
+          "date": "2025-11-20",
+          "activities": [
+            "Breakfast at the resort",
+            "Check-out and transfer to Bhuj Airport",
+            "Departure"
+          ]
+        }
+      ],
+      "additionalServices": {
+        "travelInsurance": true,
+        "visaAssistance": false,
+        "specialRequests": "Request for a cultural guide and desert activity gear."
+      }
+    },
+    "bestTimeToVisit": "November to February",
+    "recommendationTags": [
+      "Festive",
+      "Cultural",
+      "Desert",
+      "Adventure"
+    ],
+    "notes": "Experience the full vibrancy of Rann Utsav with early bookings to secure your spot.",
+    "faqs": [
+      {
+        "question": "What activities are included during the Rann Utsav?",
+        "answer": "The package includes camel safaris, cultural evenings with traditional performances, and local craft exhibitions."
+      },
+      {
+        "question": "Is camel safari safe for all age groups?",
+        "answer": "Yes, camel safaris are conducted under strict safety measures and are suitable for most age groups."
+      }
+    ]
+  }
+]

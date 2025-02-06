@@ -41,6 +41,7 @@ const embedHotelFeaturesAndDescription = async (hotelList, CityCode) => {
             }
         }
         for (const hotel of hotelList) {
+            
 
             const existingHotel = await hotelModel.findOne({HotelCode : hotel.HotelCode, CityCode});
             if(existingHotel){ 
@@ -55,7 +56,7 @@ const embedHotelFeaturesAndDescription = async (hotelList, CityCode) => {
             let embeddedFeature = await generateEmbedding(textContent);
 
             await hotelModel.findOneAndUpdate(
-                { HotelCode: hotel.HotelCode },
+                { HotelCode: hotel.HotelCode, CityCode },
                 {
                     HotelCode: hotel.HotelCode,
                     HotelRating: hotel.HotelRating,

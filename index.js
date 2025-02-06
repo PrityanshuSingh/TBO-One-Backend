@@ -12,12 +12,15 @@ const { createCustomer } = require('./utils/customer/Customer');
 const embedHotelFeaturesAndDescription = require('./utils/hotels/embedHotelFeatureAndDescription');
 const getAllCountryCode = require('./utils/hotels/getAllCountryCode');
 const findCityCode = require('./utils/hotels/findCityCode');
+const addTemplate = require('./utils/socials/template/addTemplate');
 
 app.use(express.json())
+;(async () => {
+    await mongoDB();
+})()
 
-mongoDB();
 app.use(cors({
-    origin: process.env.ALLOWED_ORIGIN ||'*',
+    origin: process.env.ALLOWED_ORIGIN || '*',
     methods: "GET, POST, PUT, DELETE, OPTIONS",
     allowedHeaders: "Content-Type, Authorization",
 }));
@@ -27,184 +30,171 @@ app.options("*", (req, res) => {
     res.sendStatus(200);
 });
 
+app.post('/api2', async (req, res) => {
+    console.log(req.body);
 
-// In-memory token storage (demo only!). 
-// In production, store tokens in DB.
-let IG_USER_ID = null;
-let SHORT_LIVED_TOKEN = null;
-let LONG_LIVED_TOKEN = null;
+    // Stringify the body to ensure it's in the correct format for the prompt
+    const prompt = `${JSON.stringify(req.body)} 
 
-/* 
-   1. Status Endpoint
-   Let your frontend poll or request 
-   GET /auth/instagram/status
-   => { connected: boolean }
-*/
-app.get("/auth/instagram/status", (req, res) => {
-    const isConnected = !!(LONG_LIVED_TOKEN && IG_USER_ID);
-    return res.json({ connected: isConnected });
-});
+You need to convert the above order detail into a structured JSON format as per the following structure(stick completely to the given structure and avoid any human errors made in the above details):
 
-/* 
-   2. Start Authorization
-   GET /auth/instagram/connect
-   This is called by the frontend to open in a popup, 
-   redirecting user to Instagram (Meta) OAuth flow.
-*/
-app.get("/auth/instagram/connect", (req, res) => {
-    console.log("Instagram Connect Request");
-    const { FB_APP_ID, IG_REDIRECT_URI } = process.env;
-
-    const scopes = [
-        "public_profile",
-        "email",
-        "instagram_basic",
-        "instagram_content_publish",
-    ];
-
-    const authUrl =
-        `https://www.facebook.com/v22.0/dialog/oauth?` +
-        `client_id=${FB_APP_ID}` +
-        `&redirect_uri=${encodeURIComponent(IG_REDIRECT_URI)}` +
-        `&scope=${scopes.join(",")}` +
-        `&response_type=code`;
-
-    // Redirect user to Meta's OAuth dialog
-    res.redirect(authUrl);
-});
-
-/* 
-   3. OAuth Callback 
-   GET /auth/instagram/callback
-   The user is redirected back here w/ ?code from Instagram. 
-   We'll exchange code => short-lived => long-lived tokens,
-   find IG user, store them in memory, then close the popup.
-*/
-app.get("/auth/instagram/callback", async (req, res) => {
-    try {
-        console.log("Instagram Callback Request");
-        const { code } = req.query;
-        if (!code) {
-            return res.status(400).send("No authorization code provided");
+{
+  "order": {
+    "id": "String",
+    "state": "String",
+    "billing": {
+      "address": {
+        "name": "String",
+        "building": "String",
+        "locality": "String",
+        "city": "String",
+        "state": "String",
+        "country": "String",
+        "area_code": "String"
+      },
+      "phone": "String",
+      "name": "String",
+      "email": "String",
+      "created_at": "String (ISO 8601 DateTime)",
+      "updated_at": "String (ISO 8601 DateTime)"
+    },
+    "items": [
+      {
+        "id": "String",
+        "itemName": "String",
+        "quantity": "Number"
+      }
+    ],
+    "provider": {
+      "id": "String",
+      "locations": [
+        {
+          "id": "String"
         }
-
-        const { FB_APP_ID, FB_APP_SECRET, IG_REDIRECT_URI } = process.env;
-        const tokenUrl = "https://graph.facebook.com/v22.0/oauth/access_token";
-        const tokenParams = {
-            client_id: FB_APP_ID,
-            client_secret: FB_APP_SECRET,
-            redirect_uri: IG_REDIRECT_URI,
-            code,
-        };
-
-        // 3a. Exchange code => Short-Lived Token
-        const tokenRes = await axios.get(tokenUrl, { params: tokenParams });
-        SHORT_LIVED_TOKEN = tokenRes.data.access_token;
-        console.log("Short-Lived Token:", SHORT_LIVED_TOKEN);
-
-        // 3b. Exchange short-lived => Long-Lived Token
-        const exchangeUrl = "https://graph.facebook.com/v22.0/oauth/access_token";
-        const exchangeParams = {
-            grant_type: "fb_exchange_token",
-            client_id: FB_APP_ID,
-            client_secret: FB_APP_SECRET,
-            fb_exchange_token: SHORT_LIVED_TOKEN,
-        };
-
-        const exchangeRes = await axios.get(exchangeUrl, { params: exchangeParams });
-        LONG_LIVED_TOKEN = exchangeRes.data.access_token;
-        console.log("Long-Lived Token:", LONG_LIVED_TOKEN);
-
-        // 3c. Retrieve IG User ID
-        // Must find a Page connected to this token => get instagram_business_account
-        const pagesUrl = "https://graph.facebook.com/v22.0/me/accounts";
-        const pagesRes = await axios.get(pagesUrl, {
-            params: { access_token: LONG_LIVED_TOKEN },
-        });
-
-        const pages = pagesRes.data?.data || [];
-        IG_USER_ID = null;
-        for (let page of pages) {
-            if (page.instagram_business_account) {
-                IG_USER_ID = page.instagram_business_account.id;
-                console.log("IG_USER_ID:", IG_USER_ID);
-                break;
+      ]
+    },
+    "fulfillments": [
+      {
+        "TAT": "String (Duration - ISO 8601)",
+        "id": "String",
+        "tracking": "Boolean",
+        "end": {
+          "contact": {
+            "email": "String",
+            "phone": "String"
+          },
+          "person": {
+            "name": "String"
+          },
+          "location": {
+            "gps": "String (Latitude,Longitude)",
+            "address": {
+              "name": "String",
+              "building": "String",
+              "locality": "String",
+              "city": "String",
+              "state": "String",
+              "country": "String",
+              "area_code": "String"
             }
+          }
+        },
+        "type": "String"
+      }
+    ],
+    "payment": {
+      "uri": "String (URL)",
+      "tl_method": "String",
+      "params": {
+        "amount": "String (Decimal as String)",
+        "currency": "String",
+        "transaction_id": "String"
+      },
+      "status": "String",
+      "type": "String",
+      "collected_by": "String",
+      "buyer_app_finder_fee_type": "String",
+      "buyer_app_finder_fee_amount": "String (Decimal as String)",
+      "settlement_details": [
+        {
+          "settlement_counterparty": "String",
+          "settlement_phase": "String",
+          "settlement_type": "String",
+          "settlement_bank_account_no": "String",
+          "settlement_ifsc_code": "String",
+          "settlement_timestamp": "String (ISO 8601 DateTime)",
+          "beneficiary_name": "String",
+          "bank_name": "String",
+          "branch_name": "String"
         }
-
-        if (!IG_USER_ID) {
-            console.warn("No IG Business Account found. (Token may still be good for user data.)");
+      ]
+    },
+    "quote": {
+      "price": {
+        "currency": "String",
+        "value": "String (Decimal as String)"
+      },
+      "breakup": [
+        {
+          "item_id": "String",
+          "item_quantity": {
+            "count": "Number"
+          },
+          "title": "String",
+          "title_type": "String",
+          "price": {
+            "currency": "String",
+            "value": "String (Decimal as String)"
+          }
         }
+      ],
+      "ttl": "String (ISO 8601 Duration)"
+    },
+    "tags": [
+      {
+        "code": "String",
+        "list": [
+          {
+            "code": "String",
+            "value": "String"
+          }
+        ]
+      }
+    ],
+    "created_at": "String (ISO 8601 DateTime)",
+    "updated_at": "String (ISO 8601 DateTime)"
+  }
+}
 
-        // In a real app, store tokens in DB associated w/ user
 
-        // Return a small snippet that closes the popup
-        return res.send(`
-      <script>
-        window.opener && window.opener.focus();
-        window.opener.postMessage("igConnected", "*");
-        window.close();
-      </script>
-    `);
-    } catch (err) {
-        console.error("Error in Instagram OAuth callback =>", err);
-        return res.status(500).send("Instagram OAuth failed");
-    }
-});
+- Please return the response strictly in JSON format, with no explanation or additional text.`;
 
-/* 
-   4. Publish a Single Image to IG
-   POST /instagram/publish
-   Body: { imageUrl, caption }
-*/
-app.post("/instagram/publish", async (req, res) => {
+
     try {
-        if (!LONG_LIVED_TOKEN || !IG_USER_ID) {
-            return res.status(400).json({ error: "Instagram is not connected. Please connect first!" });
-        }
+        const result = await model.generateContent(prompt);
+        console.log("GEMINI RESPONSE:", result.response.text());
 
-        const { imageUrl, caption } = req.body;
-        if (!imageUrl) {
-            return res.status(400).json({ error: "Missing 'imageUrl' in request body" });
-        }
+        // Remove triple backticks and extra spaces
+        const cleanedResponse = result.response.text().replace(/json|/g, "").trim();
 
-        // Step A: Create Container
-        const createUrl = `https://graph.facebook.com/v22.0/${IG_USER_ID}/media`;
-        const createRes = await axios.post(
-            createUrl,
-            qs.stringify({
-                image_url: imageUrl,
-                caption: caption || "",
-                access_token: LONG_LIVED_TOKEN,
-            })
-        );
-        const containerId = createRes.data.id;
-        console.log("Created Container ID:", containerId);
 
-        // Step B: Publish Container
-        const publishUrl = `https://graph.facebook.com/v22.0/${IG_USER_ID}/media_publish`;
-        const publishRes = await axios.post(
-            publishUrl,
-            qs.stringify({
-                creation_id: containerId,
-                access_token: LONG_LIVED_TOKEN,
-            })
-        );
-        const mediaId = publishRes.data.id;
-        console.log("Media Published ID:", mediaId);
+        // Parse the cleaned response into a valid JSON object
+        const jsonResponse = JSON.parse(cleanedResponse);
 
-        return res.json({
-            message: "Instagram post published successfully!",
-            mediaId,
+        // Log the parsed JSON object
+        console.log("Parsed JSON:", jsonResponse);
+
+        jsonResponse.order.item.forEach(element => {
+            console.log("item",element)
         });
-    } catch (err) {
-        console.error("Failed to publish IG post =>", err?.response?.data || err.message);
-        return res.status(500).json({ error: "Failed to publish IG post" });
+
+        // Send the parsed JSON as the response
+        res.status(200).json(jsonResponse);
+    } catch (error) {
+        console.error("Error generating response:", error);
+        res.status(500).send('Error generating response');
     }
 });
-
-
-
 
 app.use('/api', require('./routes'));
 
@@ -214,7 +204,9 @@ app.listen(PORT, '0.0.0.0', async () => {
     // const CountryCode = await getAllCountryCode()
     // for (let i = 0; i < CountryCode.length; i++) {
     //     const country = CountryCode[i];
+    //     console.log("Country",country)
     //     const CityCode = await findCityCode(null, country.Code)
+    //     console.log("City", CityCode)
     //     for (let j = 0; j < CityCode.length; j++) {
     //         const city = CityCode[j];
     //         if(city.Code === "111558"){
@@ -224,4 +216,6 @@ app.listen(PORT, '0.0.0.0', async () => {
     //     }
     //     console.log("Citycode", CityCode)
     // }
+
+
 });
