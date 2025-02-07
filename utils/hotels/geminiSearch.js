@@ -10,7 +10,7 @@ const aiSearch = async (CityCode, prompt) => {
         console.log("HOtels list ", hotelList)
 
         // Convert hotelList array to a string representation
-        const hotelListString = JSON.stringify(hotelList);
+        const hotelListString = JSON.stringify(hotelList.slice(0,10));
 
         const schema = {
             description: "List of HotelCodes",

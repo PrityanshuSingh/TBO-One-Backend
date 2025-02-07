@@ -51,7 +51,7 @@ app.listen(PORT, '0.0.0.0', async () => {
     //     }
     //     console.log("Citycode", CityCode)
     // }
-    aiSearch("111558","honeymoon")
+    // aiSearch("111558","honeymoon")
 
 
 });
