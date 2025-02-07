@@ -176,85 +176,85 @@
     ],
     "customer": [
       {
-        "id": "1",
+        "id": "1",679fe7f0c25ea680ba8aa8b4
         "name": "Rajesh Kumar",
         "whatsApp": "+91 98765 43210",
         "email": "rajesh.kumar@example.com"
       },
       {
         "id": "2",
-        "name": "Sonia Sharma",
+        "name": "Sonia Sharma",679fe7f0c25ea680ba8aa8b5
         "whatsApp": "+91 91234 56789",
         "email": "sonia.sharma@example.com"
       },
       {
         "id": "3",
-        "name": "Vikram Singh",
+        "name": "Vikram Singh",679fe7f0c25ea680ba8aa8b6
         "whatsApp": "+91 91213 21232",
         "email": "vikram.singh@example.com"
       },
       {
-        "id": "4",
+        "id": "4",679fe7f0c25ea680ba8aa8b7
         "name": "Priya Mehta",
         "whatsApp": "+91 91234 12341",
         "email": "priya.mehta@example.com"
       },
       {
-        "id": "5",
+        "id": "5",679fe7f0c25ea680ba8aa8b8
         "name": "Amit Patel",
         "whatsApp": "+91 91213 21233",
         "email": "amit.patel@example.com"
       },
       {
-        "id": "6",
+        "id": "6",679fe7f0c25ea680ba8aa8b9
         "name": "Neha Gupta",
         "whatsApp": "+91 91234 12342",
         "email": "neha.gupta@example.com"
       },
       {
-        "id": "7",
+        "id": "7",679fe7f0c25ea680ba8aa8ba
         "name": "Rohit Verma",
         "whatsApp": "+91 91213 21234",
         "email": "rohit.verma@example.com"
       },
       {
-        "id": "8",
+        "id": "8",679fe7f0c25ea680ba8aa8bb
         "name": "Kavita Rao",
         "whatsApp": "+91 91234 12343",
         "email": "kavita.rao@example.com"
       },
       {
-        "id": "9",
+        "id": "9",679fe7f0c25ea680ba8aa8bc
         "name": "Suresh Iyer",
         "whatsApp": "+91 98765 43200",
         "email": "suresh.iyer@example.com"
       },
       {
-        "id": "10",
+        "id": "10",679fe7f0c25ea680ba8aa8bd
         "name": "Anjali Desai",
         "whatsApp": "+91 91234 56700",
         "email": "anjali.desai@example.com"
       },
       {
-        "id": "11",
+        "id": "11",679fe7f0c25ea680ba8aa8be
         "name": "Deepak Joshi",
         "whatsApp": "+91 91213 21210",
         "email": "deepak.joshi@example.com"
       },
       {
-        "id": "12",
+        "id": "12",679fe7f0c25ea680ba8aa8bf
         "name": "Sunita Reddy",
         "whatsApp": "+91 91234 31200",
         "email": "sunita.reddy@example.com"
       },
       {
-        "id": "13",
+        "id": "13",679fe7f0c25ea680ba8aa8c0
         "name": "Kiran Rao",
         "whatsApp": "+91 91213 21211",
         "email": "kiran.rao@example.com"
       },
       {
-        "id": "14",
+        "id": "14",679fe7f0c25ea680ba8aa8c1
         "name": "Meera Nair",
         "whatsApp": "+91 91234 31201",
         "email": "meera.nair@example.com"
@@ -262,9 +262,11 @@
     ],
     "groups": [
       {
-        "id": "100",
         "name": "Loyalty Group",
         "type": "whatsApp",
+        "agentId": {
+          "$oid": "679e03e65e267317b490eff6"
+        },
         "contactId": [
           "1",
           "2",
@@ -273,8 +275,10 @@
         ]
       },
       {
-        "id": "101",
         "name": "Himalayan Group",
+        "agentId": {
+          "$oid": "679e03e65e267317b490eff6"
+        },
         "type": "whatsApp",
         "contactId": [
           "7",
@@ -282,26 +286,32 @@
         ]
       },
       {
-        "id": "102",
         "name": "Goa Group",
         "type": "whatsApp",
+        "agentId": {
+          "$oid": "679e03e65e267317b490eff6"
+        },
         "contactId": [
           "5",
           "6"
         ]
       },
       {
-        "id": "103",
         "name": "Kerala Group",
         "type": "email",
+        "agentId": {
+          "$oid": "679e03e65e267317b490eff6"
+        },
         "contactId": [
           "9",
           "10"
         ]
       },
       {
-        "id": "104",
         "name": "Luxury Cruises Group",
+        "agentId": {
+          "$oid": "679e03e65e267317b490eff6"
+        },
         "type": "email",
         "contactId": [
           "11",
@@ -309,8 +319,10 @@
         ]
       },
       {
-        "id": "105",
         "name": "Adventure Enthusiasts",
+        "agentId": {
+          "$oid": "679e03e65e267317b490eff6"
+        },
         "type": "whatsApp",
         "contactId": [
           "3",
@@ -318,8 +330,10 @@
         ]
       },
       {
-        "id": "106",
         "name": "Heritage Lovers",
+        "agentId": {
+          "$oid": "679e03e65e267317b490eff6"
+        },
         "type": "email",
         "contactId": [
           "13",
@@ -327,8 +341,10 @@
         ]
       },
       {
-        "id": "107",
         "name": "Group Excursions",
+        "agentId": {
+          "$oid": "679e03e65e267317b490eff6"
+        },
         "type": "whatsApp",
         "contactId": [
           "11",
@@ -338,8 +354,10 @@
         ]
       },
       {
-        "id": "108",
         "name": "Honeymoon Group",
+        "agentId": {
+          "$oid": "679e03e65e267317b490eff6"
+        },
         "type": "email",
         "contactId": [
           "7",
@@ -347,8 +365,10 @@
         ]
       },
       {
-        "id": "109",
         "name": "Special Offers",
+        "agentId": {
+          "$oid": "679e03e65e267317b490eff6"
+        },
         "type": "whatsApp",
         "contactId": [
           "1",
@@ -356,8 +376,10 @@
         ]
       },
       {
-        "id": "110",
         "name": "VIP Clients",
+        "agentId": {
+          "$oid": "679e03e65e267317b490eff6"
+        },
         "type": "email",
         "contactId": [
           "5",
