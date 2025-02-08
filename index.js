@@ -13,7 +13,8 @@ const embedHotelFeaturesAndDescription = require('./utils/hotels/embedHotelFeatu
 const getAllCountryCode = require('./utils/hotels/getAllCountryCode');
 const findCityCode = require('./utils/hotels/findCityCode');
 const addTemplate = require('./utils/socials/template/addTemplate');
-const aiSearch = require('./utils/hotels/geminiSearch')
+const aiSearch = require('./utils/hotels/geminiSearch');
+const sendWhatsappMessage = require('./utils/socials/whatsapp/twilio/sendWhatsappMessage');
 
 app.use(express.json())
 ;(async () => {
