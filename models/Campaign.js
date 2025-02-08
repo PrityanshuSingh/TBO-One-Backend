@@ -7,6 +7,7 @@ const campaignSchema = new mongoose.Schema({
   status: { type: String, required: true },
   pkgId: { type: mongoose.Schema.Types.ObjectId, ref: 'Package', required: true },
   grpId: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Group' }],
+  type: {type : String, enum : ['whatsapp', "email", "instagram"]},
   contactId: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Contact' }],
   startDate: { type: Date, default : Date.now()},
   endDate: { type: Date },
