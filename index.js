@@ -36,6 +36,7 @@ app.use('/api', require('./routes'));
 app.listen(PORT, '0.0.0.0', async () => {
     console.log(`Server running on port ${PORT}`);
     // await embedHotelFeaturesAndDescription([], "111558")
+    // await embedHotelFeaturesAndDescription([], "111558")
     // const CountryCode = await getAllCountryCode()
     // for (let i = 0; i < CountryCode.length; i++) {
     //     const country = CountryCode[i];
