@@ -12,6 +12,9 @@ const sendWhatsappMessage = async (to, body, mediaUrl) => {
         mediaUrl = [mediaUrl];
     }
 
+    console.log("Sending WhatsApp message to:", to);
+    console.log("Message body:", body);
+    console.log("Media URL:", mediaUrl);
     try {
         const message = await client.messages.create({
             body,
