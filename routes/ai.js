@@ -6,6 +6,7 @@ const generateWpDesc = require('../utils/genai/generateWpDesc');
 
 const router = express.Router();
 router.get("/templates", getTemplate);
+router.use("/packages",require('./package'))
 router.post("/caption", generateCaption);
 router.post("/image", generateImage);
 router.post("/wpDescription", generateWpDesc);
