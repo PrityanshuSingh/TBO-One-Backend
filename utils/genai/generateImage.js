@@ -64,4 +64,4 @@ async function generateImage(req, res) {
   // }
 }
 
-module.exports = generateImage;
+module.exports = {generateImage};
