@@ -1,7 +1,7 @@
 const generateEmbedding = require('../embedding/generateEmbedding');
 const hotel = require("../../models/Hotel")
 
-const vectorSearch = async (query, CityCode) => {
+const vectorSearch = async (query, CityCode, limit = 1) => {
     const queryEmbedding = await generateEmbedding(query);
     if (!queryEmbedding) {
         return "invalid!!";
@@ -18,9 +18,9 @@ const vectorSearch = async (query, CityCode) => {
                 // queryVector: queryEmbedding.embedding,
                 queryVector: processedVector,
                 numCandidates: 100,
-                limit: 4,
+                limit,
                 filter: {
-                    CityCode : "111558"
+                    CityCode: "111558"
                 }
             }
 

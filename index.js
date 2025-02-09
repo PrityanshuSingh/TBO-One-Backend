@@ -15,7 +15,8 @@ const findCityCode = require('./utils/hotels/findCityCode');
 const addTemplate = require('./utils/socials/template/addTemplate');
 const aiSearch = require('./utils/hotels/geminiSearch');
 const sendWhatsappMessage = require('./utils/socials/whatsapp/twilio/sendWhatsappMessage');
-const findFlights = require('./utils/flights/findFlights');
+const searchFlights = require('./utils/flights/searchFlights');
+const getIATACode = require('./utils/flights/getIATACode');
 
 app.use(express.json())
     ; (async () => {
@@ -61,4 +62,6 @@ app.listen(PORT, '0.0.0.0', async () => {
     // findFlights(endUserIp, tokenId, adultCount, childCount, infantCount, directFlight, oneStopFlight, journeyType, preferredAirlines, segments, sources)
     //     .then(response => console.log("Flight Search Result:", response))
     //     .catch(error => console.error("Error:", error.message));
+    // const iataCode = await getIATACode(["mumbai","delhi"])
+    // console.log(iataCode);
 });
