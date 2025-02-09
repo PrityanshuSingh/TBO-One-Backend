@@ -57,25 +57,6 @@ app.listen(PORT, '0.0.0.0', async () => {
     // aiSearch("111558","honeymoon")
     // const endUserIp = ; // Mock request object to simulate IP extraction
 
-    const tokenId = "bd997ce8-1570-4793-9d9b-7253b3cd890f";
-    const adultCount = "1";
-    const childCount = "1";
-    const infantCount = "1";
-    const directFlight = "false";
-    const oneStopFlight = "false";
-    const journeyType = "1";
-    const preferredAirlines = null;
-    const segments = [
-        {
-            Origin: "DEL",
-            Destination: "BOM",
-            FlightCabinClass: "2",
-            PreferredDepartureTime: "2025-02-07T00:00:00",
-            PreferredArrivalTime: "2025-02-07T00:00:00"
-        }
-    ];
-    const sources = null;
-
     // // Call the function
     // findFlights(endUserIp, tokenId, adultCount, childCount, infantCount, directFlight, oneStopFlight, journeyType, preferredAirlines, segments, sources)
     //     .then(response => console.log("Flight Search Result:", response))
