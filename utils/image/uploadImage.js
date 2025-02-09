@@ -19,12 +19,17 @@ const uploadImage = async (
     };
     // console.log("Options are", options);
     const result = await cloudinary.uploader.upload(filePath, options);
-    fs.unlinkSync(filePath); // Remove file from server after upload to Cloudinary
+    try {
+      fs.unlinkSync(filePath); // Remove file from server after upload to Cloudinary
+    } catch (error) {
+      console.log(error.message);
+    }
+    
     console.log("Image uploaded successfully:", result);
     return result;
   } catch (err) {
 
-    fs.unlinkSync(filePath);
+    // fs.unlinkSync(filePath);
 
     console.error("Error while uploading image:", err);
     throw err;

@@ -20,7 +20,7 @@ const vectorSearch = async (query, CityCode, limit = 1) => {
                 numCandidates: 100,
                 limit,
                 filter: {
-                    CityCode: "111558"
+                    CityCode
                 }
             }
 

@@ -4,6 +4,7 @@ const prepareFlightBody = require('../../utils/flights/prepareFlightBody');
 const searchFlights = require('../../utils/flights/searchFlights');
 const getHotelDetails = require('../../utils/hotels/getHotelDetails');
 const vectorSearch = require('../../utils/hotels/vectorSearch');
+const generatePackageDetails = require('../../utils/package/generatePackageDetails');
 const geminiPromptBsedFilter = require('../../utils/sightseeing/geminniPromptBasedFilter');
 const searchSightseeing = require('../../utils/sightseeing/searchSightseeing');
 
@@ -31,7 +32,7 @@ exports.recommendPackage = async (req, res) => {
 
         // Search Hotels
         try {
-            const hotelsMatchingPrompt = await vectorSearch(searchQuery, "111558")
+            const hotelsMatchingPrompt = await vectorSearch(searchQuery, req.body.destinationCityCode)
             console.log("Found hotels ", hotelsMatchingPrompt);
 
             for (const foundHotel of hotelsMatchingPrompt) {
@@ -50,80 +51,79 @@ exports.recommendPackage = async (req, res) => {
 
             // setTimeout(async () => {
 
-                const sightseeingOptions = {
-                    cityId: req.body.destinationCityCode,
-                    countryCode: req.body.destinationCountryCode,
-                    fromDate: req.body.fromDate,
-                    toDate: req.body.toDate,
-                    adultCount: req.body.adultCount,
-                    childCount: req.body.childCount,
-                    childAge: req.body.childAge,
-                    preferredLanguage: req.body.preferredLanguage,
-                    preferredCurrency: req.body.preferredCurrency,
-                    isBaseCurrencyRequired: false,
-                    endUserIp: req.ip,
-                    tokenId,
-                    // keyWord : req.body.aiPrompt,
-                };
-                // console.log("options :", options)
-                const foundSightseeing = await searchSightseeing(sightseeingOptions);
-                console.log("found sight seeing ", foundSightseeing.length)
-                const geminiFilteredSightseeing = await geminiPromptBsedFilter(foundSightseeing, searchQuery)
-                // console.log("Gemin Filtered sight seeing ", geminiFilteredSightseeing)
-                // console.log("Array ", Array.isArray(geminiFilteredSightseeing))
-                let filteredSightseeingCodes;
-                let filteredSightseeing = [];
+            const sightseeingOptions = {
+                cityId: req.body.destinationCityCode,
+                countryCode: req.body.destinationCountryCode,
+                fromDate: req.body.fromDate,
+                toDate: req.body.toDate,
+                adultCount: req.body.adultCount,
+                childCount: req.body.childCount,
+                childAge: req.body.childAge,
+                preferredLanguage: req.body.preferredLanguage,
+                preferredCurrency: req.body.preferredCurrency,
+                isBaseCurrencyRequired: false,
+                endUserIp: req.ip,
+                tokenId,
+                // keyWord : req.body.aiPrompt,
+            };
+            // console.log("options :", options)
+            const foundSightseeing = await searchSightseeing(sightseeingOptions);
+            console.log("found sight seeing ", foundSightseeing.length)
+            const geminiFilteredSightseeing = await geminiPromptBsedFilter(foundSightseeing, searchQuery)
+            // console.log("Gemin Filtered sight seeing ", geminiFilteredSightseeing)
+            // console.log("Array ", Array.isArray(geminiFilteredSightseeing))
+            let filteredSightseeingCodes;
+            let filteredSightseeing = [];
 
-                if (geminiFilteredSightseeing && geminiFilteredSightseeing.length > 0) {
-                    console.log("Entering if");
-                    filteredSightseeingCodes = new Set(geminiFilteredSightseeing.map(item => item.SightseeingCode));
-                    if (filteredSightseeingCodes) {
-                        filteredSightseeing = foundSightseeing.filter(item => filteredSightseeingCodes.has(item.SightseeingCode));
-                    }
+            if (geminiFilteredSightseeing && geminiFilteredSightseeing.length > 0) {
+                console.log("Entering if");
+                filteredSightseeingCodes = new Set(geminiFilteredSightseeing.map(item => item.SightseeingCode));
+                if (filteredSightseeingCodes) {
+                    filteredSightseeing = foundSightseeing.filter(item => filteredSightseeingCodes.has(item.SightseeingCode));
                 }
-                // Filter foundSightseeing based on the codes
-                package.details.sightseeing = filteredSightseeing && filteredSightseeing?.length > 0 ? filteredSightseeing.slice(0,3) : foundSightseeing.slice(0,3);
+            }
+            // Filter foundSightseeing based on the codes
+            package.details.sightseeing = filteredSightseeing && filteredSightseeing?.length > 0 ? filteredSightseeing.slice(0, 3) : foundSightseeing.slice(0, 3);
             // }, 1000);
         } catch (error) {
             console.log("Error adding sight seeing", error.message);
         }
 
         // Search Flights
-
-        // const iataCodes = await getIATACode([req.body.originCity, req.body.destinationCity])
-        // if(!iataCodes){
-        //     return
-        // }
-        // const originIATACodes = iataCodes[0].IATACode;
-        // const destinationIATACodes = iataCodes[1].IATACode
-        // console.log("iataCodes", iataCodes)
-        // const flightOptions = {
-        //     EndUserIp: req.ip,
-        //     tokenId,
-        //     AdultCount: req.body.adultCount,
-        //     ChildCount: req.body.childCount || 0,
-        //     InfantCount: req.body.infantCount || 0,
-        //     DirectFlight: req.body.directFlight || false,
-        //     OneStopFlight: req.body.oneStopFlight || false,
-        //     JourneyType: req.body.journeyType || '1',
-        //     PreferredAirlines: req.body.preferredAirlines,
-        //     Segments: [
-        //         {
-        //             "Origin": originIATACodes,
-        //             "Destination": destinationIATACodes,
-        //             "FlightCabinClass": "2",
-        //             "PreferredDepartureTime": "2025-2-09T00: 00: 00",
-        //             "PreferredArrivalTime": "2025-2-09T00: 00: 00"
-        //         }
-        //     ],
-        //     Sources: req.body.sources
-        // };
-
-        // console.log("Flight options ", flightOptions)
-        // const foundFlights = await searchFlights(flightOptions)
-        // console.log("flights", foundFlights.length);   
-
         try {
+            // const iataCodes = await getIATACode([req.body.originCity, req.body.destinationCity])
+            // if(!iataCodes){
+            //     return
+            // }
+            // const originIATACodes = iataCodes[0].IATACode;
+            // const destinationIATACodes = iataCodes[1].IATACode
+            // console.log("iataCodes", iataCodes)
+            // const flightOptions = {
+            //     EndUserIp: req.ip,
+            //     tokenId,
+            //     AdultCount: req.body.adultCount,
+            //     ChildCount: req.body.childCount || 0,
+            //     InfantCount: req.body.infantCount || 0,
+            //     DirectFlight: req.body.directFlight || false,
+            //     OneStopFlight: req.body.oneStopFlight || false,
+            //     JourneyType: req.body.journeyType || '1',
+            //     PreferredAirlines: req.body.preferredAirlines,
+            //     Segments: [
+            //         {
+            //             "Origin": originIATACodes,
+            //             "Destination": destinationIATACodes,
+            //             "FlightCabinClass": "2",
+            //             "PreferredDepartureTime": "2025-2-09T00: 00: 00",
+            //             "PreferredArrivalTime": "2025-2-09T00: 00: 00"
+            //         }
+            //     ],
+            //     Sources: req.body.sources
+            // };
+
+            // console.log("Flight options ", flightOptions)
+            // const foundFlights = await searchFlights(flightOptions)
+            // console.log("flights", foundFlights.length);   
+
             let flightOptions = await prepareFlightBody(req.body, searchQuery);
 
             flightOptions.EndUserIp = req.ip;
@@ -137,12 +137,25 @@ exports.recommendPackage = async (req, res) => {
             // }
             package.details.flights = [foundFlights[0].slice(0, 1)];
         } catch (error) {
-            console.log("Error Adding flights");
+            console.log("Error Adding flights", error.message);
+        }
+
+        // Add package Description 
+        try {
+            const packageDescription = await generatePackageDetails(package);
+            if (packageDescription) {
+                const { itinerary, ...description } = packageDescription;
+                if (description)
+                    package = { ...package, ...description };
+                if (itinerary)
+                    package.details.itinerary = itinerary;
+            }
+        } catch (error) {
+            console.log("Error generating description for the package", error.message);
         }
 
 
-
-        res.status(200).json({ success: "OK", package });
+        res.status(200).json(package);
     } catch (error) {
         console.log("Error ", error.message)
         res.status(400).json({ message: 'Error fetching packages', error });
