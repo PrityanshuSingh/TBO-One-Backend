@@ -2,7 +2,7 @@ const { GoogleGenerativeAI, SchemaType } = require("@google/generative-ai");
 
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
-const generatePackageDetails = async (package) => {
+const generatePackageDetails = async (package, userPrompt = "") => {
 
     const packageString = JSON.stringify(package);
 
@@ -84,9 +84,6 @@ const generatePackageDetails = async (package) => {
     });
 
     const examplePackage = {
-        "_id": {
-            "$oid": "679d505d4a4362b7ba5a536d"
-        },
         "packageTitle": "Rajasthan Royal Heritage Tour",
         "image": "https://media.istockphoto.com/id/2150015755/photo/elephant-riders-in-amber-fort-famous-tourist-attraction-of-jaipur-india.webp?a=1&b=1&s=612x612&w=0&k=20&c=2eIrJx_4ek-Rdd6VOkoCNwqpFqnSx8pl3e7f77My_ng=",
         "location": "Rajasthan, India",
@@ -101,231 +98,6 @@ const generatePackageDetails = async (package) => {
             "totalPrice": 37000
         },
         "details": {
-            "flights": [
-                [
-                    {
-                        "FirstNameFormat": null,
-                        "IsBookableIfSeatNotAvailable": false,
-                        "IsHoldAllowedWithSSR": false,
-                        "LastNameFormat": null,
-                        "ResultIndex": "FLIGHT12345",
-                        "Source": 3,
-                        "IsLCC": true,
-                        "IsRefundable": true,
-                        "IsPanRequiredAtBook": false,
-                        "IsPanRequiredAtTicket": false,
-                        "IsPassportRequiredAtBook": false,
-                        "IsPassportRequiredAtTicket": false,
-                        "GSTAllowed": true,
-                        "IsCouponAppilcable": true,
-                        "IsGSTMandatory": false,
-                        "AirlineRemark": "IndiGo operates multiple daily flights to Rajasthan destinations.",
-                        "IsPassportFullDetailRequiredAtBook": false,
-                        "ResultFareType": "RegularFare",
-                        "Fare": {
-                            "Currency": "INR",
-                            "BaseFare": 8000,
-                            "Tax": 2000,
-                            "TaxBreakup": [
-                                {
-                                    "key": "GST",
-                                    "value": 1800
-                                },
-                                {
-                                    "key": "OtherTaxes",
-                                    "value": 200
-                                }
-                            ],
-                            "YQTax": 0,
-                            "AdditionalTxnFeeOfrd": 0,
-                            "AdditionalTxnFeePub": 0,
-                            "PGCharge": 0,
-                            "OtherCharges": 50,
-                            "ChargeBU": [
-                                {
-                                    "key": "CONVENIENCECHARGE",
-                                    "value": 50
-                                }
-                            ],
-                            "Discount": 0,
-                            "PublishedFare": 10050,
-                            "CommissionEarned": 0,
-                            "PLBEarned": 0,
-                            "IncentiveEarned": 0,
-                            "OfferedFare": 10050,
-                            "TdsOnCommission": 0,
-                            "TdsOnPLB": 0,
-                            "TdsOnIncentive": 0,
-                            "ServiceFee": 0,
-                            "TotalBaggageCharges": 0,
-                            "TotalMealCharges": 0,
-                            "TotalSeatCharges": 0,
-                            "TotalSpecialServiceCharges": 0
-                        },
-                        "FareBreakdown": [
-                            {
-                                "Currency": "INR",
-                                "PassengerType": 1,
-                                "PassengerCount": 1,
-                                "BaseFare": 4000,
-                                "Tax": 1000,
-                                "TaxBreakUp": [
-                                    {
-                                        "key": "GST",
-                                        "value": 900
-                                    },
-                                    {
-                                        "key": "OtherTaxes",
-                                        "value": 100
-                                    }
-                                ],
-                                "YQTax": 0,
-                                "AdditionalTxnFeeOfrd": 0,
-                                "AdditionalTxnFeePub": 0,
-                                "PGCharge": 0,
-                                "SupplierReissueCharges": 0
-                            },
-                            {
-                                "Currency": "INR",
-                                "PassengerType": 2,
-                                "PassengerCount": 1,
-                                "BaseFare": 4000,
-                                "Tax": 1000,
-                                "TaxBreakUp": [
-                                    {
-                                        "key": "GST",
-                                        "value": 900
-                                    },
-                                    {
-                                        "key": "OtherTaxes",
-                                        "value": 100
-                                    }
-                                ],
-                                "YQTax": 0,
-                                "AdditionalTxnFeeOfrd": 0,
-                                "AdditionalTxnFeePub": 0,
-                                "PGCharge": 0,
-                                "SupplierReissueCharges": 0
-                            }
-                        ],
-                        "Segments": [
-                            [
-                                {
-                                    "Baggage": "15 KG",
-                                    "CabinBaggage": "7 KG",
-                                    "CabinClass": 2,
-                                    "SupplierFareClass": null,
-                                    "TripIndicator": 1,
-                                    "SegmentIndicator": 1,
-                                    "Airline": {
-                                        "AirlineCode": "6E",
-                                        "AirlineName": "IndiGo",
-                                        "FlightNumber": "6E-123",
-                                        "FareClass": "V",
-                                        "OperatingCarrier": ""
-                                    },
-                                    "Origin": {
-                                        "Airport": {
-                                            "AirportCode": "DEL",
-                                            "AirportName": "Indira Gandhi International Airport",
-                                            "Terminal": "3",
-                                            "CityCode": "DEL",
-                                            "CityName": "Delhi",
-                                            "CountryCode": "IN",
-                                            "CountryName": "India"
-                                        },
-                                        "DepTime": "2025-07-01T08:00:00"
-                                    },
-                                    "Destination": {
-                                        "Airport": {
-                                            "AirportCode": "JAI",
-                                            "AirportName": "Sanganer Airport",
-                                            "Terminal": "1",
-                                            "CityCode": "JAI",
-                                            "CityName": "Jaipur",
-                                            "CountryCode": "IN",
-                                            "CountryName": "India"
-                                        },
-                                        "ArrTime": "2025-07-01T09:30:00"
-                                    },
-                                    "Duration": 90,
-                                    "GroundTime": 0,
-                                    "Mile": 0,
-                                    "StopOver": false,
-                                    "FlightInfoIndex": "",
-                                    "StopPoint": "",
-                                    "StopPointArrivalTime": null,
-                                    "StopPointDepartureTime": null,
-                                    "Craft": "737",
-                                    "Remark": null,
-                                    "IsETicketEligible": true,
-                                    "FlightStatus": "Confirmed",
-                                    "Status": "",
-                                    "FareClassification": {
-                                        "Type": ""
-                                    }
-                                }
-                            ]
-                        ],
-                        "LastTicketDate": "2025-07-30",
-                        "TicketAdvisory": null,
-                        "FareRules": [
-                            {
-                                "Origin": "DEL",
-                                "Destination": "JAI",
-                                "Airline": "6E",
-                                "FareBasisCode": "V",
-                                "FareRuleDetail": "No changes allowed after booking.",
-                                "FareRestriction": "Non-refundable.",
-                                "FareFamilyCode": "Economy",
-                                "FareRuleIndex": "FR12345"
-                            }
-                        ],
-                        "AirlineCode": "6E",
-                        "MiniFareRules": [
-                            [
-                                {
-                                    "JourneyPoints": "DEL-JAI",
-                                    "Type": "Reissue",
-                                    "From": "24",
-                                    "To": "72",
-                                    "Unit": "HOURS",
-                                    "Details": "INR 1500"
-                                },
-                                {
-                                    "JourneyPoints": "DEL-JAI",
-                                    "Type": "Reissue",
-                                    "From": "72",
-                                    "To": "",
-                                    "Unit": "HOURS",
-                                    "Details": "INR 2000"
-                                },
-                                {
-                                    "JourneyPoints": "DEL-JAI",
-                                    "Type": "Cancellation",
-                                    "From": "24",
-                                    "To": "72",
-                                    "Unit": "HOURS",
-                                    "Details": "INR 2500"
-                                },
-                                {
-                                    "JourneyPoints": "DEL-JAI",
-                                    "Type": "Cancellation",
-                                    "From": "72",
-                                    "To": "",
-                                    "Unit": "HOURS",
-                                    "Details": "INR 3500"
-                                }
-                            ]
-                        ],
-                        "ValidatingAirline": "6E",
-                        "FareClassification": {
-                            "Color": "lightGreen",
-                            "Type": "Publish"
-                        }
-                    }
-                ]
-            ],
             "hotel": {
                 "name": "Taj Rambagh Palace",
                 "address": "Rambagh, Jaipur, Rajasthan, India",
@@ -452,22 +224,6 @@ const generatePackageDetails = async (package) => {
                     "IsPANMandatory": false
                 }
             ],
-            "transport": {
-                "airportTransfers": {
-                    "pickup": {
-                        "type": "Private Car",
-                        "datetime": "2025-07-01T10:00:00Z",
-                        "pickupLocation": "Jaipur International Airport",
-                        "dropoffLocation": "Taj Rambagh Palace"
-                    },
-                    "dropoff": {
-                        "type": "Private Car",
-                        "datetime": "2025-07-12T12:00:00Z",
-                        "pickupLocation": "Taj Rambagh Palace",
-                        "dropoffLocation": "Jaipur International Airport"
-                    }
-                }
-            },
             "itinerary": [
                 {
                     "day": 1,
@@ -586,12 +342,7 @@ const generatePackageDetails = async (package) => {
                         "Departure"
                     ]
                 }
-            ],
-            "additionalServices": {
-                "travelInsurance": true,
-                "visaAssistance": false,
-                "specialRequests": "Vegetarian meal preferences, Extra pillows upon request"
-            }
+            ]
         },
         "bestTimeToVisit": "October to March",
         "recommendationTags": [
@@ -620,17 +371,42 @@ const generatePackageDetails = async (package) => {
 
     const prompt = `
 
-    Here is an example package
+    You are an AI travel agent specializing in creating detailed travel packages.
+
+    ### Example Package:
+    Below is a sample travel package for reference. Use this as a learning guide for tone, structure, and details.
 
     ${examplePackageString}
 
-    You are a travel agent AI.  Given the following package details, generate a detailed travel package JSON object that conforms to the provided JSON schema.  The JSON should include the package title, image URL, location, duration, descriptions, price breakdown, best time to visit, recommendation tags, notes, FAQs, and a detailed itinerary with dates and activities for each day.  Be creative and fill in the details based on the general information provided.  If specific details are not provided, make reasonable assumptions.  Return ONLY the valid JSON object. Do not include any other text or explanations.
+    ---
 
-    Package Details:
+    ### Task:
+    Given the package details below, generate a **comprehensive travel package JSON** that strictly follows the provided JSON schema. The JSON **must** include:
+
+    - **Title, Image, Location, and Duration**  
+    - **Descriptions:** A compelling **short description** and a detailed **long description** that highlight key attractions, experiences, and themes of the trip.  
+    - **Sightseeing & Hotels:** Incorporate sightseeing activities and hotel details into the descriptions and itinerary.  
+    - **Price Breakdown:** Include currency, base price, taxes, discounts, and total price.  
+    - **Best Time to Visit & Recommendations:** Suggest ideal travel seasons and relevant experience tags.  
+    - **Notes & FAQs:** Provide essential tips and answer common traveler questions.  
+    - **Itinerary:** A structured **day-by-day itinerary**, with each day including:
+    - **Day number & date**
+    - **Planned activities (linked to sightseeing & hotels)**
+    - **Experiences, guided tours, and free time suggestions**  
+
+    ### **Current Package Details:**
+    Use the following package details to build the JSON output:
 
     ${packageString}
 
-    you MUST follow the json schema:
+    ---
+
+    ### **Instructions:**
+    - **Be creative and fill in missing details** based on the general package information.
+    - **The description name and everything should be related to the current package information and the user prompt : ${userPrompt}
+    - **Ensure sutructural consistency** with the given example package and data consistency with the current package details.  
+    - **Follow the JSON schema strictly.**  
+    - **Return ONLY the JSON object.** Do not include any explanations or additional text.  
 
     `;
 

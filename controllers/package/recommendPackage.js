@@ -5,6 +5,7 @@ const searchFlights = require('../../utils/flights/searchFlights');
 const getHotelDetails = require('../../utils/hotels/getHotelDetails');
 const vectorSearch = require('../../utils/hotels/vectorSearch');
 const generatePackageDetails = require('../../utils/package/generatePackageDetails');
+const { createPackage } = require('../../utils/package/Package');
 const geminiPromptBsedFilter = require('../../utils/sightseeing/geminniPromptBasedFilter');
 const searchSightseeing = require('../../utils/sightseeing/searchSightseeing');
 
@@ -135,14 +136,19 @@ exports.recommendPackage = async (req, res) => {
             // if(!foundFlights){
             //     return
             // }
-            package.details.flights = [foundFlights[0].slice(0, 1)];
+            if (foundFlights.length > 1) {
+                package.details.flights = [foundFlights[0].slice(0, 1), foundFlights[1].slice(0, 1)];
+            }
+            else if(foundFlights.length === 1){
+                package.details.flights = [foundFlights[0].slice(0, 1)];
+            }
         } catch (error) {
             console.log("Error Adding flights", error.message);
         }
 
         // Add package Description 
         try {
-            const packageDescription = await generatePackageDetails(package);
+            const packageDescription = await generatePackageDetails(package, searchQuery);
             if (packageDescription) {
                 const { itinerary, ...description } = packageDescription;
                 if (description)
@@ -154,7 +160,21 @@ exports.recommendPackage = async (req, res) => {
             console.log("Error generating description for the package", error.message);
         }
 
+        const savedPackage = await createPackage(
+            package
+        );
 
+        package.id = savedPackage._id;
+
+        if(savedPackage){
+            console.log("Saved Package with id ", savedPackage._id)
+        }
+
+        if (!Array.isArray(package)) {
+            package = [package];
+        }
+
+        // package.agentId = ""
         res.status(200).json(package);
     } catch (error) {
         console.log("Error ", error.message)

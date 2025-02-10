@@ -37,18 +37,6 @@ app.options("*", (req, res) => {
     res.sendStatus(200);
 });
 
-app.post('/api/ai/hostImage', imageUpload.none(), async (req, res) => {
-    try {
-        const { image } = req.body;
-        const response = await uploadImage(image);
-        console.log(response);
-        res.status(200).json({ imageURL: response.secure_url })
-    } catch (error) {
-        console.log("Error uploading image", error.message);
-
-    }
-})
-
 app.use('/api', require('./routes'));
 
 app.listen(PORT, '0.0.0.0', async () => {
