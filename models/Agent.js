@@ -21,7 +21,8 @@ const agentSchema = new mongoose.Schema({
       linkedin: { type: String, default: '' },
       twitter: { type: String, default: '' }
     },
-    saved: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Package' }]
+    saved: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Package' }],
+    personalized: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Package' }]
   },
   userName: { type: String, required: true, unique : true},
   password: { type: String, required: true },
