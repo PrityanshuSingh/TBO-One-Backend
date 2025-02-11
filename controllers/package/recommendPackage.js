@@ -1,4 +1,5 @@
 const Package = require('../../models/Package');
+const Agent = require('../../models/Agent');
 const getIATACode = require('../../utils/flights/getIATACode');
 const prepareFlightBody = require('../../utils/flights/prepareFlightBody');
 const searchFlights = require('../../utils/flights/searchFlights');
@@ -29,6 +30,7 @@ exports.recommendPackage = async (req, res) => {
     let package = { details: {} };
     let hotel = [];
     try {
+        const agentId = req.body.agentId;
         const { aiPrompt: searchQuery } = req.body;
 
         // Search Hotels
@@ -160,22 +162,32 @@ exports.recommendPackage = async (req, res) => {
             console.log("Error generating description for the package", error.message);
         }
 
-        const savedPackage = await createPackage(
+        const newGenPackage = await createPackage(
             package
         );
 
-        package.id = savedPackage._id;
+        package.id = newGenPackage._id;
 
-        if(savedPackage){
-            console.log("Saved Package with id ", savedPackage._id)
+        if(newGenPackage){
+            console.log("Created and saved Package with id ", newGenPackage._id)
         }
+
+        const agent = await Agent.findById(agentId);
+        if (!agent) {
+            return res.status(404).json({ error: 'Agent not found' });
+        }
+
+        if (!agent.Profile.personalized.includes(package.id)) {
+            agent.Profile.personalized.push(package.id);
+            await agent.save();
+          }
 
         if (!Array.isArray(package)) {
             package = [package];
         }
 
         // package.agentId = ""
-        res.status(200).json(package);
+        res.status(200).json({ package, personalized: agent.Profile.personalized });
     } catch (error) {
         console.log("Error ", error.message)
         res.status(400).json({ message: 'Error fetching packages', error });
