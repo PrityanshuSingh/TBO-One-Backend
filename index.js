@@ -20,6 +20,7 @@ const getIATACode = require('./utils/flights/getIATACode');
 const generatePackageDetails = require('./utils/package/generatePackageDetails');
 const { imageUpload } = require('./middleware/upload');
 const uploadImage = require('./utils/image/uploadImage');
+const recommendDestination = require('./utils/trends/recommendDestination');
 
 app.use(express.json())
     ; (async () => {
@@ -543,4 +544,35 @@ app.listen(PORT, '0.0.0.0', async () => {
     //         ]
     //     }
     // })
+
+    // const CityCode = await findCityCode(null, 'IN')
+    // console.log("City", CityCode)
+    // for (let j = 0; j < CityCode.length; j++) {
+    //     const city = CityCode[j];
+    //     if (city.Code === "111558") {
+    //         continue
+    //     }
+    //     await embedHotelFeaturesAndDescription([], city.Code)
+    // }
+    // console.log("Embeding complete for : Citycode : ", CityCode)
+    const recommendedPlaces = await recommendDestination({
+        "age": 20,
+        "origin": {
+            "country": "India",
+            "region": "East",
+            "coordinates": [20.2960, 85.8246]
+        },
+        "travel_style": ["nature", "cultural"],
+        "placesVisited": [
+            {
+                "place": "Puri",
+                "tags": ["Beach", "Spiritual"],
+                "duration_days": 3,
+                "budget_category": "budget",
+                "coordinates": [19.8135, 85.8315],
+                "region": "East"
+            }
+        ]
+    });
+    console.log(recommendedPlaces);
 });
