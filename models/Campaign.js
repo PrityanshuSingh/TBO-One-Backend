@@ -37,7 +37,6 @@ const campaignSchema = new mongoose.Schema(
     // Additional relational fields (if needed)
     grpId: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Group' }],
     contactId: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Customer' }],
-    interestContacts: { type: mongoose.Schema.Types.Mixed, ref: 'Contact' },
 
     // Timestamps
     startDate: { type: Date, default: Date.now },

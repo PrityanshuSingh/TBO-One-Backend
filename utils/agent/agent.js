@@ -3,6 +3,9 @@ const Group = require('../../models/Group');
 const Customer = require('../../models/Customer');
 const Campaign = require('../../models/Campaign');
 const bcrypt = require('bcryptjs');
+
+const mongoose = require('mongoose');
+const Interest = require('../../models/Interest');
 // Create an Agent
 const createAgent = async (data) => {
     try {
@@ -67,6 +70,21 @@ const getAgent = async (query) => {
             agentId: agent._id
         }).lean();
 
+        // For each campaign, fetch matching interest contacts (from the Interest collection)
+// and attach them as "interestContacts"
+for (let i = 0; i < campaigns.length; i++) {
+    const camp = campaigns[i];
+    // Use the campaign's _id directly (from the lean query, _id is available)
+    const campObjectId = camp._id;
+    const interests = await Interest.find({ campaignId: campObjectId }).lean();
+    const interestContacts = interests.map(interest => {
+        const { _id, ...rest } = interest;
+        return { id: _id.toString(), ...rest };
+    });
+    camp.interestContacts = interestContacts;
+}
+
+        
         // Function to remove _id and convert it to id
         const removeId = (data) => {
             return data.map(item => {

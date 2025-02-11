@@ -1,8 +1,10 @@
+// controllers/campaignController.js
 const sendWhatsappMessage = require("../../../../utils/socials/whatsapp/twilio/sendWhatsappMessage");
 const Contact = require("../../../../models/Customer");
 const Group = require("../../../../models/Group");
 const Package = require("../../../../models/Package");
 const Agent = require("../../../../models/Agent");
+const Interest = require("../../../../models/Interest"); // Import the Interest model
 const { createCampaign } = require("../../createCampain");
 
 exports.sendMessage = async (req, res, next) => {
@@ -21,7 +23,10 @@ exports.sendMessage = async (req, res, next) => {
     // Format the incoming message
     let formattedMessage = req.body.message || "";
     formattedMessage = formattedMessage.replace(/\r\n/g, "\n\n");
-    formattedMessage = formattedMessage.replace(/^Details:\s*(.*)$/m, `View Details: ${req.body.detailsUrl}\n`);
+    formattedMessage = formattedMessage.replace(
+      /^Details:\s*(.*)$/m,
+      `View Details: ${req.body.detailsUrl}\n`
+    );
 
     // ---------- Fetch Contact Numbers for Individual Contact IDs ----------
     let contactNumbers = [];
@@ -40,7 +45,9 @@ exports.sendMessage = async (req, res, next) => {
         }
         return acc;
       }, []);
-      const uniqueGroupContactIds = [...new Set(groupContactIds.map(id => id.toString()))];
+      const uniqueGroupContactIds = [
+        ...new Set(groupContactIds.map(id => id.toString()))
+      ];
       if (uniqueGroupContactIds.length > 0) {
         const groupContacts = await Contact.find({ _id: { $in: uniqueGroupContactIds } });
         groupContactNumbers = groupContacts.map(contact => contact.whatsApp);
@@ -63,13 +70,12 @@ exports.sendMessage = async (req, res, next) => {
     console.log("Agent found with _id:", agent._id);
 
     // ---------- Campaign Creation / Retrieval ----------
-    // Extract campaign-related fields from req.body
     const {
       campaignId,      // Provided by client as a 24-character hex string
-      campaignName,    // Campaign name (common)
-      campaignType,    // "whatsapp", "email", or "instagram"
-      title,           // For WhatsApp campaigns: campaign title
-      description,     // For WhatsApp campaigns: description
+      campaignName,    
+      campaignType,   
+      title,    
+      description,    
       scheduleDateTime,
       frequency,
       campaignEnd,     // End time (for campaignEnd)
@@ -94,17 +100,31 @@ exports.sendMessage = async (req, res, next) => {
       imageUrl: mediaUrl,
       grpId: groupIdsArray,
       contactId: contactIdsArray,
-      interestContacts: []
     };
 
     // Create or update campaign document using the campaign controller
     const campaign = await createCampaign(campaignPayload);
 
+    // Convert campaign to a plain object and map _id to id
     const campaignObj = campaign.toObject ? campaign.toObject() : { ...campaign };
     const transformedCampaign = { ...campaignObj, id: campaignObj._id };
     delete transformedCampaign._id;
 
-    // ---------- Loop through each phone number and send the WhatsApp message ----------
+    // ---------- Fetch matching interest contacts for this campaign ----------
+    const interests = await Interest.find({ campaignId: campaign._id }).lean();
+    const interestContacts = interests.map(interest => ({
+      id: interest._id,
+      name: interest.name,
+      whatsappNumber: interest.whatsappNumber,
+      status: interest.status,
+      suggestions: interest.suggestions,
+      newPkgId: interest.newPkgId
+    }));
+
+    // Attach interestContacts to the transformed campaign JSON
+    transformedCampaign.interestContacts = interestContacts;
+
+    // ---------- (Optional) Loop through each phone number and send the WhatsApp message ----------
     for (const number of uniquePhoneNumbers) {
       await sendWhatsappMessage(number, formattedMessage, mediaUrl);
     }
