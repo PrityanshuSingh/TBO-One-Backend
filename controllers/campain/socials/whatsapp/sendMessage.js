@@ -2,11 +2,12 @@ const sendWhatsappMessage = require("../../../../utils/socials/whatsapp/twilio/s
 const Contact = require("../../../../models/Customer");
 const Group = require("../../../../models/Group");
 const Package = require("../../../../models/Package");
+const Agent = require("../../../../models/Agent");
+const { createCampaign } = require("../../createCampain");
 
 exports.sendMessage = async (req, res, next) => {
   try {
-    // console.log("Logging request body:", req.body);
-
+    // Parse groupIds and contactIds from req.body (assumed as JSON strings)
     let groupIdsArray = [];
     let contactIdsArray = [];
     try {
@@ -17,23 +18,15 @@ exports.sendMessage = async (req, res, next) => {
       return res.status(400).json({ error: "Invalid format in request" });
     }
 
-    // Format the incoming message:
+    // Format the incoming message
     let formattedMessage = req.body.message || "";
-    // Normalize line breaks (replace CRLF with LF)
     formattedMessage = formattedMessage.replace(/\r\n/g, "\n\n");
-    // Replace a line starting with "Details:" with "View Details:" 
-    formattedMessage = formattedMessage.replace(/^Details:\s*(.*)$/m, `View Details: ${req.body.DetailsUrl}\n`);
-
-    // Append image URL (if provided) so that the WhatsApp message shows the image link
-    // if (req.body.imageUrl) {
-    //   formattedMessage += `\n\nDestination Image: ${req.body.imageUrl}\n`;
-    // }
+    formattedMessage = formattedMessage.replace(/^Details:\s*(.*)$/m, `View Details: ${req.body.detailsUrl}\n`);
 
     // ---------- Fetch Contact Numbers for Individual Contact IDs ----------
     let contactNumbers = [];
     if (contactIdsArray.length > 0) {
       const contacts = await Contact.find({ _id: { $in: contactIdsArray } });
-      // Assume each contact document has a field "whatsApp" with the phone number
       contactNumbers = contacts.map(contact => contact.whatsApp);
     }
 
@@ -41,39 +34,78 @@ exports.sendMessage = async (req, res, next) => {
     let groupContactNumbers = [];
     if (groupIdsArray.length > 0) {
       const groups = await Group.find({ _id: { $in: groupIdsArray } });
-      // Accumulate all contact IDs from the groups
       const groupContactIds = groups.reduce((acc, group) => {
         if (group.contactId && Array.isArray(group.contactId)) {
           return acc.concat(group.contactId);
         }
         return acc;
       }, []);
-
-      // Remove duplicates (convert ObjectIDs to strings)
       const uniqueGroupContactIds = [...new Set(groupContactIds.map(id => id.toString()))];
       if (uniqueGroupContactIds.length > 0) {
         const groupContacts = await Contact.find({ _id: { $in: uniqueGroupContactIds } });
         groupContactNumbers = groupContacts.map(contact => contact.whatsApp);
       }
     }
-
-    console.log("Group Contact Numbers:", groupContactNumbers);
-
-    // ---------- Combine and Deduplicate All Phone Numbers ----------
     const allPhoneNumbers = [...contactNumbers, ...groupContactNumbers];
     const uniquePhoneNumbers = [...new Set(allPhoneNumbers)];
-
     console.log("Unique Phone Numbers:", uniquePhoneNumbers);
 
+    // ---------- Fetch Package Details ----------
     const fetchPackage = await Package.findOne({ _id: req.body.packageId });
-    mediaUrl = fetchPackage?.image || null;
+    const mediaUrl = fetchPackage?.image || null;
 
-    // ---------- Loop through each number and send the message ----------
-    for (const number of uniquePhoneNumbers) {
-      await sendWhatsappMessage(number, formattedMessage, mediaUrl);
+    // ---------- Fetch Agent by Email ----------
+    // Assume the agent's email is provided in req.body.email
+    const agent = await Agent.findOne({ "Profile.email": req.body.email });
+    if (!agent) {
+      return res.status(404).json({ error: "Agent not found." });
     }
+    console.log("Agent found with _id:", agent._id);
 
-    res.status(201).json({ message: "Message sent successfully", body: formattedMessage });
+    // ---------- Campaign Creation / Retrieval ----------
+    // Extract campaign-related fields from req.body
+    const {
+      campaignId,      // Provided by client as a 24-character hex string
+      campaignName,    // Campaign name (common)
+      campaignType,    // "whatsapp", "email", or "instagram"
+      title,           // For WhatsApp campaigns: campaign title
+      description,     // For WhatsApp campaigns: description
+      scheduleDateTime,
+      frequency,
+      campaignEnd,     // End time (for campaignEnd)
+    } = req.body;
+
+    // Prepare payload for campaign creation
+    const campaignPayload = {
+      _id: campaignId,         // Our custom campaign ID
+      agentId: agent._id,       // Retrieved from agent lookup
+      pkgId: req.body.packageId,
+      type: campaignType,
+      name: campaignName,       // Common field (campaign name)
+      status: "Running",        // Default status
+      scheduleTime: scheduleDateTime ? new Date(scheduleDateTime) : null,
+      frequency: frequency,
+      endTime: campaignEnd ? new Date(campaignEnd) : null,
+      // Extra fields for WhatsApp campaign (or others):
+      title: title,
+      description: description,
+      message: req.body.message,
+      detailsUrl: req.body.detailsUrl,
+      imageUrl: mediaUrl,
+      grpId: groupIdsArray,
+      contactId: contactIdsArray,
+      interestContacts: []
+    };
+
+    // Create or update campaign document using the campaign controller
+    const campaign = await createCampaign(campaignPayload);
+
+    // ---------- Loop through each phone number and send the WhatsApp message ----------
+    // for (const number of uniquePhoneNumbers) {
+    //   await sendWhatsappMessage(number, formattedMessage, mediaUrl);
+    // }
+
+    res.status(201).json({ message: "Message sent successfully", campaign });
   } catch (error) {
     console.error("Unexpected server error:", error);
     res.sendStatus(500);
