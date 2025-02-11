@@ -105,9 +105,9 @@ exports.sendMessage = async (req, res, next) => {
     delete transformedCampaign._id;
 
     // ---------- Loop through each phone number and send the WhatsApp message ----------
-    // for (const number of uniquePhoneNumbers) {
-    //   await sendWhatsappMessage(number, formattedMessage, mediaUrl);
-    // }
+    for (const number of uniquePhoneNumbers) {
+      await sendWhatsappMessage(number, formattedMessage, mediaUrl);
+    }
 
     res.status(201).json({ message: "Message sent successfully", campaign: transformedCampaign });
   } catch (error) {
