@@ -100,12 +100,16 @@ exports.sendMessage = async (req, res, next) => {
     // Create or update campaign document using the campaign controller
     const campaign = await createCampaign(campaignPayload);
 
+    const campaignObj = campaign.toObject ? campaign.toObject() : { ...campaign };
+    const transformedCampaign = { ...campaignObj, id: campaignObj._id };
+    delete transformedCampaign._id;
+
     // ---------- Loop through each phone number and send the WhatsApp message ----------
     // for (const number of uniquePhoneNumbers) {
     //   await sendWhatsappMessage(number, formattedMessage, mediaUrl);
     // }
 
-    res.status(201).json({ message: "Message sent successfully", campaign });
+    res.status(201).json({ message: "Message sent successfully", campaign: transformedCampaign });
   } catch (error) {
     console.error("Unexpected server error:", error);
     res.sendStatus(500);

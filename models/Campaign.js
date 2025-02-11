@@ -32,19 +32,17 @@ const campaignSchema = new mongoose.Schema(
     // For Email campaigns
     subject: { type: String },     // Email: subject line (could be same as package title initially)
     emailBody: { type: String },   // Email: email body content
-    recipients: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Contact' }], // Recipients list
+    recipients: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Customer' }], // Recipients list
 
     // Additional relational fields (if needed)
     grpId: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Group' }],
-    contactId: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Contact' }],
+    contactId: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Customer' }],
     interestContacts: { type: mongoose.Schema.Types.Mixed, ref: 'Contact' },
 
     // Timestamps
     startDate: { type: Date, default: Date.now },
-    createdAt: { type: Date, default: Date.now },
-    updatedAt: { type: Date, default: Date.now },
   },
-  { strict: false }
+  { strict: false, timestamps: true}
 );
 
 module.exports = mongoose.model('Campaign', campaignSchema);

@@ -6,5 +6,5 @@ const { imageUpload } = require('../middleware/upload');
 const router = express.Router();
 // router.post("/createPackage", createPackage)
 router.get('/', getAgentPackages)
-router.post('/generate', imageUpload.none(),recommendPackage)
+router.post('/generate', imageUpload.none(), recommendPackage)
 module.exports = router;
