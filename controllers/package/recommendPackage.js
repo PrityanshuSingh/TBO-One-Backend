@@ -9,6 +9,7 @@ const generatePackageDetails = require('../../utils/package/generatePackageDetai
 const { createPackage } = require('../../utils/package/Package');
 const geminiPromptBsedFilter = require('../../utils/sightseeing/geminniPromptBasedFilter');
 const searchSightseeing = require('../../utils/sightseeing/searchSightseeing');
+const generatePackageImage = require('../../utils/genai/generatePackageImage');
 
 exports.recommendPackage = async (req, res) => {
 
@@ -47,7 +48,7 @@ exports.recommendPackage = async (req, res) => {
             console.log("error finding hotel");
         }
 
-        const tokenId = "9bb8df0c-110e-4803-991b-0ad1326d4313"
+        const tokenId = process.env.TBO_SIGHTSEEING_AND_FLIGHT_TOKEN
 
         // // Search Sightseeing
         try {
@@ -162,7 +163,23 @@ exports.recommendPackage = async (req, res) => {
             console.log("Error generating description for the package", error.message);
         }
 
+
+        // Generate Package Image
+        try {
+            const prompt = `Generate a captivating image for the travel package "${package.packageTitle}" located in ${req.body.destinationCity}. The package short description is: "${package.shortDescription}". Make sure to keep the image relevant to the package and use key elements from the description. Make it visually appealing and engaging and in context of travelling and travel Packages. Keep it realistic and relatable to the audience. Try to avoid sky, clouds, and other generic images.`;
+            package.image = await generatePackageImage(prompt);
+        } catch (error) {
+            console.log("Error generating image for the package", error.message);
+        }
+
+
+
         package.type = "local";
+
+        console.log("Package Image", package.image);
+        console.log("Package short description", package.shortDescription);
+        console.log("Package long description", package.detailedDescription);
+
 
         const newGenPackage = await createPackage(
             package
