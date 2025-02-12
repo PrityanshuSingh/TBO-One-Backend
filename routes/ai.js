@@ -2,15 +2,20 @@ const express = require('express');
 const { getTemplate } = require('../controllers/campain/template/getTemplate');
 const { generateCaption } = require('../utils/genai/generateCaption');
 const {generateImage} = require('../utils/genai/generateImage');
-const {imageUpload} = require('../middleware/upload');
 const generateWpDesc = require('../utils/genai/generateWpDesc');
+const generateInstaPackageCaption = require('../utils/genai/generateInstaPackageCaption');
+
+const {imageUpload} = require('../middleware/upload');
+const uploadImage = require('../utils/image/uploadImage');
 
 const router = express.Router();
 router.get("/templates", getTemplate);
 router.use("/packages",require('./package'))
 router.post("/caption", imageUpload.none(), generateCaption);
+router.post("/instagrampackageCaption", generateInstaPackageCaption);
 router.post("/image", generateImage);
 router.post("/wpDescription", generateWpDesc);
+
 router.post('/hostImage', imageUpload.none(), async (req, res) => {
     try {
         const { image } = req.body;

@@ -28,6 +28,7 @@ const campaignSchema = new mongoose.Schema(
 
     // For Instagram campaigns
     caption: { type: String },     // Instagram: caption text
+    imageUrl: { type: String },    // Instagram: image URL
 
     // For Email campaigns
     subject: { type: String },     // Email: subject line (could be same as package title initially)

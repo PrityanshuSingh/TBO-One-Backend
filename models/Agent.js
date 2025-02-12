@@ -22,7 +22,11 @@ const agentSchema = new mongoose.Schema({
       twitter: { type: String, default: '' }
     },
     saved: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Package' }],
-    personalized: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Package' }]
+    personalized: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Package' }],
+    instagram: {
+      igUserId: { type: String, default: '' },
+      longLivedToken: { type: String, default: '' }
+    }
   },
   userName: { type: String, required: true, unique : true},
   password: { type: String, required: true },

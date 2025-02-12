@@ -1,185 +1,174 @@
 const express = require('express');
+const axios = require('axios');
+const qs = require('qs');
+const Agent = require('../models/Agent');
+const { publishInstagramCampaign } = require('../controllers/campain/socials/instagram/publishCampaignPost');
+const { publishInstagramPersonal } = require('../controllers/campain/socials/instagram/publishPersonalPost');
 const router = express.Router();
 
-// In-memory token storage (demo only!). 
-// In production, store tokens in DB.
-let IG_USER_ID = null; //status callback publish
-let SHORT_LIVED_TOKEN = null; //callback
-let LONG_LIVED_TOKEN = null; // staus callback publish
-
-/* 
-   1. Status Endpoint
-   Let your frontend poll or request 
-   GET api/auth/status
-   => { connected: boolean }
-*/
-router.get("/status", (req, res) => {
-    const isConnected = !!(LONG_LIVED_TOKEN && IG_USER_ID);
-    return res.json({ connected: isConnected });
+// Status Endpoint: Check if an agent is connected to Instagram.
+router.get("/status", async (req, res) => {
+  const agentId = req.query.agentId;
+  if (!agentId) return res.status(400).json({ error: "Agent ID is required" });
+  try {
+    const agent = await Agent.findById(agentId).lean();
+    const connected = agent && agent.Profile.instagram && 
+      agent.Profile.instagram.longLivedToken && agent.Profile.instagram.igUserId;
+    return res.json({ connected: !!connected });
+  } catch (err) {
+    return res.json({ connected: false });
+  }
 });
 
-
-/* 
-   2. Start Authorization
-   GET api/auth/connect
-   This is called by the frontend to open in a popup, 
-   redirecting user to Instagram (Meta) OAuth flow.
-*/
+// Start Authorization: Redirects to Instagram OAuth. AgentId must be passed.
 router.get("/connect", (req, res) => {
-    console.log("Instagram Connect Request");
-    const { FB_APP_ID, IG_REDIRECT_URI } = process.env;
-
-    const scopes = [
-        "public_profile",
-        "email",
-        "instagram_basic",
-        "instagram_content_publish",
-        "read_insights",
-        "ads_management",
-        "ads_read",
-        "business_management",
-        "pages_read_engagement"
-    ];
-
-    const authUrl =
-        `https://www.facebook.com/v22.0/dialog/oauth?` +
-        `client_id=${FB_APP_ID}` +
-        `&redirect_uri=${encodeURIComponent(IG_REDIRECT_URI)}` +
-        `&scope=${scopes.join(",")}` +
-        `&response_type=code`;
-
-    // Redirect user to Meta's OAuth dialog
-    res.redirect(authUrl);
+  const { FB_APP_ID, IG_REDIRECT_URI } = process.env;
+  const agentId = req.query.agentId;
+  if (!agentId) {
+    return res.status(400).send("Agent ID required");
+  }
+  const scopes = [
+    "public_profile",
+    "email",
+    "instagram_basic",
+    "instagram_content_publish",
+    "read_insights",
+    "ads_management",
+    "ads_read",
+    "business_management",
+    "pages_read_engagement"
+  ];
+  // Append agentId as a query parameter in the redirect URI
+  const redirectUri = `${IG_REDIRECT_URI}`;
+  const authUrl =
+    `https://www.facebook.com/v22.0/dialog/oauth?` +
+    `client_id=${FB_APP_ID}` +
+    `&redirect_uri=${encodeURIComponent(redirectUri)}` +
+    `&scope=${scopes.join(",")}` +
+    `&response_type=code`;
+  res.redirect(authUrl);
 });
 
-/* 
-   3. OAuth Callback 
-   GET api/auth/callback
-   The user is redirected back here w/ ?code from Instagram. 
-   We'll exchange code => short-lived => long-lived tokens,
-   find IG user, store them in memory, then close the popup.
-*/
+// OAuth Callback: Exchange code for tokens, retrieve IG user ID, and update the agent.
 router.get("/callback", async (req, res) => {
-    try {
-        console.log("Instagram Callback Request");
-        const { code } = req.query;
-        if (!code) {
-            return res.status(400).send("No authorization code provided");
-        }
-
-        const { FB_APP_ID, FB_APP_SECRET, IG_REDIRECT_URI } = process.env;
-        const tokenUrl = "https://graph.facebook.com/v22.0/oauth/access_token";
-        const tokenParams = {
-            client_id: FB_APP_ID,
-            client_secret: FB_APP_SECRET,
-            redirect_uri: IG_REDIRECT_URI,
-            code,
-        };
-
-        // 3a. Exchange code => Short-Lived Token
-        const tokenRes = await axios.get(tokenUrl, { params: tokenParams });
-        SHORT_LIVED_TOKEN = tokenRes.data.access_token;
-        console.log("Short-Lived Token:", SHORT_LIVED_TOKEN);
-
-        // 3b. Exchange short-lived => Long-Lived Token
-        const exchangeUrl = "https://graph.facebook.com/v22.0/oauth/access_token";
-        const exchangeParams = {
-            grant_type: "fb_exchange_token",
-            client_id: FB_APP_ID,
-            client_secret: FB_APP_SECRET,
-            fb_exchange_token: SHORT_LIVED_TOKEN,
-        };
-
-        const exchangeRes = await axios.get(exchangeUrl, { params: exchangeParams });
-        LONG_LIVED_TOKEN = exchangeRes.data.access_token;
-        console.log("Long-Lived Token:", LONG_LIVED_TOKEN);
-
-        // 3c. Retrieve IG User ID
-        // Must find a Page connected to this token => get instagram_business_account
-        const pagesUrl = "https://graph.facebook.com/v22.0/me/accounts";
-        const pagesRes = await axios.get(pagesUrl, {
-            params: { access_token: LONG_LIVED_TOKEN },
-        });
-
-        const pages = pagesRes.data?.data || [];
-        IG_USER_ID = null;
-        for (let page of pages) {
-            if (page.instagram_business_account) {
-                IG_USER_ID = page.instagram_business_account.id;
-                console.log("IG_USER_ID:", IG_USER_ID);
-                break;
-            }
-        }
-
-        if (!IG_USER_ID) {
-            console.warn("No IG Business Account found. (Token may still be good for user data.)");
-        }
-
-        // In a real router, store tokens in DB associated w/ user
-
-        // Return a small snippet that closes the popup
-        return res.send(`
+  try {
+    console.log("Instagram Callback Request");
+    const { code } = req.query;
+    if (!code) {
+      return res.status(400).send("Missing authorization code or agentId");
+    }
+    const { FB_APP_ID, FB_APP_SECRET, IG_REDIRECT_URI } = process.env;
+    const tokenUrl = "https://graph.facebook.com/v22.0/oauth/access_token";
+    const tokenParams = {
+      client_id: FB_APP_ID,
+      client_secret: FB_APP_SECRET,
+      redirect_uri: `${IG_REDIRECT_URI}`,
+      code,
+    };
+    // Exchange code for short-lived token
+    const tokenRes = await axios.get(tokenUrl, { params: tokenParams });
+    const shortLivedToken = tokenRes.data.access_token;
+    console.log("Short-Lived Token:", shortLivedToken);
+    // Exchange short-lived token for long-lived token
+    const exchangeUrl = "https://graph.facebook.com/v22.0/oauth/access_token";
+    const exchangeParams = {
+      grant_type: "fb_exchange_token",
+      client_id: FB_APP_ID,
+      client_secret: FB_APP_SECRET,
+      fb_exchange_token: shortLivedToken,
+    };
+    const exchangeRes = await axios.get(exchangeUrl, { params: exchangeParams });
+    const longLivedToken = exchangeRes.data.access_token;
+    console.log("Long-Lived Token:", longLivedToken);
+    // Retrieve IG User ID from connected pages
+    const pagesUrl = "https://graph.facebook.com/v22.0/me/accounts";
+    const pagesRes = await axios.get(pagesUrl, {
+      params: { access_token: longLivedToken },
+    });
+    const pages = pagesRes.data?.data || [];
+    let igUserId = null;
+    for (let page of pages) {
+      if (page.instagram_business_account) {
+        igUserId = page.instagram_business_account.id;
+        console.log("IG_USER_ID:", igUserId);
+        break;
+      }
+    }
+    if (!igUserId) {
+      console.warn("No IG Business Account found.");
+    }
+    // Update the agent in the DB with the tokens and IG user ID.
+    const agent = await Agent.findById(agentId);
+    if (!agent) {
+      return res.status(404).send("Agent not found");
+    }
+    agent.Profile.instagram.igUserId = igUserId;
+    agent.Profile.instagram.longLivedToken = longLivedToken;
+    await agent.save();
+    // Return script to close the popup.
+    return res.send(`
       <script>
         window.opener && window.opener.focus();
         window.opener.postMessage("igConnected", "*");
         window.close();
       </script>
     `);
-    } catch (err) {
-        console.error("Error in Instagram OAuth callback =>", err);
-        return res.status(500).send("Instagram OAuth failed");
-    }
+  } catch (err) {
+    console.error("Error in Instagram OAuth callback:", err.response?.data || err.message);
+    return res.status(500).send("Instagram OAuth failed");
+  }
 });
 
-/* 
-   4. Publish a Single Image to IG
-   POST /instagram/publish
-   Body: { imageUrl, caption }
-*/
-router.post("/publish", async (req, res) => {
+// Publish Instagram Campaign
+// This route expects agentId and campaign data in the request body.
+router.post("/campaignPost", async (req, res) => {
+  try {
+    const { agentId } = req.body;
+    if (!agentId) {
+      return res.status(400).json({ error: "Agent ID is required" });
+    }
+    // Fetch agent from DB to retrieve IG credentials.
+    const agent = await Agent.findById(agentId);
+    if (!agent || !agent.Profile.instagram.longLivedToken || !agent.Profile.instagram.igUserId) {
+      return res.status(400).json({ error: "Instagram is not connected for this agent" });
+    }
+    // Set global tokens (if your publishInstagramCampaign uses them)
+    global.LONG_LIVED_TOKEN = agent.Profile.instagram.longLivedToken;
+    global.IG_USER_ID = agent.Profile.instagram.igUserId;
+
+    // Alternatively, you can pass them directly to the controller.
+    // Now call the publishInstagramCampaign controller.
+    await publishInstagramCampaign(req, res);
+
+  } catch (err) {
+    console.error("Error in publishing Instagram campaign:", err.message);
+    res.status(500).json({ error: "Failed to publish Instagram campaign" });
+  }
+});
+
+router.post("/personalPost", async (req, res) => {
     try {
-        if (!LONG_LIVED_TOKEN || !IG_USER_ID) {
-            return res.status(400).json({ error: "Instagram is not connected. Please connect first!" });
-        }
-
-        const { imageUrl, caption } = req.body;
-        if (!imageUrl) {
-            return res.status(400).json({ error: "Missing 'imageUrl' in request body" });
-        }
-
-        // Step A: Create Container
-        const createUrl = `https://graph.facebook.com/v22.0/${IG_USER_ID}/media`;
-        const createRes = await axios.post(
-            createUrl,
-            qs.stringify({
-                image_url: imageUrl,
-                caption: caption || "",
-                access_token: LONG_LIVED_TOKEN,
-            })
-        );
-        const containerId = createRes.data.id;
-        console.log("Created Container ID:", containerId);
-
-        // Step B: Publish Container
-        const publishUrl = `https://graph.facebook.com/v22.0/${IG_USER_ID}/media_publish`;
-        const publishRes = await axios.post(
-            publishUrl,
-            qs.stringify({
-                creation_id: containerId,
-                access_token: LONG_LIVED_TOKEN,
-            })
-        );
-        const mediaId = publishRes.data.id;
-        console.log("Media Published ID:", mediaId);
-
-        return res.json({
-            message: "Instagram post published successfully!",
-            mediaId,
-        });
+      const { agentId } = req.body;
+      if (!agentId) {
+        return res.status(400).json({ error: "Agent ID is required" });
+      }
+      // Fetch agent from DB to retrieve IG credentials.
+      const agent = await Agent.findById(agentId);
+      if (!agent || !agent.Profile.instagram.longLivedToken || !agent.Profile.instagram.igUserId) {
+        return res.status(400).json({ error: "Instagram is not connected for this agent" });
+      }
+      // Set global tokens (if your publishInstagramCampaign uses them)
+      global.LONG_LIVED_TOKEN = agent.Profile.instagram.longLivedToken;
+      global.IG_USER_ID = agent.Profile.instagram.igUserId;
+  
+      // Alternatively, you can pass them directly to the controller.
+      // Now call the publishInstagramCampaign controller.
+      await publishInstagramPersonal(req, res);
+  
     } catch (err) {
-        console.error("Failed to publish IG post =>", err?.response?.data || err.message);
-        return res.status(500).json({ error: "Failed to publish IG post" });
+      console.error("Error in publishing Instagram campaign:", err.message);
+      res.status(500).json({ error: "Failed to publish Instagram campaign" });
     }
-});
+  });
 
-module.exports = router
+module.exports = router;
