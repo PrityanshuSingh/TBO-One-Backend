@@ -162,6 +162,8 @@ exports.recommendPackage = async (req, res) => {
             console.log("Error generating description for the package", error.message);
         }
 
+        package.type = "local";
+
         const newGenPackage = await createPackage(
             package
         );
