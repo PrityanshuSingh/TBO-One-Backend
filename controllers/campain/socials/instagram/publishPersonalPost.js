@@ -43,13 +43,13 @@ exports.publishInstagramPersonal = async (req, res) => {
     // const mediaId="1234567890"; // Dummy media ID for testing
     
     // Step 2: Publish the Media Container
-    // const publishUrl = `https://graph.facebook.com/v22.0/${global.IG_USER_ID}/media_publish`;
-    // const publishRes = await axios.post(publishUrl, qs.stringify({
-    //   creation_id: containerId,
-    //   access_token: global.LONG_LIVED_TOKEN
-    // }));
-    // const mediaId = publishRes.data.id;
-    // console.log("Published Instagram media with ID:", mediaId);
+    const publishUrl = `https://graph.facebook.com/v22.0/${global.IG_USER_ID}/media_publish`;
+    const publishRes = await axios.post(publishUrl, qs.stringify({
+      creation_id: containerId,
+      access_token: global.LONG_LIVED_TOKEN
+    }));
+    const mediaId = publishRes.data.id;
+    console.log("Published Instagram media with ID:", mediaId);
 
 
     res.status(200).json({

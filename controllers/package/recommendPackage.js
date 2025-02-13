@@ -176,9 +176,9 @@ exports.recommendPackage = async (req, res) => {
 
         package.type = "local";
 
-        console.log("Package Image", package.image);
-        console.log("Package short description", package.shortDescription);
-        console.log("Package long description", package.detailedDescription);
+        // console.log("Package Image", package.image);
+        // console.log("Package short description", package.shortDescription);
+        // console.log("Package long description", package.detailedDescription);
 
 
         const newGenPackage = await createPackage(
