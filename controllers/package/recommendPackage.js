@@ -166,7 +166,7 @@ exports.recommendPackage = async (req, res) => {
 
         // Generate Package Image
         try {
-            const prompt = `Generate a captivating image for the travel package "${package.packageTitle}" located in ${req.body.destinationCity}. The package short description is: "${package.shortDescription}". Make sure to keep the image relevant to the package and use key elements from the description. Make it visually appealing and engaging and in context of travelling and travel Packages. Keep it realistic and relatable to the audience. Try to avoid sky, clouds, and other generic images.`;
+            const prompt = `Generate a captivating image for the travel package "${package.packageTitle}" located in ${req.body.destinationCity}. The package short description is: "${package.shortDescription}". Make sure to keep the image relevant to the package and use key elements from the description. Make it visually appealing and engaging. Keep it realistic and relatable to the audience. Try to avoid sky, clouds, and other generic images and do not write any text over image.`;
             package.image = await generatePackageImage(prompt);
         } catch (error) {
             console.log("Error generating image for the package", error.message);
